@@ -31,10 +31,10 @@
             </ul>
           </nav>
           <address class="page-header__contacts contacts">
-            <p class="contact__paragraph">
+            <p class="contact__text">
               <a class="contacts__link" href="tel:+78005558628">8 800 555-86-28</a>
             </p>
-            <p class="contact__paragraph">
+            <p class="contact__text">
               <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
           </address>
@@ -52,16 +52,18 @@
         </div>
       </div>
     </header>
+
     <main class="main-content">
       <h1 class="visually-hidden">"Погнали?" &mdash; сервис для поиска попутчиков</h1>
+
       <section class="intro">
         <h2 class="visually-hidden">Интро</h2>
         <b class="intro__slogan">В путешествие с крутыми попутчиками!</b>
         <address class="intro__contacts contacts">
-          <p class="contacts__paragraph">
+          <p class="contacts__text">
             <a class="contacts__link" href="tel:+78005558628">8 800 555-86-28</a>
           </p>
-          <p class="contacts__paragraph">
+          <p class="contacts__text">
             <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
         </address>
@@ -85,20 +87,22 @@
           <li class="steps-list__item">Путешествуйте вместе!</li>
         </ol>
       </section>
+
       <section class="about">
-        <h2 class="about__title index-page__subtitle">О сервисе</h2>
-        <p class="about__paragraph">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="about__paragraph about__paragraph--bold"><b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b></p>
+        <h2 class="about__heading index-page__subheading">О сервисе</h2>
+        <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+        <p class="about__text about__text--bold"><b>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b></p>
       </section>
+
       <section class="destinations">
-        <h2 class="destinations__title index-page__subtitle">Направления</h2>
-        <p class="destinations__paragraph">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <h2 class="destinations__heading index-page__subheading">Направления</h2>
+        <p class="destinations__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
         <ul class="destinations__list">
           <li class="destinations__list-item country-card">
             <picture>
               <img class="country-card__country-img" src="#" alt="Морские рифы Тайланда">
             </picture>
-            <h3 class="country-card__title">Тайланд</h3>
+            <h3 class="country-card__heading">Тайланд</h3>
             <b class="country-card__slogan">Джунгли зовут!</b>
             <span class="country-card__wanting-counter">18321</span>
           </li>
@@ -106,7 +110,7 @@
             <picture>
               <img class="country-card__country-img" src="#" alt="Проспект с историческими зданиями во Франции">
             </picture>
-            <h3 class="country-card__title">Франция</h3>
+            <h3 class="country-card__heading">Франция</h3>
             <b class="country-card__slogan">Трэ бьен, манифик!</b>
             <span class="country-card__wanting-counter">12518</span>
           </li>
@@ -114,25 +118,30 @@
             <picture>
               <img class="country-card__country-img" src="#" alt="Река с плывущим по ней судном и ее набережная">
             </picture>
-            <h3 class="country-card__title">Чехия</h3>
+            <h3 class="country-card__heading">Чехия</h3>
             <b class="country-card__slogan">Закоулки старой Европы</b>
             <span class="country-card__wanting-counter">5326</span>
           </li>
         </ul>
         <a class="destinations__btn btn" href="catalog.html">Показать все</a>
       </section>
+
       <section class="companions">
-        <h2 class="companions__title index-page__subtitle">Попутчики</h2>
-        <p class="companions__paragraph">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        <h2 class="companions__heading index-page__subheading">Попутчики</h2>
+        <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <p class="companions__paragraph companions__paragraph--bold"><b>Теперь можно легко найти единомышленников!</b></p>
+        <p class="companions__text companions__text--bold"><b>Теперь можно легко найти единомышленников!</b></p>
         <ul class="companions__list">
+
           <li class="companion__list-item user-card">
-            <img class="user-card__userpic" src="#" alt="Фото пользователя Таня Фирсова">
-            <p class="user-card__name"><b>Таня Фирсова</b></p>
+            <a href="#" class="user-card__userpic-link">
+              <img class="user-card__userpic-img" src="#" alt="Фото пользователя Таня Фирсова">
+            </a>
+            <p class="user-card__name"><a href="#"><b>Таня Фирсова</b></a></p>
             <div class="user-card__status">Офлайн</div>
-            <div class="user-card__level"><span class="user-card__current-level">99</span> level</div>
-            <h3 class="visually-hidden">Желаемые страны:</h3>
+            <div class="user-card__level">99<span class="user-card__level-text"> level</span></div>
+
+            <h3 class="visually-hidden">Хочет посетить:</h3>
             <ul class="user-card__countries-list">
               <li class="user-card__countries-item">
                 <a class="user-card__countries-link" href="#">Шри-ланка</a>
@@ -141,9 +150,10 @@
                 <a class="user-card__countries-link" href="#">Тайланд</a>
               </li>
               <li class="user-card__countries-item">
-                <a class="user-card__countries-link" href="#">Сейшельские оствора</a>
+                <a class="user-card__countries-link" href="#">Сейшелы</a>
               </li>
             </ul>
+
             <h3 class="visually-hidden">Тэги:</h3>
             <ul class="user-card__tags-list">
               <li class="user-card__tags-item">
@@ -165,27 +175,34 @@
                 <a class="user-card__tags-link" href="#">#смузи</a>
               </li>
             </ul>
-            <h3 class="visually-hidden">Возможный транспорт:</h3>
+
+            <h3 class="visually-hidden">Транспорт:</h3>
             <ul class="user-card__transport-list">
-              <li class="user-card__transport-item">Самолет</li>
+              <li class="user-card__transport-item">Авиаперелет</li>
+              <li class="user-card__transport-item">Автотранспорт</li>
+              <li class="user-card__transport-item">Велосипед</li>
+              <li class="user-card__transport-item">Пешком</li>
             </ul>
           </li>
+
           <li class="companion__list-item user-card">
             <a class="user-card__userpic-link" href="#">
               <img class="user-card__userpic-img" src="#" alt="Фото пользователя Петя Демин">
             </a>
-            <p class="user-card__name"><b>Петя Демин</b></p>
+            <p class="user-card__name"><a href="#"><b>Петя Демин</b></a></p>
             <div class="user-card__status">Онлайн</div>
-            <div class="user-card__level"><span class="user-card__current-level">80</span> level</div>
-            <h3 class="visually-hidden">Желаемые страны:</h3>
+            <div class="user-card__level">80<span class="user-card__level-text"> level</span></div>
+
+            <h3 class="visually-hidden">Хочет посетить:</h3>
             <ul class="user-card__countries-list">
               <li class="user-card__countries-item">
-                <a class="user-card__countries-link" href="#">Название страны флаг которой изображен</a>
+                <a class="user-card__countries-link" href="#">Бельгия</a>
               </li>
               <li class="user-card__countries-item">
-                <a class="user-card__countries-link" href="#">Название страны флаг которой изображен</a>
+                <a class="user-card__countries-link" href="#">Чехия</a>
               </li>
             </ul>
+
             <h3 class="visually-hidden">Тэги:</h3>
             <ul class="user-card__tags-list">
               <li class="user-card__tags-item">
@@ -204,18 +221,21 @@
                 <a class="user-card__tags-link" href="#">#крафт</a>
               </li>
             </ul>
-            <h3 class="visually-hidden">Возможный транспорт:</h3>
+
+            <h3 class="visually-hidden">Транспорт:</h3>
             <ul class="user-card__transport-list">
-              <li class="user-card__transport-item">Самолет</li>
-              <li class="user-card__transport-item">Авто</li>
+              <li class="user-card__transport-item">Авиаперелет</li>
+              <li class="user-card__transport-item">Автотранспорт</li>
+              <li class="user-card__transport-item">Велосипед</li>
               <li class="user-card__transport-item">Пешком</li>
             </ul>
           </li>
+
         </ul>
         <a class="companions__btn btn" href="#">Показать всех</a>
       </section>
       <section class="rates">
-        <h2 class="rates__title index-page__subtitle">Добавьте свой профиль</h2>
+        <h2 class="rates__heading index-page__subheading">Добавьте свой профиль</h2>
         <table class="rates__table">
           <tr class="rates__row">
             <td class="rates__field">Базовое размещение</td>
@@ -234,6 +254,7 @@
       </section>
       <!-- Здесь будут форма обратной связи и карта -->
     </main>
+
     <footer class="page-footer">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="#" alt="Логотип &#34;Погнали&#34;">
