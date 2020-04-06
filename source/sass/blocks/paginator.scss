@@ -1,0 +1,16 @@
+.paginator {
+  @include list-reset;
+  display: flex;
+}
+
+.paginator__link {
+  display: block;
+  width: 135px;
+  height: 50px;
+
+  background-color: #ffffff;
+
+  &--next {
+    border-left: 1px solid $color-light-grey;
+  }
+}

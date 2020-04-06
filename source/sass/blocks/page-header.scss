@@ -1,0 +1,24 @@
+.page-header {
+  /* Временные стили */
+  border: 1px solid black;
+}
+
+.page-header__logo {
+  display: block;
+  width: 100px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.page-header__logo-img {
+  display: block;
+}
+
+.page-header__contacts {
+  margin-bottom: 30px;
+}
+
+.page-header__social {
+  @include list-reset;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,10 @@
+.main-nav__site-list {
+  @include list-reset;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-nav__user-list {
+  @include list-reset;
+  margin-bottom: 50px;
+}

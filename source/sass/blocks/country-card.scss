@@ -1,0 +1,36 @@
+.country-card__picture {
+  display: block;
+  line-height: 0;
+}
+
+.country-card__wraper {
+  min-height: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 90px;
+
+  background-color: #ffffff;
+}
+
+.country-card__heading {
+  margin: 0;
+
+  font-size: 21px;
+  font-weight: 700;
+  color: #161c35;
+}
+
+.country-card__slogan {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(#444444, 0.3);
+}
+
+.country-card__counter {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgba(#444444, 0.3);
+}

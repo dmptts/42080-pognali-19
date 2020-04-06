@@ -1,0 +1,42 @@
+.btn {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 24px;
+  padding-right: 33px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: #161c35;
+
+  background-color: $color-yellow;
+  border-radius: 7px;
+
+  &--rounded {
+    padding-top: 7px;
+    padding-bottom: 3px;
+    padding-right: 24px;
+
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 25px;
+  }
+
+  &--rounded-big {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 24px;
+
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    border-radius: 25px;
+  }
+}

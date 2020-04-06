@@ -1,0 +1,38 @@
+.steps-list__item {
+  display: block;
+  min-height: 85px;
+  margin-top: -5px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 95px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-dark-blue;
+
+  background-color: #ff8d30;
+  border-radius: 7px 7px 0 0;
+
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+
+  &:nth-child(4) {
+    background-color: #ffd74b;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    min-height: 80px;
+
+    border-radius: 7px;
+  }
+}
