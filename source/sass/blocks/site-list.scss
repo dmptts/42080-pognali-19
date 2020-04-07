@@ -1,0 +1,19 @@
+.site-list {
+  /* Временные стили */
+  border: 1px solid black;
+}
+
+.site-list__item {
+  display: block;
+}
+
+.site-list__link {
+  display: block;
+
+  font-size: 30px;
+  line-height: 36px;
+  color: $color-dark-blue;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}

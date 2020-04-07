@@ -1,0 +1,31 @@
+.rates {
+  padding-top: 95px;
+  padding-bottom: 40px;
+  background-color: $color-light-grey;
+}
+
+.rates__heading {
+  padding-left: 25px;
+  padding-right: 140px;
+}
+
+.rates__table {
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+
+.rates__row {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.rates__link {
+  padding-left: 25px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: $color-dark-blue;
+}

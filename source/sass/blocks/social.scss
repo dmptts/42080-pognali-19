@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  display: block;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+
+  /* Временные стили */
+  background-color: black;
+}

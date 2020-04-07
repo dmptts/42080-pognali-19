@@ -1,0 +1,175 @@
+.index-profile-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+
+  background-color: #ffffff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.index-profile-card__userpic-picture {
+  display: block;
+  line-height: 0;
+}
+
+.index-profile-card__name {
+  display: block;
+
+  font-size: 21px;
+  font-weight: 700;
+  color: $color-dark-blue;
+}
+
+.index-profile-card__name-wraper {
+  position: relative;
+
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.index-profile-card__status {
+  position: absolute;
+  top: 50%;
+  left: -17px;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  transform: translateY(-50%);
+
+  &--online {
+    background-color: #81e31e;
+  }
+
+  &--offline {
+    background-color: #f97676;
+  }
+}
+
+// .profile-card__text {
+//   margin: 0;
+//   margin-bottom: 18px;
+//   margin-left: 8px;
+// }
+
+// .index-profile-card__tags-list {
+//   @include list-reset;
+//   display: flex;
+//   flex-wrap: wrap;
+//   width: 185px;
+//   margin-bottom: 20px;
+
+//   &--index {
+//     justify-content: center;
+//   }
+
+//   &--catalog {
+//     justify-content: flex-start;
+//     margin-top: 15px;
+//     padding-left: 8px;
+//   }
+// }
+
+.index-profile-card__level {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  width: 60px;
+  height: 60px;
+
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+
+  /* Временные стили */
+  background-color: $color-grey;
+}
+
+.index-profile-card__level-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.index-profile-card__countries-list {
+  @include list-reset;
+  position: absolute;
+  top: 270px - 24px/2;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &--catalog {
+    padding-left: 8px;
+  }
+}
+
+.index-profile-card__countries-item {
+  margin-right: 17px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.index-profile-card__countries-link {
+  display: block;
+  width: 35px;
+  height: 24px;
+
+  /* Временные стили */
+  background-color: black;
+}
+
+.index-profile-card__tags-list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.index-profile-card__tags-item {
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.index-profile-card__tags-link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-grey;
+}
+
+.index-profile-card__transport-list {
+  @include list-reset;
+  display: flex;
+}
+
+.index-profile-card__transport-item {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+
+  /* Временные стили */
+  background-color: black;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

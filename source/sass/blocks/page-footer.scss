@@ -1,0 +1,34 @@
+.page-footer__wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 100px;
+  margin-bottom: 12px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.page-footer__logo-img {
+  display: block;
+}
+
+.page-footer__social {
+  @include list-reset;
+  margin-bottom: 35px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

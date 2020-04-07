@@ -1,0 +1,192 @@
+.catalog-profile-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 17px;
+
+  background-color: #ffffff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog-profile-card__wraper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.catalog-profile-card__column--name {
+  width: 80px;
+}
+
+.catalog-profile-card__userpic-link {
+  display: block;
+  margin-left: 18px;
+  margin-right: 16px;
+
+  border-radius: 50%;
+}
+
+.catalog-profile-card__btn {
+  width: 230px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.catalog-profile-card__userpic-picture {
+  display: block;
+  line-height: 0;
+}
+
+.catalog-profile-card__userpic-img {
+  border-radius: 50%;
+}
+
+.catalog-profile-card__name {
+  font-size: 20px;
+  font-weight: 700;
+  color: $color-dark-blue;
+}
+
+.catalog-profile-card__like-counter {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+  text-transform: uppercase;
+}
+
+.catalog-profile-card__status {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  &--online {
+    background-color: #81e31e;
+  }
+
+  &--offline {
+    background-color: #f97676;
+  }
+}
+
+.catalog-profile-card__like-btn {
+  position: absolute;
+  top: 59px;
+  left: 67px;
+  z-index: 1;
+
+  display: block;
+  width: 31px;
+  height: 31px;
+
+  border-radius: 50%;
+
+  /* Временные стили */
+  background-color: $color-grey;
+}
+
+.catalog-profile-card__tags-list {
+  @include list-reset;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  width: 195px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+.catalog-profile-card__tags-item {
+  margin-right: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.catalog-profile-card__tags-link {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-grey;
+}
+
+.catalog-profile-card__text {
+  display: inline-block;
+  margin: 0;
+  padding-left: 25px;
+  // margin-bottom: -9px;
+  // padding-left: 12px;
+  // padding-right: 12px;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-grey;
+
+  // background-color: #ffffff;
+}
+
+.catalog-profile-card__countries-list {
+  @include list-reset;
+  width: 100%;
+  margin-bottom: 18px;
+  padding-top: 20px;
+  padding-left: 25px;
+
+  border-top: 1px solid $color-light-grey;
+}
+
+.catalog-profile-card__countries-item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog-profile-card__countries-link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 40px;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-dark-blue;
+  text-transform: uppercase;
+}
+
+.catalog-profile-card__transport-list {
+  @include list-reset;
+  display: flex;
+}
+
+.catalog-profile-card__transport-item {
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  background-color: $color-light-grey;
+  border-radius: 50%;
+}
+
+.catalog-profile-card__level {
+  width: 45px;
+  height: 45px;
+
+  background-color: $color-light-grey;
+}

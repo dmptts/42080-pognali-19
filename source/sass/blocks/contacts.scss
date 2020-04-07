@@ -1,0 +1,46 @@
+.contacts__text {
+  margin: 0;
+}
+
+.contacts__link {
+  position: relative;
+
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 60px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  font-style: normal;
+  color: $color-dark-blue;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: $color-dark-blue;
+    border-radius: 50%;
+  }
+
+  &--yellow::before {
+    background-color: $color-yellow;
+  }
+
+  &--hidden-text {
+    height: 40px;
+    padding-left: 40px;
+  }
+
+  &--hidden-text::before {
+    width: 40px;
+    height: 40px;
+  }
+}
