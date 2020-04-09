@@ -4,6 +4,22 @@
   padding-left: 25px;
   padding-right: 25px;
 
-  /* Временные стили */
-  border: 1px solid black;
+  // /* Временные стили */
+  // border: 1px solid black;
+}
+
+@media (min-width: $tablet-width) {
+  .wraper {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wraper {
+    width: 1440px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
