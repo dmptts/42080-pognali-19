@@ -55,12 +55,13 @@
   .about__wraper {
     display: flex;
     flex-direction: column;
-    min-height: 684px;
+    min-height: 920px;
+    padding-top: 30px + 236px;
     padding-bottom: 88px;
 
     background-image: url("../../img/about-tablet@1x.png"),
       url("../../img/back");
-    background-position: top 30px right 8px;
+    background-position: bottom 88px right 8px;
   }
 
   .about__heading {
