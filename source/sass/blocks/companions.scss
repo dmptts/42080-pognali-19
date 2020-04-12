@@ -1,14 +1,7 @@
 .companions {
   padding-top: 25px;
   padding-bottom: 30px;
-
-  &--index {
-    background-color: $color-dark-blue;
-  }
-
-  &--catalog {
-    background-color: $color-light-grey;
-  }
+  background-color: $color-dark-blue;
 }
 
 .companions__wraper {

@@ -1,15 +1,40 @@
-.inner-page__heading-wraper {
+.inner-page__heading {
   background-color: $color-dark-blue;
 }
 
-.inner-page__heading {
-  margin: 0 auto;
-  width: 320px;
-  padding-left: 25px;
-  padding-right: 25px;
+.inner-page__heading-wraper {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.inner-page__title {
+  margin: 0;
 
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.inner-page__heading-link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .inner-page__heading-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+
+  .inner-page__heading-link {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+  }
 }

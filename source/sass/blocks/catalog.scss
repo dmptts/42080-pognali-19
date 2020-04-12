@@ -1,0 +1,21 @@
+.catalog {
+  background-color: $color-light-grey;
+}
+
+.catalog__wraper {
+  padding-bottom: 45px;
+  /* Временные стили */
+  outline: 1px solid black;
+}
+
+.catalog__list {
+  @include list-reset;
+  margin-bottom: 22px;
+}
+
+.catalog__show-more-link {
+  display: block;
+  margin-bottom: 27px;
+
+  text-align: center;
+}
