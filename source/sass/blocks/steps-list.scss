@@ -36,3 +36,38 @@
     border-radius: 7px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .steps-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -140px;
+  }
+
+  .steps-list__item {
+    height: 140px;
+    margin-top: 0;
+
+    &:nth-child(odd) {
+      width: 344px;
+    }
+
+    &:nth-child(even) {
+      width: 344px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps-list {
+    flex-wrap: nowrap;
+
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .steps-list__item {
+    width: 25%;
+    height: 105px;
+  }
+}

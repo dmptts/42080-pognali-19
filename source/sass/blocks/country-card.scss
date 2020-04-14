@@ -3,7 +3,7 @@
   line-height: 0;
 }
 
-.country-card__wraper {
+.country-card__wrapper {
   min-height: 90px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -33,4 +33,23 @@
   line-height: 30px;
   font-weight: 400;
   color: rgba(#444444, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .country-card {
+    display: flex;
+  }
+
+  .country-card__picture {
+    order: 1;
+  }
+
+  .country-card__img {
+    width: 185px;
+    height: 140px;
+  }
+
+  .country-card__wrapper {
+    flex-grow: 1;
+  }
 }

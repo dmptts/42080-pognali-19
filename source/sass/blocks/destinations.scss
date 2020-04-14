@@ -30,6 +30,38 @@
   margin-bottom: 10px;
 
   &:last-child {
-    margin-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .destinations__container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .destinations__wraper {
+    flex-direction: row;
+  }
+
+  .destinations__description {
+    order: 1;
+    width: 345px;
+  }
+
+  .destinations__list {
+    width: 558px;
+    margin-bottom: 0;
+    margin-right: 170px;
+  }
+
+  .destinations__btn {
+    position: absolute;
+    bottom: 0;
+    left: 558px + 170px + 60px;
   }
 }

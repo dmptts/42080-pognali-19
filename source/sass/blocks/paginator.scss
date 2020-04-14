@@ -1,16 +1,38 @@
 .paginator {
   @include list-reset;
   display: flex;
+  width: 100%;
+  min-height: 50px;
+
+  background-color: #ffffff;
+}
+
+.paginator__pages-list {
+  display: none;
 }
 
 .paginator__link {
   display: block;
   width: 135px;
-  height: 50px;
+  min-height: 50px;
 
-  background-color: #ffffff;
 
   &--next {
     border-left: 1px solid $color-light-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .paginator {
+    justify-content: space-between;
+  }
+
+  .paginator__pages-list {
+    @include list-reset;
+    display: flex;
+  }
+
+  .paginator__item:first-child {
+    margin-right: auto;
   }
 }

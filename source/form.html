@@ -5,17 +5,19 @@
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="inner-page">
-    <header class="page-header index-page__page-header page-header--bg-blue">
-      <div class="page-header__wrapper wraper">
-        <a class="page-header__logo" href="index.html">
-          <picture>
-            <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
-          </picture>
-        </a>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
+            </picture>
+          </a>
+        </div>
         <div class="page-header__menu">
-          <button class="page-header__toggle" type="button">Открыть меню</button>
-          <div class="page-header__menu-wraper">
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="page-header__dropdown-menu">
             <nav class="main-nav">
               <ul class="main-nav__site-list site-list">
                 <li class="site-list__item">
@@ -33,15 +35,15 @@
                   <a class="user-list__link btn btn--rounded-big" href="#">Авторизация</a>
                 </li>
               </ul>
+              <address class="main-nav__contacts contacts">
+                <p class="contacts__text">
+                  <a class="contacts__link contacts__link--phone" href="tel:+78005558628">8 800 555-86-28</a>
+                </p>
+                <p class="contacts__text">
+                  <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </p>
+              </address>
             </nav>
-            <address class="page-header__contacts contacts">
-              <p class="contacts__text">
-                <a class="contacts__link contacts__link--phone" href="tel:+78005558628">8 800 555-86-28</a>
-              </p>
-              <p class="contacts__text">
-                <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </p>
-            </address>
             <ul class="page-header__social social">
               <li class="social__item">
                 <a class="social__link" href="#"><span class="visually-hidden">Facebook</span></a>
@@ -58,15 +60,18 @@
       </div>
     </header>
 
-    <main class="main-content">
-      <div class="inner-page__heading-wraper">
-        <h1 class="inner-page__heading">Направления</h1>
+    <main>
+      <div class="page-title">
+        <div class="page-title__container container">
+          <h1 class="page-title__page-heading">Попутчики</h1>
+          <a class="page-title__link" href="index.html">На главную</a>
+        </div>
       </div>
       <!-- Здесь будут формы -->
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wraper wraper">
+      <div class="page-footer__container container">
         <a class="page-footer__logo">
           <picture>
             <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" alt="Логотип &#34;Погнали&#34;" width="100" height="19">

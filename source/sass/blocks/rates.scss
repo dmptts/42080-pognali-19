@@ -1,17 +1,33 @@
 .rates {
-  padding-top: 95px;
+  padding-top: 25px;
   padding-bottom: 40px;
   background-color: $color-light-grey;
+
+  /* Временные стили */
+  outline: 1px solid black;
+}
+
+.rates__container {
+  /* Временные стили */
+  outline: 1px solid black;
 }
 
 .rates__heading {
+  margin-top: 50px;
   padding-left: 25px;
   padding-right: 140px;
+
+  /* Временные стили */
+  outline: 1px solid black;
 }
 
 .rates__table {
+  width: 100%;
   margin-bottom: 30px;
   padding-left: 25px;
+  padding-right: 45px;
+  /* Временные стили */
+  outline: 1px solid black;
 }
 
 .rates__row {
@@ -20,6 +36,9 @@
 
   padding-top: 12px;
   padding-bottom: 12px;
+
+  /* Временные стили */
+  outline: 1px solid black;
 }
 
 .rates__link {
@@ -28,4 +47,83 @@
   font-size: 16px;
   font-weight: 700;
   color: $color-dark-blue;
+  /* Временные стили */
+  outline: 1px solid black;
+}
+
+@media (min-width: $tablet-width) {
+  .rates {
+    padding-top: 60px;
+  }
+
+  .rates__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rates__heading {
+    margin-top: 65px;
+    margin-bottom: 80px;
+    padding: 0;
+  }
+
+  .rates__table {
+    margin-bottom: 55px;
+    padding-left: 90px;
+    padding-right: 35px;
+  }
+
+  .rates__row {
+    flex-direction: row;
+  }
+
+  .rates__field {
+    width: 400px;
+
+    /* Временные стили */
+    outline: 1px solid black;
+  }
+
+  .rates__value {
+    width: 163px;
+
+    text-align: end;
+
+    /* Временные стили */
+    outline: 1px solid black;
+  }
+
+  .rates__link {
+    align-self: flex-start;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates {
+    padding-bottom: 165px;
+  }
+
+  .rates__container {
+    align-items: flex-start;
+  }
+
+  .rates__heading {
+    align-self: center;
+  }
+
+  .rates__table {
+    width: 905px;
+  }
+
+  .rates__field {
+    width: 528px;
+  }
+
+  .rates__value {
+    width: 285px;
+  }
 }

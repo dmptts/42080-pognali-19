@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 270px;
   margin-bottom: 10px;
   padding-bottom: 20px;
 
@@ -12,6 +13,13 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.index-profile-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .index-profile-card__userpic-picture {
@@ -27,11 +35,10 @@
   color: $color-dark-blue;
 }
 
-.index-profile-card__name-wraper {
+.index-profile-card__name-wrapper {
   position: relative;
 
   margin-top: 25px;
-  margin-bottom: 20px;
 }
 
 .index-profile-card__status {
@@ -55,30 +62,6 @@
   }
 }
 
-// .profile-card__text {
-//   margin: 0;
-//   margin-bottom: 18px;
-//   margin-left: 8px;
-// }
-
-// .index-profile-card__tags-list {
-//   @include list-reset;
-//   display: flex;
-//   flex-wrap: wrap;
-//   width: 185px;
-//   margin-bottom: 20px;
-
-//   &--index {
-//     justify-content: center;
-//   }
-
-//   &--catalog {
-//     justify-content: flex-start;
-//     margin-top: 15px;
-//     padding-left: 8px;
-//   }
-// }
-
 .index-profile-card__level {
   position: absolute;
   top: 16px;
@@ -98,6 +81,12 @@
 .index-profile-card__level-text {
   font-size: 14px;
   font-weight: 400;
+}
+
+.index-profile-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .index-profile-card__countries-list {
@@ -171,5 +160,18 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .index-profile-card {
+    width: 285px;
+    margin-bottom: 0;
+  }
+
+  .index-profile-card__userpic-img {
+    width: 285px;
+    height: 285px;
   }
 }

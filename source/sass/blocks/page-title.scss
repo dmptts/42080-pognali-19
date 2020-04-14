@@ -1,0 +1,40 @@
+.page-title {
+  background-color: $color-dark-blue;
+}
+
+.page-title__container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.page-title__page-heading {
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.page-title__link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+
+  .page-title__link {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+  }
+}

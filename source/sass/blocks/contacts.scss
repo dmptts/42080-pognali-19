@@ -44,3 +44,10 @@
     height: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+  }
+}

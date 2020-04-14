@@ -1,0 +1,13 @@
+.slogan {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .slogan {
+    text-align: left;
+  }
+}

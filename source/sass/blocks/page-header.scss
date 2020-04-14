@@ -1,24 +1,133 @@
 .page-header {
   /* Временные стили */
-  border: 1px solid black;
+  outline: 1px solid black;
+}
+
+.page-header__container {
+  position: relative;
+
+  padding-bottom: 30px;
+
+  /* Временные стили */
+  outline: 1px solid black;
+}
+
+.page-header__top {
+  display: flex;
+  align-items: center;
+  min-height: 73px;
+
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+
+  /* Временные стили */
+  outline: 1px solid black;
 }
 
 .page-header__logo {
   display: block;
   width: 100px;
-  padding-top: 27px;
-  padding-bottom: 27px;
 }
 
 .page-header__logo-img {
   display: block;
-}
-
-.page-header__contacts {
-  margin-bottom: 30px;
+  width: 100px;
+  height: 19px;
 }
 
 .page-header__social {
   @include list-reset;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+
+  /* Временные стили */
+  outline: 1px solid black;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 27px;
+  right: 25px + 6px;
+
+  width: 19px;
+  height: 19px;
+  background-color: $color-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    min-height: 910px;
+  }
+
+  .page-header__top {
+    min-height: 132px;
+  }
+
+  .page-header__logo-img {
+    width: 164px;
+    height: 42px;
+  }
+
+  .page-header__dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 688px;
+
+    /* Временные стили */
+    outline: 1px solid black;
+  }
+
+  .page-header__social {
+    margin-top: auto;
+    margin-left: 55px;
+  }
+
+  .page-header__toggle {
+    top: 50px;
+    right: 50%;
+
+    width: 30px;
+    height: 30px;
+
+    transform: translateX(50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 100px;
+    padding-bottom: 0;
+  }
+
+  .page-header__dropdown-menu {
+    flex-direction: row;
+    min-height: auto;
+  }
+
+  .page-header__top {
+    min-height: auto;
+    border: none;
+  }
+
+  .page-header__menu {
+    display: flex;
+  }
+
+  .page-header__logo-img {
+    width: 200px;
+    height: 52px;
+  }
+
+  .page-header__social {
+    display: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
 }
