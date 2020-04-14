@@ -1,13 +1,13 @@
-.inner-page__heading {
+.page-title {
   background-color: $color-dark-blue;
 }
 
-.inner-page__heading-wraper {
+.page-title__wraper {
   padding-top: 40px;
   padding-bottom: 25px;
 }
 
-.inner-page__title {
+.page-title__page-heading {
   margin: 0;
 
   font-size: 36px;
@@ -16,12 +16,12 @@
   color: #ffffff;
 }
 
-.inner-page__heading-link {
+.page-title__link {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .inner-page__heading-wraper {
+  .page-title__wraper {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -29,7 +29,7 @@
     padding-bottom: 80px;
   }
 
-  .inner-page__heading-link {
+  .page-title__link {
     display: block;
     font-size: 20px;
     line-height: 24px;
