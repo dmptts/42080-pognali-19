@@ -2,7 +2,7 @@
   background-color: $color-dark-blue;
 }
 
-.page-title__wraper {
+.page-title__container {
   padding-top: 40px;
   padding-bottom: 25px;
 }
@@ -21,7 +21,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-title__wraper {
+  .page-title__container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;

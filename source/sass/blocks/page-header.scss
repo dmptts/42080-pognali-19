@@ -3,7 +3,7 @@
   outline: 1px solid black;
 }
 
-.page-header__wraper {
+.page-header__container {
   position: relative;
 
   padding-bottom: 30px;
@@ -55,7 +55,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__wraper {
+  .page-header__container {
     min-height: 910px;
   }
 
@@ -95,7 +95,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__wraper {
+  .page-header__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

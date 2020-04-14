@@ -1,4 +1,4 @@
-.page-footer__wraper {
+.page-footer__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +52,7 @@
     min-height: 154px;
   }
 
-  .page-footer__wraper {
+  .page-footer__container {
     flex-direction: row;
     justify-content: center;
     align-items: center;
