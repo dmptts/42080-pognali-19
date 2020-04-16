@@ -3,18 +3,11 @@
 }
 
 .user-list__link {
-  // display: block;
   width: 100%;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
+}
 
-  // font-size: 17px;
-  // line-height: 30px;
-  // font-weight: 700;
-  // color: #161c35;
-  // text-align: center;
-  // text-transform: uppercase;
-
-  // background-color: $color-yellow;
-  // border-radius: 25px;
+@media (min-width: $tablet-width) {
+  .user-list__link {
+    width: 190px;
+  }
 }

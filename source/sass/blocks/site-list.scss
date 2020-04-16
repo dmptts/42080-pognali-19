@@ -11,6 +11,14 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+
+  &:hover {
+    color: rgba($color-dark-blue, 0.7);
+  }
+
+  &:active {
+    color: rgba($color-dark-blue, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,11 +29,17 @@
   }
 
   .site-list__item {
-    margin-bottom: 20px;
+    // margin-bottom: px;
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .site-list__link {
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: -0.6px;
   }
 }
 

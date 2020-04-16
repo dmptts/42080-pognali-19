@@ -1,6 +1,6 @@
 .social__item {
   display: block;
-  margin-right: 15px;
+  margin-right: 5px;
 
   &:last-child {
     margin-right: 0;
@@ -12,6 +12,21 @@
   width: 40px;
   height: 40px;
 
-  /* Временные стили */
-  background-color: black;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--fb {
+    background-image: url("../../img/facebook.svg");
+    background-size: 11px 21px
+  }
+
+  &--vk {
+    background-image: url("../../img/vk.svg");
+    background-size: 23px 12px;
+  }
+
+  &--instagram {
+    background-image: url("../../img/instagram.svg");
+    background-size: 18px 18px;
+  }
 }
