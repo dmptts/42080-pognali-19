@@ -17,7 +17,7 @@
 
   &--fb {
     background-image: url("../../img/facebook.svg");
-    background-size: 11px 21px
+    background-size: 11px 21px;
   }
 
   &--vk {
@@ -28,5 +28,25 @@
   &--instagram {
     background-image: url("../../img/instagram.svg");
     background-size: 18px 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__item {
+    margin-right: 20px;
+  }
+
+  .social__link {
+    &--fb {
+      background-size: 14px 28px;
+    }
+
+    &--vk {
+      background-size: 31px 16px;
+    }
+
+    &--instagram {
+      background-size: 24px 24px;
+    }
   }
 }

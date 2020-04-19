@@ -11,14 +11,6 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-
-  &:hover {
-    color: rgba($color-dark-blue, 0.7);
-  }
-
-  &:active {
-    color: rgba($color-dark-blue, 0.3);
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -29,7 +21,6 @@
   }
 
   .site-list__item {
-    // margin-bottom: px;
 
     &:last-child {
       margin-bottom: 0;
@@ -46,9 +37,31 @@
 @media (min-width: $desktop-width) {
   .site-list {
     flex-direction: row;
+    margin-bottom: -5px;
   }
 
   .site-list__item {
     margin-bottom: 0;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0;
+
+    &:hover {
+      color: #ffd74b;
+    }
+
+    &:active {
+      color: rgba(#ffd74b, 0.3);
+    }
   }
 }

@@ -1,13 +1,11 @@
 .page-header {
   position: relative;
   background-color: #161c36;
-
-  &--bg-white {
-    background-color: #ffffff;
-  }
 }
 
-.page-header__top {
+.page-header__top-container {
+  position: relative;
+
   display: flex;
   align-items: center;
   min-height: 73px;
@@ -27,14 +25,12 @@
   height: 19px;
 }
 
-// .page-header__menu {
-//   position: relative;
-// }
-
 .page-header__dropdown-menu {
-  padding-bottom: 30px;
-
   background-color: #ffffff;
+}
+
+.page-header__dropdown-menu-container {
+  padding-bottom: 30px;
 }
 
 .page-header__social {
@@ -55,31 +51,27 @@
   background-color: #161c36;
   border: none;
   cursor: pointer;
-}
 
-.page-header__menu--closed .page-header__toggle::before{
-  position: absolute;
-  top: 7px;
-  left: 0;
-  content: "";
+  &--menu-closed::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 0;
 
-  width: 25px;
-  height: 3px;
+    width: 25px;
+    height: 3px;
 
-  background-color: #ffffff;
-  border-radius: 1px;
-  box-shadow: 0 8px 0 0 #ffffff;
-}
+    background-color: #ffffff;
+    border-radius: 1px;
+    box-shadow: 0 8px 0 0 #ffffff;
+  }
 
-.page-header__menu--closed .page-header__dropdown-menu {
-  display: none;
-}
+  &--menu-opened {
+    background-color: #ffffff;
+  }
 
-.page-header__menu--opened .page-header__toggle {
-  background-color: #ffffff;
-
-  &::before,
-  &::after {
+  &--menu-opened::before,
+  &--menu-opened::after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -91,15 +83,19 @@
     background-color: #cccccc;
   }
 
-  &::before {
+  &--menu-opened::before {
     transform: translate(-50%, -50%)
-      rotate(45deg);
+    rotate(45deg);
   }
 
-  &::after  {
+  &--menu-opened::after {
     transform: translate(-50%, -50%)
-      rotate(-45deg);
+    rotate(-45deg);
   }
+}
+
+.page-header__menu--closed .page-header__dropdown-menu {
+  display: none;
 }
 
 .page-header__menu--opened .page-header__dropdown-menu {
@@ -119,16 +115,28 @@
   display: block;
 }
 
-@media (min-width: $tablet-width) {
-  .page-header {
-    background-color: #182044;
+@media (max-width: $mobile-devices-only) {
+  .page-header--bg-white {
+    background-color: #ffffff;
   }
 
   .page-header__container {
-    min-height: 910px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-color: #182044;
+
+    &--bg-white {
+      background-color: #ffffff;
+    }
   }
 
-  .page-header__top {
+  .page-header__top-container {
     min-height: 132px;
   }
 
@@ -141,20 +149,20 @@
     height: 42px;
   }
 
-  .page-header__dropdown-menu {
+  .page-header__dropdown-menu-container {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 688px;
-  }
-
-  .page-header__dropdown-menu-container {
-    position: relative;
+    min-height: 778px;
+    padding-bottom: 84px;
   }
 
   .page-header__social {
+    justify-content: flex-start;
     margin-top: auto;
-    margin-left: 55px;
+    padding-left: 70px;
   }
 
   .page-header__toggle {
@@ -173,32 +181,60 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    background-color: #161c34;
+  }
+
   .page-header__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     min-height: 100px;
-    padding-bottom: 0;
+
   }
 
-  .page-header__dropdown-menu {
-    flex-direction: row;
+  .page-header__top-container {
+    width: auto;
     min-height: auto;
-  }
-
-  .page-header__top {
-    min-height: auto;
-    border: none;
+    margin: 0;
+    margin-right: 40px;
+    padding: 0;
   }
 
   .page-header__menu {
-    display: flex;
+    flex-grow: 1;
+  }
+
+  .page-header__dropdown-menu {
+    background-color: inherit;
+  }
+
+  .page-header__menu--closed .page-header__dropdown-menu,
+  .page-header__menu--opened .page-header__dropdown-menu {
+    position: static;
+  }
+
+  .page-header__dropdown-menu-container {
+    flex-direction: row;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-header__logo {
+    width: 200px;
+    height: 52px;
   }
 
   .page-header__logo-img {
     width: 200px;
     height: 52px;
+  }
+
+  .page-header__menu {
+    display: flex;
   }
 
   .page-header__social {

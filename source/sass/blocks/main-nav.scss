@@ -1,6 +1,6 @@
 .main-nav {
+  margin-bottom: 33px;
   padding-top: 44px;
-  padding-bottom: 33px;
 }
 
 .main-nav__site-list {
@@ -23,7 +23,7 @@
   }
 
   .main-nav__site-list {
-    margin-bottom: 145px;
+    margin-bottom: 130px;
   }
 
   .main-nav__user-list {
@@ -37,12 +37,18 @@
   .main-nav {
     flex-direction: row;
     align-items: center;
+    flex-grow: 1;
     min-height: 52px;
+    margin: 0;
     padding: 0;
+    padding-left: 105px;
+
+    background-color: #161c34;
   }
 
   .main-nav__site-list {
     margin: 0;
+    margin-right: auto;
   }
 
   .main-nav__user-list {
