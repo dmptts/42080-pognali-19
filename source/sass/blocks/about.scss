@@ -1,6 +1,8 @@
 .about {
   position: relative;
-  z-index: 7;
+  z-index: 6;
+
+  margin-top: -240px;
 
   color: #ffffff;
 
@@ -9,38 +11,33 @@
 }
 
 .about__container {
-  min-height: 352px;
-  padding-top: 30px;
-  padding-bottom: 42px;
+  padding-top: 313px;
+  padding-bottom: 60px;
+
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: top center;
-
-  /* Временные стили */
-  outline: 1px solid white;
+  background-position: bottom center;
 }
 
 .about__heading {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   padding-left: 25px;
-
-  /* Временные стили */
-  outline: 1px solid white;
 }
 
 .about__text {
   margin: 0;
   margin-bottom: 20px;
   padding-left: 25px;
-  padding-right: 30px;
+  padding-right: 35px;
 
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
 
-  /* Временные стили */
-  outline: 1px solid white;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &--bold {
     font-weight: 700;
@@ -52,11 +49,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about {
+    margin-top: 0;
+  }
+
   .about__container {
     display: flex;
     flex-direction: column;
     min-height: 920px;
-    padding-top: 30px + 236px;
+    padding-top: 278px;
     padding-bottom: 88px;
 
     background-image: url("../img/about-tablet@1x.png"),
@@ -66,12 +67,26 @@
 
   .about__heading {
     width: 360px;
+    margin-bottom: 40px;
     padding-left: 34px;
+
+    font-size: 45px;
+    line-height: 45px;
   }
 
   .about__text {
-    width: 360px;
-    padding-left: 34px;
+    width: 335px;
+    margin-bottom: 31px;
+    padding-left: 35px;
+    padding-right: 0;
+
+    font-size: 28px;
+    line-height: 33px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+    }
   }
 
   .about__btn {
@@ -86,23 +101,29 @@
   .about__container {
     display: flex;
     flex-direction: column;
-    min-height: 750px;
-    padding-top: 120px;
+    min-height: 748px;
+    padding-top: 130px;
     padding-bottom: 163px;
 
     background-image: url("../img/about-desktop@1x.png"),
       url("../img/back");
-    background-position: bottom right 87px;
+    background-position: bottom right 60px;
   }
 
   .about__heading {
     width: 620px;
+    margin-bottom: 58px;
     padding-left: 70px;
   }
 
   .about__text {
-    width: 620px;
+    width: 685px;
+    margin-bottom: 38px;
     padding-left: 70px;
+
+    &--bold {
+      width: 500px;
+    }
   }
 
   .about__btn {

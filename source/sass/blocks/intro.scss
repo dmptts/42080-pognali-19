@@ -1,16 +1,11 @@
 .intro {
   position: relative;
-  z-index: 8;
   color: #ffffff;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-color: #161c36;
   background-size: 100% 405px;
   background-position: top center;
   background-repeat: no-repeat;
-}
-
-.intro__container {
-  min-height: 970px;
 }
 
 .intro__slogan {
@@ -52,8 +47,15 @@
 }
 
 .intro__steps-list {
+  position: relative;
+  z-index: 7;
+
   margin: 0 auto;
-  padding-bottom: 39px;
+}
+
+.intro__menu-btn {
+  padding-top: 6px;
+  padding-bottom: 4px;
 }
 
 @media (min-width: $tablet-width) {
@@ -139,5 +141,9 @@
     margin-bottom: 0;
     padding: 0;
     padding-top: 12px;
+  }
+
+  .intro__steps-list {
+    margin-bottom: 0;
   }
 }
