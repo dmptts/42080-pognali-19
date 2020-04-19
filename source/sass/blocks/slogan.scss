@@ -6,6 +6,13 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .slogan {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .slogan {
     text-align: left;

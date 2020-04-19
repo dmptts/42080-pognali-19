@@ -1,15 +1,11 @@
 .review__main {
   margin: 0;
-  margin-top: 6px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
   font-weight: 300;
-
-  /* Временные стили */
-  outline: 1px solid white;
 }
 
 .review__author {
@@ -17,11 +13,23 @@
   line-height: 22px;
   color: #ffffff;
   font-weight: 700;
-
-  /* Временные стили */
-  outline: 1px solid white;
 }
 
 .review__cite {
   font-style: normal;
+  text-transform: lowercase;
+}
+
+@media (min-width: $tablet-width) {
+  .review__main {
+    margin-bottom: 43px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .review__author {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
