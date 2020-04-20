@@ -1,5 +1,16 @@
 .heading {
+  padding-left: 25px;
+
   font-size: 24px;
   font-weight: 700;
   color: #ff8d30;
+}
+
+@media (min-width: $tablet-width) {
+  .heading {
+    padding-left: 0;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
 }

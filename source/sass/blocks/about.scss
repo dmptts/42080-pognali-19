@@ -61,6 +61,8 @@
     min-height: 920px;
     padding-top: 278px;
     padding-bottom: 88px;
+    padding-left: 40px + 34px;
+    padding-right: 40px + 34px;
 
     background-image: url("../img/about-tablet@1x.png"),
       url("../img/back");
@@ -70,7 +72,7 @@
   .about__heading {
     width: 360px;
     margin-bottom: 40px;
-    padding-left: 34px;
+    padding-left: 0;
 
     font-size: 45px;
     line-height: 45px;
@@ -79,8 +81,8 @@
   .about__text {
     width: 335px;
     margin-bottom: 31px;
-    padding-left: 35px;
-    padding-right: 0;
+    padding-left: 0;
+    padding-right: 35px;
 
     font-size: 28px;
     line-height: 33px;
@@ -95,7 +97,6 @@
     display: block;
     width: 275px;
     margin-top: auto;
-    margin-left: 34px;
   }
 }
 
@@ -106,6 +107,7 @@
     min-height: 748px;
     padding-top: 130px;
     padding-bottom: 163px;
+    padding-left: 60px + 72px;
 
     background-image: url("../img/about-desktop@1x.png"),
       url("../img/back");
@@ -115,22 +117,20 @@
   .about__heading {
     width: 620px;
     margin-bottom: 58px;
-    padding-left: 70px;
   }
 
   .about__text {
-    width: 685px;
+    width: 645px;
     margin-bottom: 38px;
-    padding-left: 70px;
+    padding-right: 0;
 
     &--bold {
-      width: 500px;
+      width: 465px;
     }
   }
 
   .about__btn {
     width: 275px;
     margin-top: auto;
-    margin-left: 70px;
   }
 }
