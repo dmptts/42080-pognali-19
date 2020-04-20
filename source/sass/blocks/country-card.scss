@@ -3,20 +3,30 @@
   line-height: 0;
 }
 
+.country-card__img {
+  border-radius: 10px 10px 0 0;
+}
+
 .country-card__wrapper {
+  position: relative;
+  z-index: 1;
+
   min-height: 90px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin-top: -11px;
+  padding-top: 27px;
+  padding-bottom: 11px;
   padding-left: 25px;
-  padding-right: 90px;
+  padding-right: 75px;
 
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .country-card__heading {
   margin: 0;
 
   font-size: 21px;
+  line-height: 21px;
   font-weight: 700;
   color: #161c35;
 }
@@ -26,9 +36,14 @@
   line-height: 18px;
   font-weight: 400;
   color: rgba(#444444, 0.3);
+  letter-spacing: 0.35px;
 }
 
 .country-card__counter {
+  position: absolute;
+  top: 24px;
+  right: 25px;
+
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
@@ -45,11 +60,48 @@
   }
 
   .country-card__img {
-    width: 185px;
+    width: 187px;
     height: 140px;
+
+    border-radius: 0 20px 20px 0;
   }
 
   .country-card__wrapper {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+
+    border-radius: 20px 0 0 20px;
+  }
+
+  .country-card__heading {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .country-card__slogan {
+    font-size: 20px;
+    line-height: 20px * 1.4; // В макете не указана высота строки
+  }
+
+  .country-card__counter {
+    top: auto;
+    bottom: 16px;
+    left: 60px;
+    right: auto;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country-card__wrapper {
+    padding-top: 24px;
+    padding-left: 29px;
   }
 }
