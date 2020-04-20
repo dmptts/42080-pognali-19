@@ -19,25 +19,22 @@
   background-position: bottom center;
 }
 
-.about__heading {
-  margin: 0;
-  margin-bottom: 20px;
+.about__description {
   padding-left: 25px;
+  padding-right: 35px;
+}
+
+.about__heading {
+  margin-bottom: 20px;
 }
 
 .about__text {
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 25px;
-  padding-right: 35px;
 
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   &--bold {
     font-weight: 700;
@@ -61,28 +58,31 @@
     min-height: 920px;
     padding-top: 278px;
     padding-bottom: 88px;
-    padding-left: 40px + 34px;
-    padding-right: 40px + 34px;
 
     background-image: url("../img/about-tablet@1x.png"),
       url("../img/back");
     background-position: bottom 88px right 8px;
   }
 
+  .about__description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    padding-left: 34px;
+    padding-right: 0;
+    width: 335px;
+  }
+
   .about__heading {
-    width: 360px;
     margin-bottom: 40px;
-    padding-left: 0;
 
     font-size: 45px;
     line-height: 45px;
   }
 
   .about__text {
-    width: 335px;
     margin-bottom: 31px;
-    padding-left: 0;
-    padding-right: 35px;
 
     font-size: 28px;
     line-height: 33px;
@@ -107,22 +107,23 @@
     min-height: 748px;
     padding-top: 130px;
     padding-bottom: 163px;
-    padding-left: 60px + 72px;
 
     background-image: url("../img/about-desktop@1x.png"),
       url("../img/back");
     background-position: bottom right 60px;
   }
 
+  .about__description {
+    width: 690px;
+    padding-left: 72px;
+  }
+
   .about__heading {
-    width: 620px;
     margin-bottom: 58px;
   }
 
   .about__text {
-    width: 645px;
     margin-bottom: 38px;
-    padding-right: 0;
 
     &--bold {
       width: 465px;
@@ -131,6 +132,5 @@
 
   .about__btn {
     width: 275px;
-    margin-top: auto;
   }
 }
