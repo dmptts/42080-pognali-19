@@ -1,37 +1,44 @@
 .companions {
-  padding-top: 25px;
-  padding-bottom: 30px;
+  position: relative;
+  z-index: 4;
+
+  margin-top: -25px;
+
   background-color: $color-dark-blue;
+  border-radius: 0 0 25px 25px;
 }
 
 .companions__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .companions__description {
-  padding-top: 70px;
-  padding-bottom: 35px;
-  padding-left: 23px;
+  margin-bottom: 56px;
+  padding-left: 25px;
   padding-right: 30px;
 }
 
 .companions__heading {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .companions__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 300;
   color: #ffffff;
 
   &--bold {
     font-weight: 700;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -51,29 +58,36 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    padding-top: 60px;
-    padding-bottom: 88px;
+    margin-top: -60px;
+
+    border-radius: 0 0 60px 60px;
   }
 
   .companions__container {
     align-items: flex-start;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-top: 201px;
+    padding-bottom: 87px;
+    padding-left: 40px + 35px;
+    padding-right: 40px + 35px;
   }
 
   .companions__description {
-    padding-top: 140px;
-    padding-bottom: 20px;
+    width: 430px;
     padding-left: 0;
-    padding-right: 190px;
+    padding-right: 0;
   }
 
   .companions__heading {
-    margin-bottom: 65px;
+    margin-bottom: 57px;
   }
 
   .companions__text {
     margin-bottom: 40px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+    }
   }
 
   .companions__list {
@@ -86,29 +100,23 @@
   .companions__list-item {
     margin-bottom: 0;
   }
-
-  .companions__btn {
-    width: 100%;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .companions {
-    padding-bottom: 134px;
-  }
-
   .companions__container {
     position: relative;
 
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 133px;
+    padding-top: 188px;
+    padding-bottom: 133px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .companions__description {
-    width: 430px;
+    width: 500px;
     padding-top: 0;
     padding-left: 70px;
     padding-right: 0;
@@ -117,12 +125,13 @@
   .companions__list {
     width: 630px;
     margin-bottom: 0;
+    padding-top: 4px;
   }
 
   .companions__btn {
     position: absolute;
-    left: 75px + 70px;
-    bottom: 0;
+    left: 60px + 70px;
+    bottom: 133px;
 
     width: 280px;
   }
