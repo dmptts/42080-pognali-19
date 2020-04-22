@@ -2,59 +2,63 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- Модификатор для смены background-color на белый - "bg-white" -->
     <header class="page-header">
       <div class="page-header__container container">
-        <div class="page-header__top">
+        <div class="page-header__top-container page-header__top-container--inner-page container">
           <a class="page-header__logo" href="index.html">
             <picture>
               <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
             </picture>
           </a>
+          <button class="page-header__toggle page-header__toggle--inner-page page-header__toggle--menu-closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-        <div class="page-header__menu">
-          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="page-header__dropdown-menu">
-            <nav class="main-nav">
-              <ul class="main-nav__site-list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="#">О сервисе</a>
+        <div class="page-header__menu page-header__menu--closed">
+          <div class="page-header__dropdown-menu page-header__dropdown-menu--inner-page">
+            <div class="page-header__dropdown-menu-container container">
+              <nav class="page-header__main-nav main-nav">
+                <ul class="page-header__site-list main-nav__site-list site-list">
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="#">О сервисе</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="form.html">Направления</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="catalog.html">Попутчики</a>
+                  </li>
+                </ul>
+                <ul class="page-header__user-list main-nav__user-list user-list">
+                  <li class="user-list__item">
+                    <a class="user-list__link btn" href="#">Авторизация</a>
+                  </li>
+                </ul>
+                <address class="page-header__contacts main-nav__contacts contacts">
+                  <p class="contacts__text">
+                    <a class="contacts__link contacts__link--phone" href="tel:+78005558628">8 800 555-86-28</a>
+                  </p>
+                  <p class="contacts__text">
+                    <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                  </p>
+                </address>
+              </nav>
+              <ul class="page-header__social social">
+                <li class="social__item">
+                  <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Facebook</span></a>
                 </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="form.html">Направления</a>
+                <li class="social__item">
+                  <a class="social__link social__link--vk" href="#"><span class="visually-hidden">VK</span></a>
                 </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html">Попутчики</a>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Instagram</span></a>
                 </li>
               </ul>
-              <ul class="main-nav__user-list user-list">
-                <li class="user-list__item">
-                  <a class="user-list__link btn btn--rounded-big" href="#">Авторизация</a>
-                </li>
-              </ul>
-              <address class="main-nav__contacts contacts">
-                <p class="contacts__text">
-                  <a class="contacts__link contacts__link--phone" href="tel:+78005558628">8 800 555-86-28</a>
-                </p>
-                <p class="contacts__text">
-                  <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </p>
-              </address>
-            </nav>
-            <ul class="page-header__social social">
-              <li class="social__item">
-                <a class="social__link" href="#"><span class="visually-hidden">Facebook</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#"><span class="visually-hidden">VK</span></a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#"><span class="visually-hidden">Instagram</span></a>
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
