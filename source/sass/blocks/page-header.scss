@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  background-color: #161c36;
+  background-color: #161c35;
 }
 
 .page-header__top-container {
@@ -148,6 +148,10 @@
     &--bg-white {
       background-color: #ffffff;
     }
+
+    &--inner-page {
+      background-color: #161c35;
+    }
   }
 
   .page-header__top-container {
@@ -209,6 +213,10 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background-color: #161c34;
+
+    &--inner-page {
+      background-color: #161c35
+    }
   }
 
   .page-header__container {
