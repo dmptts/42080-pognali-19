@@ -13,3 +13,10 @@
   /* Временные стили */
   background-color: black;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
