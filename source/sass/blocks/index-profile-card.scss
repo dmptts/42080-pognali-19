@@ -6,9 +6,11 @@
   align-items: center;
   width: 270px;
   margin-bottom: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 
   background-color: #ffffff;
+
+  border-radius: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -19,7 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .index-profile-card__userpic-picture {
@@ -27,10 +29,18 @@
   line-height: 0;
 }
 
+.index-profile-card__userpic-img {
+  width: 270px;
+  height: 270px;
+
+  border-radius: 10px 10px 0 0;
+}
+
 .index-profile-card__name {
   display: block;
 
   font-size: 21px;
+  line-height: 21px;
   font-weight: 700;
   color: $color-dark-blue;
 }
@@ -38,20 +48,18 @@
 .index-profile-card__name-wrapper {
   position: relative;
 
-  margin-top: 25px;
+  padding-top: 26px;
 }
 
 .index-profile-card__status {
   position: absolute;
-  top: 50%;
-  left: -17px;
+  bottom: 9px;
+  left: -16px;
 
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
 
   border-radius: 50%;
-
-  transform: translateY(-50%);
 
   &--online {
     background-color: #81e31e;
@@ -125,13 +133,14 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  margin-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 185px;
+  margin-bottom: 12px;
 }
 
 .index-profile-card__tags-item {
   margin-right: 5px;
+
+  line-height: 0;
 
   &:last-child {
     margin-right: 0;
@@ -153,7 +162,7 @@
 .index-profile-card__transport-item {
   width: 30px;
   height: 30px;
-  margin-right: 5px;
+  margin-right: 4px;
 
   /* Временные стили */
   background-color: black;
@@ -168,10 +177,47 @@
   .index-profile-card {
     width: 285px;
     margin-bottom: 0;
+    padding-bottom: 25px;
+
+    border-radius: 20px;
+  }
+
+  .index-profile-card__header {
+    margin-bottom: 22px;
   }
 
   .index-profile-card__userpic-img {
     width: 285px;
     height: 285px;
+
+    border-radius: 20px 20px 0 0;
+  }
+
+  .index-profile-card__name-wrapper {
+    padding-top: 32px;
+  }
+
+  .index-profile-card__name {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .index-profile-card__level {
+    top: 20px;
+    left: 20px;
+  }
+
+  .index-profile-card__countries-list {
+    top: 275px;
+  }
+
+  .index-profile-card__tags-list {
+    width: 230px;
+    margin-bottom: 18px;
+  }
+
+  .index-profile-card__tags-link {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
