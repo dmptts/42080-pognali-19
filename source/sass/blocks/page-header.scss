@@ -93,12 +93,12 @@
 
   &--menu-opened::before {
     transform: translate(-50%, -50%)
-    rotate(45deg);
+      rotate(45deg);
   }
 
   &--menu-opened::after {
     transform: translate(-50%, -50%)
-    rotate(-45deg);
+      rotate(-45deg);
   }
 }
 
@@ -215,7 +215,7 @@
     background-color: #161c34;
 
     &--inner-page {
-      background-color: #161c35
+      background-color: #161c35;
     }
   }
 
@@ -225,7 +225,6 @@
     justify-content: flex-start;
     align-items: flex-end;
     min-height: 100px;
-
   }
 
   .page-header__top-container {
@@ -237,6 +236,7 @@
   }
 
   .page-header__menu {
+    display: flex;
     flex-grow: 1;
   }
 
@@ -268,10 +268,6 @@
   .page-header__logo-img {
     width: 200px;
     height: 52px;
-  }
-
-  .page-header__menu {
-    display: flex;
   }
 
   .page-header__social {

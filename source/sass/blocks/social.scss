@@ -44,13 +44,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__item {
-    // margin-right: 20px;
-  }
-
   .social__link {
     width: 60px;
-      height: 60px;
+    height: 60px;
+
     &--fb {
       background-size: 14px 28px;
     }
