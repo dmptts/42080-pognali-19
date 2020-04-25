@@ -21,20 +21,46 @@
   }
 
   .site-list__item {
-    margin-bottom: 20px;
-
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .site-list__link {
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: -0.6px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     flex-direction: row;
+    margin-bottom: -5px;
   }
 
   .site-list__item {
     margin-bottom: 0;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0;
+
+    &:hover {
+      color: #ffd74b;
+    }
+
+    &:active {
+      color: rgba(#ffd74b, 0.3);
+    }
   }
 }

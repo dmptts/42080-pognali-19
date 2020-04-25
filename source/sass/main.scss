@@ -12,6 +12,10 @@ body {
   min-width: 320px;
 
   font-family: "Blogger Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-grey;
+  font-weight: 300;
 }
 
 a {
@@ -20,4 +24,11 @@ a {
 
 img {
   max-width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }

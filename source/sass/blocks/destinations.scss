@@ -1,29 +1,37 @@
+/* To-do: сделать фейд */
+
 .destinations {
-  padding-top: 75px;
-  padding-bottom: 30px;
+  position: relative;
+  z-index: 5;
+
+  margin-top: -25px;
 
   background-color: $color-light-grey;
+  border-radius: 0 0 25px 25px;
+}
+
+.destinations__container {
+  padding-top: 98px;
+  padding-bottom: 30px;
+}
+
+.destinations__description {
+  margin-bottom: 61px;
+  padding-left: 25px;
+  padding-right: 50px;
 }
 
 .destinations__heading {
-  padding-left: 25px;
+  margin-bottom: 19px;
 }
 
 .destinations__text {
   margin: 0;
-  margin-bottom: 65px;
-  padding-left: 25px;
-  padding-right: 50px;
-
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 300;
-  color: $color-grey;
 }
 
 .destinations__list {
   @include list-reset;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .destinations__list-item {
@@ -35,33 +43,80 @@
 }
 
 @media (min-width: $tablet-width) {
+  .destinations {
+    margin-top: -60px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
   .destinations__container {
     position: relative;
 
     display: flex;
     flex-direction: column;
+    padding-top: 133px;
+    padding-bottom: 80px;
+    padding-left: 40px + 34px;
+    padding-right: 40px + 34px;
+
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: top 140px right 40px;
+  }
+
+  .destinations__description {
+    width: 340px;
+    margin-bottom: 105px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .destinations__heading {
+    margin-bottom: 58px;
+  }
+
+  .destinations__list {
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .destinations__wraper {
+  .destinations__container {
     flex-direction: row;
+    padding-top: 221px;
+    padding-bottom: 150px;
+    padding-left: 60px + 72px;
+
+    background-position: top 148px right 60px;
   }
 
   .destinations__description {
     order: 1;
-    width: 345px;
+    margin-bottom: 0;
+  }
+
+  .destinations__wraper {
+    flex-direction: row;
   }
 
   .destinations__list {
     width: 558px;
     margin-bottom: 0;
-    margin-right: 170px;
+
+    margin-right: 171px;
+  }
+
+  .destinations__heading {
+    padding-top: 5px;
+  }
+
+  .destinations__text {
+    padding-right: 0;
   }
 
   .destinations__btn {
     position: absolute;
-    bottom: 0;
-    left: 558px + 170px + 60px;
+    bottom: 140px;
+    left: 863px;
   }
 }

@@ -4,32 +4,46 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 415px;
   margin-bottom: 10px;
   padding-top: 15px;
-  padding-bottom: 17px;
+  padding-bottom: 76px;
 
   background-color: #ffffff;
+  border-radius: 19px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+/* Контейнеры и обертки */
+
 .catalog-profile-card__column-1 {
   display: flex;
   flex-direction: column;
-
-  /* Временные стили */
-  outline: 1px solid black;
 }
 
 .catalog-profile-card__row-1 {
-  margin-bottom: 20px;
-
-  /* Временные стили */
-  outline: 1px solid black;
+  margin-bottom: 18px;
 }
+
+.catalog-profile-card__column-2 {
+  width: 100%;
+}
+
+.catalog-profile-card__row-2 {
+  display: flex;
+}
+
+.catalog-profile-card__transport-wrapper {
+  width: 196px;
+}
+
+.catalog-profile-card__level-wrapper {
+  width: 74px;
+}
+
+/* Юзерпик */
 
 .catalog-profile-card__userpic-link {
   position: absolute;
@@ -48,56 +62,52 @@
   border-radius: 50%;
 }
 
-.catalog-profile-card__btn {
-  position: absolute;
-  bottom: 17px;
-  left: 50%;
-  width: 230px;
-
-  transform: translateX(-50%);
-}
+/* Имя пользователя */
 
 .catalog-profile-card__name-link {
   display: block;
   width: 80px;
-  margin-left: 85px + 18px;
+  margin-bottom: 6px;
+  margin-left: 85px + 20px;
 }
 
 .catalog-profile-card__name {
   display: block;
 
   font-size: 20px;
+  line-height: 20px;
   font-weight: 700;
-  color: $color-dark-blue;
+  color: #1d2e5b;
+
+  &:hover {
+    color: rgba(#1d2e5b, 0.6);
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+}
+
+/* Кнопка и лайки */
+
+.catalog-profile-card__btn {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+
+  width: 230px;
+
+  transform: translateX(-50%);
 }
 
 .catalog-profile-card__like-counter {
-  margin-left: 85px + 18px;
+  margin-left: 85px + 19px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   color: #161c35;
   text-transform: uppercase;
 }
-
-// // .catalog-profile-card__status {
-// //   position: absolute;
-// //   top: 28px;
-// //   right: 22px;
-
-// //   width: 4px;
-// //   height: 4px;
-
-// //   border-radius: 50%;
-
-// //   &--online {
-// //     background-color: #81e31e;
-// //   }
-
-// //   &--offline {
-// //     background-color: #f97676;
-// //   }
-// // }
 
 .catalog-profile-card__like-btn {
   position: absolute;
@@ -110,9 +120,53 @@
 
   border-radius: 50%;
 
-  /* Временные стили */
-  background-color: $color-grey;
+  background-color: $color-grey; // Временное свойство
 }
+
+/* Заголовки списков */
+
+.catalog-profile-card__text {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-grey;
+  text-transform: lowercase;
+
+  background-color: #ffffff;
+
+  &::before,
+  &::after {
+    content: "";
+
+    width: 14px;
+    height: 1px;
+
+    background-color: #edeff6;
+  }
+
+  &::before {
+    margin-right: 12px;
+  }
+
+  &::after {
+    flex-grow: 1;
+    margin-left: 11px;
+  }
+
+  &--level {
+    padding-left: 12px;
+  }
+
+  &--level::before {
+    display: none;
+  }
+}
+
+/* Список тегов */
 
 .catalog-profile-card__tags-list {
   @include list-reset;
@@ -121,12 +175,14 @@
   flex-wrap: wrap;
 
   width: 205px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   padding-left: 25px;
 }
 
 .catalog-profile-card__tags-item {
-  margin-right: 3px;
+  margin-right: 5px;
+
+  line-height: 0;
 
   &:last-child {
     margin-right: 0;
@@ -138,39 +194,24 @@
   line-height: 18px;
   font-weight: 400;
   color: $color-grey;
+
+  &:hover {
+    color: rgba($color-grey, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-grey, 0.3);
+  }
 }
 
-.catalog-profile-card__column-2 {
-  width: 100%;
-
-  /* Временные стили */
-  outline: 1px solid black;
-}
-
-.catalog-profile-card__row-2 {
-  display: flex;
-}
-
-.catalog-profile-card__text {
-  margin: 0;
-  margin-left: 25px;
-
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: 400;
-  color: $color-grey;
-
-  background-color: #ffffff;
-}
+/* Список стран */
 
 .catalog-profile-card__countries-list {
   @include list-reset;
   width: 100%;
-  margin-bottom: 18px;
-  padding-top: 20px;
+  margin-bottom: 14px;
+  padding-top: 17px;
   padding-left: 25px;
-
-  border-top: 1px solid $color-light-grey;
 }
 
 .catalog-profile-card__countries-item {
@@ -185,20 +226,45 @@
 }
 
 .catalog-profile-card__countries-link {
+  position: relative;
+
   padding-top: 4px;
-  padding-bottom: 4px;
   padding-left: 40px;
 
   font-size: 15px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: 500;
   color: $color-dark-blue;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 26px;
+    height: 18px;
+
+    background-color: $color-grey; // Временное свойство
+  }
+
+  &:hover {
+    color: rgba($color-dark-blue, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-dark-blue, 0.3);
+  }
 }
+
+/* Список странспорта и уровень */
 
 .catalog-profile-card__transport-list {
   @include list-reset;
   display: flex;
+  padding-top: 14px;
+  padding-left: 26px;
 }
 
 .catalog-profile-card__transport-item {
@@ -213,31 +279,32 @@
 .catalog-profile-card__level {
   width: 45px;
   height: 45px;
+  margin-top: 7px;
+  margin-left: 9px;
 
   background-color: $color-light-grey;
+}
+
+@media (max-width: $mobile-only) {
+  .catalog-profile-card__btn {
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .catalog-profile-card {
     flex-direction: row;
     min-height: 332px;
-    padding-top: 35px;
-    padding-bottom: 25px;
+    margin-bottom: 40px;
+    padding-top: 33px;
+    padding-bottom: 104px;
   }
 
-  .catalog-profile-card__userpic-link {
-    position: static;
-    margin-left: 35px;
-  }
-
-  .catalog-profile-card__userpic-img {
-    width: 190px;
-    height: 190px;
-
-    border-radius: 0;
-  }
+  /* Контейнеры и обертки */
 
   .catalog-profile-card__column-1 {
+    align-items: flex-start;
     width: 260px;
     min-height: 190px;
   }
@@ -246,46 +313,14 @@
     display: flex;
     align-items: center;
     order: 1;
-  }
-
-  .catalog-profile-card__name-link {
-    display: block;
-    width: auto;
-    margin-left: 0;
-  }
-
-  .catalog-profile-card__name {
-    display: block;
-
-    font-size: 20px;
-    font-weight: 700;
-    color: $color-dark-blue;
-  }
-
-  .catalog-profile-card__btn {
-    position: static;
-
-    width: 150px;
-
-    transform: none;
-  }
-
-  .catalog-profile-card__like-btn {
-    position: static;
-
-    width: 40px;
-    height: 40px;
-  }
-
-  .catalog-profile-card__like-counter {
-    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .catalog-profile-card__column-2 {
     flex-direction: column;
     width: 60px;
     margin-left: auto;
-    margin-right: 35px;
+    margin-right: 26px;
   }
 
   .catalog-profile-card__countries-wrapper {
@@ -300,8 +335,79 @@
     flex-direction: column;
   }
 
+  .catalog-profile-card__transport-wrapper {
+    width: 60px;
+    margin-bottom: 7px;
+  }
+
+  .catalog-profile-card__level-wrapper {
+    width: auto;
+  }
+
+  /* Юзерпик */
+
+  .catalog-profile-card__userpic-link {
+    position: static;
+
+    margin-top: 2px;
+    margin-left: 35px;
+    margin-right: 29px;
+
+    border-radius: 15px;
+  }
+
+  .catalog-profile-card__userpic-img {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 17px;
+  }
+
+  /* Имя пользователя */
+
+  .catalog-profile-card__name-link {
+    display: block;
+    width: auto;
+    margin-bottom: 18px;
+    margin-left: 4px;
+  }
+
+  .catalog-profile-card__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  /* Кнопка и лайки */
+
+  .catalog-profile-card__btn {
+    position: static;
+
+    width: 150px;
+
+    transform: none;
+  }
+
+  .catalog-profile-card__like-counter {
+    margin-left: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .catalog-profile-card__like-btn {
+    position: static;
+
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+  }
+
+  /* Заголовки списков */
+
   .catalog-profile-card__text {
-    margin-left: 70px;
+    &::before {
+      width: 71px;
+    }
 
     &--transport {
       display: none;
@@ -312,26 +418,66 @@
     }
   }
 
+  /* Список тегов */
+
+  .catalog-profile-card__tags-list {
+    width: 100%;
+    margin-bottom: 46px;
+    padding-left: 7px;
+  }
+
+  .catalog-profile-card__tags-item {
+    margin-right: 6px;
+  }
+
+  .catalog-profile-card__tags-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* Список стран */
+
   .catalog-profile-card__countries-list {
     display: flex;
     margin-bottom: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 17px;
+    padding-bottom: 20px;
     padding-left: 35px;
-
-    border-top: 1px solid $color-light-grey;
   }
 
   .catalog-profile-card__countries-item {
-    margin-bottom: 10px;
+    margin: 0;
+    margin-right: 27px;
 
     &:last-child {
-      margin-bottom: 0;
+      margin-right: 0;
     }
   }
 
+  .catalog-profile-card__countries-link {
+    padding-left: 47px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      width: 35px;
+      height: 24px;
+    }
+  }
+
+  /* Список странспорта и уровень */
+
   .catalog-profile-card__transport-list {
     flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .catalog-profile-card__level {
+    width: 60px;
+    height: 60px;
+    margin: 0;
   }
 }
 
@@ -339,35 +485,88 @@
   .catalog-profile-card {
     width: 950px;
     min-height: 285px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  /* Контейнеры и обертки */
+
+  .catalog-profile-card__column-1 {
+    margin-right: 74px;
+    padding-top: 47px;
+  }
+
+  .catalog-profile-card__column-2 {
+    width: 232px;
+    margin: 0;
+    padding-top: 49px;
+  }
+
+  .catalog-profile-card__countries-wrapper {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .catalog-profile-card__row-2 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog-profile-card__transport-wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  /* Юзерпик */
+
+  .catalog-profile-card__userpic-link {
+    margin: 0;
+    margin-right: 55px;
+
+    border-radius: 17px 0 0 17px;
   }
 
   .catalog-profile-card__userpic-img {
     width: 285px;
     height: 285px;
+
+    border-radius: 17px 0 0 17px;
   }
+
+  /* Имя пользователя */
+
+  /* Кнопка и лайки */
+
+  /* Заголовки списков */
 
   .catalog-profile-card__text--countries {
     display: none;
   }
 
-  .catalog-profile-card__column-2 {
-    width: auto;
-  }
+  /* Список тегов */
 
-  .catalog-profile-card__countries-wrapper {
-    position: static;
-  }
-
-  .catalog-profile-card__row-2 {
-    flex-direction: row;
-  }
+  /* Список стран */
 
   .catalog-profile-card__countries-list {
     flex-direction: column;
+    padding: 0;
   }
+
+  .catalog-profile-card__countries-item {
+    margin: 0;
+    margin-bottom: 7px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog-profile-card__countries-link {
+    padding-left: 54px;
+  }
+
+  /* Список странспорта и уровень */
 
   .catalog-profile-card__transport-list {
     flex-direction: row;

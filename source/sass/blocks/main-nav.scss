@@ -1,29 +1,16 @@
 .main-nav {
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  /* Временные стили */
-  outline: 1px solid black;
+  margin-bottom: 33px;
+  padding-top: 44px;
 }
 
 .main-nav__site-list {
   @include list-reset;
   margin-bottom: 50px;
-  /* Временные стили */
-  outline: 1px solid black;
 }
 
 .main-nav__user-list {
   @include list-reset;
-  margin-bottom: 30px;
-
-  /* Временные стили */
-  outline: 1px solid black;
-}
-
-.main-nav__contacts {
-  /* Временные стили */
-  outline: 1px solid black;
+  margin-bottom: 50px;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,17 +18,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 55px;
-    padding-left: 55px;
+    padding-top: 50px;
+    padding-left: 57px;
   }
 
   .main-nav__site-list {
-    margin-bottom: 145px;
+    margin-bottom: 130px;
   }
 
   .main-nav__user-list {
     position: absolute;
-    top: 40px;
+    top: -92px;
     right: 40px;
   }
 }
@@ -50,12 +37,18 @@
   .main-nav {
     flex-direction: row;
     align-items: center;
+    flex-grow: 1;
     min-height: 52px;
+    margin: 0;
     padding: 0;
+    padding-left: 105px;
+
+    background-color: #161c34;
   }
 
   .main-nav__site-list {
     margin: 0;
+    margin-right: auto;
   }
 
   .main-nav__user-list {

@@ -1,21 +1,129 @@
 .catalog {
+  padding-bottom: 45px;
+
   background-color: $color-light-grey;
 }
 
-.catalog__container {
-  padding-bottom: 45px;
-  /* Временные стили */
-  outline: 1px solid black;
+.catalog__country-filter {
+  margin-top: -20px;
 }
 
-.catalog__list {
+.catalog__container {
+  margin-top: -20px;
+  padding-top: 20px + 24px;
+}
+
+.catalog__companions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog__companions-list {
   @include list-reset;
-  margin-bottom: 22px;
+  width: 100%;
+  margin-bottom: 23px;
 }
 
 .catalog__show-more-link {
-  display: block;
-  margin-bottom: 27px;
+  position: relative;
 
+  display: block;
+  margin-bottom: 19px;
+  padding-left: 32px;
+
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: -1px;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: #1d2e5b;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-bottom: 62px;
+  }
+
+  .catalog__country-filter {
+    margin-top: -60px;
+  }
+
+  .catalog__container {
+    margin-top: -60px;
+    padding-top: 46px + 60px;
+  }
+
+  .catalog__companions-list {
+    margin-bottom: 46px;
+  }
+
+  .catalog__show-more-link {
+    margin-bottom: 47px;
+    padding-left: 43px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before,
+    &::after {
+      top: 11px;
+      left: -8px;
+      width: 27px;
+      height: 3px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding-bottom: 77px;
+  }
+
+  .catalog__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .catalog__companions-filter {
+    order: 1;
+  }
+
+  .catalog__companions {
+    width: 950px;
+  }
+
+  .catalog__companions-list {
+    margin-bottom: 66px;
+  }
+
+  .catalog__show-more-link {
+    margin-bottom: 66px;
+  }
 }

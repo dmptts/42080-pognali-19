@@ -1,6 +1,5 @@
 .intro {
   position: relative;
-  z-index: 8;
   color: #ffffff;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-color: #161c36;
@@ -9,17 +8,12 @@
   background-repeat: no-repeat;
 }
 
-.intro__container {
-  min-height: 970px;
-
-  /* Временные стили */
-  outline: 1px solid white;
-}
-
 .intro__slogan {
   display: block;
   min-height: 405px;
-  padding-top: 20px;
+  padding-top: 21px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   background-image: url("../img/traveller-illustration-mobile@1x.png");
   background-position: bottom right 25px;
@@ -29,6 +23,7 @@
 .intro__menu {
   display: flex;
   min-height: 40px;
+  margin-bottom: 7px;
 }
 
 .intro__contacts {
@@ -44,20 +39,23 @@
 }
 
 .intro__review {
-  width: 170px;
+  width: 180px;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-bottom: 29px;
-
-  /* Временные стили */
-  outline: 1px solid white;
+  margin-bottom: 30px;
+  padding-left: 25px;
 }
 
 .intro__steps-list {
-  @include list-reset;
+  position: relative;
+  z-index: 7;
+
   margin: 0 auto;
-  padding-bottom: 39px;
+}
+
+.intro__menu-btn {
+  padding-top: 6px;
+  padding-bottom: 4px;
 }
 
 @media (min-width: $tablet-width) {
@@ -73,6 +71,8 @@
     flex-direction: column;
     align-items: flex-start;
     min-height: 862px;
+    padding-top: 31px;
+
 
     background-image: url("../img/traveller-illustration-tablet@1x.png");
     background-position: bottom 140px right 110px;
@@ -87,16 +87,20 @@
     width: 400px;
     min-height: 185px;
     margin: 0 auto;
-    padding-top: 35px;
+    margin-bottom: 86px;
+    padding: 0;
 
     background-image: none;
   }
 
   .intro__review {
+    width: 295px;
     margin-bottom: auto;
+    padding-left: 34px;
   }
 
   .intro__steps-list {
+    margin-bottom: -140px;
     padding-bottom: 0;
   }
 }
@@ -115,24 +119,31 @@
     justify-content: space-between;
     align-content: space-between;
     min-height: 652px;
-    padding-top: 110px;
-    padding-bottom: 123px;
+    padding-top: 109px;
+    padding-bottom: 125px;
 
     background-image: url("../img/traveller-illustration-desktop@1x.png");
-    background-position: bottom right 405px;
-  }
-
-  .intro__review {
-    margin-bottom: 0;
+    background-position: bottom 1px right 405px;
   }
 
   .intro__slogan {
-    width: 400px;
+    width: 465px;
     min-height: auto;
     margin: 0;
     padding-top: 0;
-    padding-left: 70px;
+    padding-left: 67px;
 
     background-image: none;
+  }
+
+  .intro__review {
+    width: 286px;
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 12px;
+  }
+
+  .intro__steps-list {
+    margin-bottom: 0;
   }
 }

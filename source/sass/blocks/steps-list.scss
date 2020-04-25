@@ -1,10 +1,17 @@
+.steps-list {
+  @include list-reset;
+  counter-reset: steps-list;
+}
+
 .steps-list__item {
+  position: relative;
+
   display: block;
-  min-height: 85px;
-  margin-top: -5px;
-  padding-top: 20px;
+  min-height: 89px;
+  margin-top: -9px;
+  padding-top: 22px;
   padding-left: 24px;
-  padding-right: 95px;
+  padding-right: 105px;
 
   font-size: 18px;
   line-height: 18px;
@@ -12,17 +19,30 @@
   color: $color-dark-blue;
 
   background-color: #ff8d30;
-  border-radius: 7px 7px 0 0;
+  border-radius: 9px 9px 0 0;
 
-  &:nth-child(2) {
+  &::before {
+    position: absolute;
+    top: 22px;
+    right: 21px;
+
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+
+    counter-increment: steps-list;
+    content: counter(steps-list);
+  }
+
+  &:nth-child(4n+2) {
     background-color: #ffa530;
   }
 
-  &:nth-child(3) {
+  &:nth-child(4n+3) {
     background-color: #ffbd30;
   }
 
-  &:nth-child(4) {
+  &:nth-child(4n+4) {
     background-color: #ffd74b;
   }
 
@@ -33,7 +53,7 @@
   &:last-child {
     min-height: 80px;
 
-    border-radius: 7px;
+    border-radius: 9px;
   }
 }
 
@@ -41,19 +61,54 @@
   .steps-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -140px;
   }
 
   .steps-list__item {
-    height: 140px;
+    min-height: 140px;
     margin-top: 0;
+    padding-top: 31px;
+    padding-left: 33px;
+    padding-right: 140px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 0;
+
+    &::before {
+      top: auto;
+      right: auto;
+      left: 33px;
+      bottom: 22px;
+
+      font-size: 30px;
+      line-height: 30px;
+    }
 
     &:nth-child(odd) {
-      width: 344px;
+      width: 364px;
     }
 
     &:nth-child(even) {
       width: 344px;
+      margin-left: -20px;
+    }
+
+    &:first-child {
+      border-radius: 19px 0 0 0;
+    }
+
+    &:nth-child(2) {
+      border-radius: 19px 19px 0 0;
+    }
+
+    &:nth-last-child(2) {
+      border-radius: 0 0 0 19px;
+    }
+
+    &:last-child {
+      flex-grow: 1;
+      border-radius: 0 0 19px 19px;
     }
   }
 }
@@ -61,13 +116,50 @@
 @media (min-width: $desktop-width) {
   .steps-list {
     flex-wrap: nowrap;
-
     width: 100%;
-    margin-bottom: 0;
   }
 
   .steps-list__item {
-    width: 25%;
-    height: 105px;
+    min-height: 107px;
+    margin-left: -20px;
+    padding-top: 29px;
+    padding-left: 32px;
+    padding-right: 145px;
+
+    &::before {
+      top: 29px;
+      bottom: auto;
+      left: auto;
+      right: 53px;
+
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &:first-child {
+      width: 335px;
+      margin-left: 0;
+    }
+
+    &:nth-child(1n+1) {
+      border-radius: 19px 0 0 19px;
+    }
+
+    &:nth-child(1n+2) {
+      width: 365px;
+    }
+
+    &:nth-child(4n+4) {
+      width: 315px;
+    }
+
+    &:nth-child(4n+4)::before {
+      top: 29px;
+      right: 33px;
+    }
+
+    &:last-child {
+      border-radius: 19px;
+    }
   }
 }
