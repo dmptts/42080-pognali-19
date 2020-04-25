@@ -1,0 +1,23 @@
+.companions-filter {
+  min-height: 624px;
+  margin-bottom: 28px;
+
+  background-color: #ffd74b;
+
+  border-radius: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .companions-filter {
+    min-height: 550px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companions-filter {
+    width: 285px;
+    min-height: 814px;
+    margin-bottom: 0;
+  }
+}
