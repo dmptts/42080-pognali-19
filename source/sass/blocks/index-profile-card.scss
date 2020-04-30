@@ -24,16 +24,16 @@
   margin-bottom: 15px;
 }
 
-.index-profile-card__userpic-picture {
-  display: block;
+.index-profile-card__userpic-link {
   line-height: 0;
+  // border-radius: 10px 10px 0 0;
 }
 
 .index-profile-card__userpic-img {
   width: 270px;
   height: 270px;
 
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .index-profile-card__name {
@@ -123,8 +123,27 @@
   width: 35px;
   height: 24px;
 
-  /* Временные стили */
-  background-color: black;
+  background-size: 35px 24px;
+
+  &--sri-lanka {
+    background-image: url("../img/flag-sri-lanka.svg");
+  }
+
+  &--thailand {
+    background-image: url("../img/flag-thailand.svg");
+  }
+
+  &--seychelles {
+    background-image: url("../img/flag-seychelles.svg");
+  }
+
+  &--belgium {
+    background-image: url("../img/flag-belgium.svg");
+  }
+
+  &--czech {
+    background-image: url("../img/flag-czech.svg");
+  }
 }
 
 .index-profile-card__tags-list {
@@ -190,7 +209,7 @@
     width: 285px;
     height: 285px;
 
-    border-radius: 20px 20px 0 0;
+    border-radius: 18px 18px 0 0;
   }
 
   .index-profile-card__name-wrapper {

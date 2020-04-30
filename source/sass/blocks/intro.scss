@@ -6,6 +6,10 @@
   background-size: 100% 405px;
   background-position: top center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/globe-back-mobile@2x.jpg");
+  }
 }
 
 .intro__slogan {
@@ -18,6 +22,11 @@
   background-image: url("../img/traveller-illustration-mobile@1x.png");
   background-position: bottom right 25px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/traveller-illustration-mobile@2x.png");
+    background-size: 192px 255px;
+  }
 }
 
 .intro__menu {
@@ -62,8 +71,12 @@
   .intro {
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-color: #182044;
-    background-size: auto;
+    background-size: auto 612px;
     background-position: bottom center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/globe-back-tablet@2x.jpg");
+    }
   }
 
   .intro__container {
@@ -75,8 +88,13 @@
 
 
     background-image: url("../img/traveller-illustration-tablet@1x.png");
+    background-size: 372px 451px;
     background-position: bottom 140px right 110px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/traveller-illustration-tablet@2x.png");
+    }
   }
 
   .intro__menu {
@@ -109,8 +127,12 @@
   .intro {
     background-image: url("../img/globe-back-desktop@1x.jpg");
     background-color: #161c36;
-    background-size: auto;
+    background-size: auto 750px;
     background-position: bottom center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/globe-back-desktop@2x.jpg");
+    }
   }
 
   .intro__container {
@@ -123,7 +145,12 @@
     padding-bottom: 125px;
 
     background-image: url("../img/traveller-illustration-desktop@1x.png");
+    background-size: 431px 640px;
     background-position: bottom 1px right 405px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/traveller-illustration-desktop@2x.png");
+    }
   }
 
   .intro__slogan {

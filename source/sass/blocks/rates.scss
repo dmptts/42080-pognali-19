@@ -16,6 +16,10 @@
   background-repeat: no-repeat;
   background-size: 99px;
   background-position: top 62px right 25px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/rates@2x.png");
+  }
 }
 
 .rates__heading {

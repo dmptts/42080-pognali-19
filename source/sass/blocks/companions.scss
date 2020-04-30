@@ -5,16 +5,60 @@
   margin-top: -25px;
 
   background-color: $color-dark-blue;
+
   border-radius: 0 0 25px 25px;
 }
 
 .companions__container {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding-top: 98px;
   padding-bottom: 30px;
+
+  background-image: url("../img/smolov-back-desktop@1x.png");
+  background-size: 143px;
+  background-repeat: no-repeat;
+  background-position: top 64px right 25px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 63px;
+    left: -20px;
+    z-index: -1;
+
+    width: 132px;
+    height: 132px;
+
+    background-color: #141b3b;
+    border-radius: 18px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 336px;
+    left: -10px;
+    z-index: -1;
+
+    width: 71px;
+    height: 71px;
+
+    background-image: url("../img/rogovaya-back-mobile@1x.png");
+    background-size: 71px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/smolov-back-desktop@2x.png");
+
+    &::after {
+      background-image: url("../img/rogovaya-back-mobile@2x.png");
+    }
+  }
 }
 
 .companions__description {
@@ -69,6 +113,32 @@
     padding-bottom: 87px;
     padding-left: 40px + 35px;
     padding-right: 40px + 35px;
+
+    background-position: top 486px left 40px;
+
+    &::before {
+      top: 140px;
+      left: 40px;
+
+      width: 213px;
+      height: 213px;
+    }
+
+    &::after {
+      top: 140px;
+      left: auto;
+      right: 75px;
+
+      width: 285px;
+      height: 285px;
+
+      background-image: url("../img/rogovaya-back-desktop@1x.png");
+      background-size: 285px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/rogovaya-back-desktop@2x.png");
+      }
+    }
   }
 
   .companions__description {
@@ -113,6 +183,19 @@
     padding-bottom: 133px;
     padding-left: 60px;
     padding-right: 60px;
+
+    background-position: top 192px left 547px;
+
+    &::before {
+      top: 128px;
+      left: 60px;
+    }
+
+    &::after {
+      top: 444px;
+      left: 191px;
+      right: auto;
+    }
   }
 
   .companions__description {

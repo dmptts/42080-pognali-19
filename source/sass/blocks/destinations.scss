@@ -16,7 +16,7 @@
 }
 
 .destinations__description {
-  margin-bottom: 61px;
+  margin-bottom: 59px;
   padding-left: 25px;
   padding-right: 50px;
 }
@@ -60,8 +60,27 @@
     padding-right: 40px + 34px;
 
     background-image: url("../img/flags-back@1x.png");
+    background-size: 289px 575px;
     background-repeat: no-repeat;
     background-position: top 140px right 40px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 466px;
+      left: 40px;
+      z-index: -1;
+
+      width: 141px;
+      height: 141px;
+
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/flags-back@2x.png");
+    }
   }
 
   .destinations__description {
@@ -88,6 +107,11 @@
     padding-left: 60px + 72px;
 
     background-position: top 148px right 60px;
+
+    &::before {
+      top: 149px;
+      left: 60px;
+    }
   }
 
   .destinations__description {
