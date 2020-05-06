@@ -70,6 +70,8 @@
   }
 
   .page-title__link {
+    position: relative;
+
     display: block;
     margin-bottom: -5px;
     padding-right: 61px;
@@ -80,12 +82,34 @@
     text-transform: uppercase;
     color: white;
 
+    &::after {
+      position: absolute;
+      content: "";
+      top: 1px;
+      right: 0;
+
+      width: 32px;
+      height: 16px;
+
+      background-image: url("../img/return.svg");
+      background-size: 32px 16px;
+      background-repeat: no-repeat;
+    }
+
     &:hover {
       color: rgba(#ffffff, 0.6);
     }
 
+    &:hover::after {
+      opacity: 0.6;
+    }
+
     &:active {
       color: rgba(#ffffff, 0.3);
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }

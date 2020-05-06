@@ -13,7 +13,9 @@
         <div class="page-header__top-container page-header__top-container--inner-page container">
           <a class="page-header__logo" href="index.html">
             <picture>
-              <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
+              <source media="(min-width: 1440px)"  srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)"  srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <img class="page-header__logo-img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
             </picture>
           </a>
           <button class="page-header__toggle page-header__toggle--inner-page page-header__toggle--menu-closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -39,12 +41,21 @@
                   </li>
                 </ul>
                 <address class="page-header__contacts main-nav__contacts contacts">
-                  <p class="contacts__text">
-                    <a class="contacts__link contacts__link--phone" href="tel:+78005558628">8 800 555-86-28</a>
-                  </p>
-                  <p class="contacts__text">
-                    <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                  </p>
+                  <a class="page-header__contacts-link contacts__link" href="tel:+78005558628">
+                    <span class="page-header__contacts-icon page-header__contacts-icon--phone contacts__icon">
+                      <svg id="topmenu-phone-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><path d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z"/></svg>
+                      <svg id="topmenu-phone-desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M12.6 18h-.8c-3.6-.4-6.2-2.1-8.1-4.3C1.8 11.6.3 8.8 0 5V4c.1-.7.4-1.1.8-1.5C1.2 2 2 1.4 2.6 1.3c.5 0 1.3.3 1.6.8.3.4.4 1.2.6 1.8.1.6.4 1.4.4 2-.2.9-1.3 1.3-1.7 1.9 1.1 2.8 3 4.8 5.4 6.2.6-.3 1.2-1.4 2-1.4.3 0 .7.2 1 .3s.6.2 1 .4c.5.2 1.4.5 1.7.9s.5 1.2.4 1.7c-.1.8-1.6 1.8-2.4 2.1zM9.1 1.1c4.3 0 7.8 3.6 7.8 8H18c0-5-4-9.1-8.9-9.1v1.1zm0 5.8V8c.6 0 1 .5 1 1.1h1.1c0-1.2-.9-2.2-2.1-2.2zm0-2.3c2.4 0 4.4 2 4.4 4.5h1.2c0-3.1-2.5-5.7-5.5-5.7v1.2h-.1z"/></svg>
+                    </span>
+                    <span class="page-header__contacts-text contacts__text">8 800 555-86-28</span>
+                  </a>
+                  <a class="page-header__contacts-link page-header__contacts-link--email contacts__link" href="mailto:mail@htmlacademy.ru">
+                    <span class="page-header__contacts-icon page-header__contacts-icon--email contacts__icon">
+                      <svg id="topmenu-email-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 26"><path d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z"/></svg>
+                      <svg id="topmenu-email-desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14"><path d="M14.9 1.8c1.2-1 .9-1.8-.7-1.8H3.7c-1.5 0-1.8.8-.6 1.8l3.7 3.1c1.2 1 3.2 1 4.4 0l3.7-3.1zm-3 5.3L9.7 8.9c-.1.1-.2.1-.3.1h-.1c-.1.1-.2.1-.3.1h0c-.1 0-.2 0-.3-.1h-.1c-.1 0-.2 0-.3-.1L6.1 7.1 2.2 3.8C1 2.8 0 3.3 0 4.8v6.3C0 12.7 1.3 14 2.8 14h12.3c1.6 0 2.8-1.3 2.8-2.8V4.8c0-1.6-1-2-2.2-1l-3.8 3.3z"/></svg>
+                    </span>
+                    <span class="page-header__contacts-text contacts__text">mail@htmlacademy.ru</span>
+                  </a>
+
                 </address>
               </nav>
               <ul class="page-header__social social">
@@ -71,15 +82,19 @@
           <a class="page-title__link" href="index.html">На главную</a>
         </div>
       </div>
+
       <section class="catalog__country-filter country-filter">
         <h2 class="visually-hidden">Фильтрация по странам</h2>
         <!-- Здесь будет форма фильтра -->
       </section>
+
       <div class="catalog__container container">
+
         <section class="catalog__companions-filter companions-filter">
           <h2 class="visually-hidden">Фильтрация по параметрам попутчика</h2>
           <!-- Здесь будет форма фильтра -->
         </section>
+
         <section class="catalog__companions">
           <h2 class="visually-hidden">Список попутчиков</h2>
           <!-- <div class="catalog__companions-container container"> -->
@@ -89,7 +104,9 @@
 
                 <a class="catalog-profile-card__userpic-link" href="#">
                   <picture class="catalog-profile-card__userpic-picture">
-                    <img class="catalog-profile-card__userpic-img" src="https://via.placeholder.com/150x150" alt="Фото пользователя Таня Фирсова" width="70" height="70">
+                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                    <img class="catalog-profile-card__userpic-img" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg" alt="Фото пользователя Таня Фирсова" width="70" height="70">
                   </picture>
                 </a>
 
@@ -99,7 +116,7 @@
                   </a>
                   <div class="catalog-profile-card__row-1">
                     <a class="catalog-profile-card__btn btn" href="#">Позвать!</a>
-                    <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
+                    <a class="catalog-profile-card__like-btn catalog-profile-card__like-btn--active" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
                     <div class="catalog-profile-card__like-counter"><span class="visually-hidden">Лайков: </span>1,5 М</div>
                   </div>
 
@@ -135,13 +152,13 @@
                     <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
                     <ul class="catalog-profile-card__countries-list">
                       <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link" href="#">Шри-ланка</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--sri-lanka" href="#">Шри-ланка</a>
                       </li>
                       <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link" href="#">Тайланд</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--thailand" href="#">Тайланд</a>
                       </li>
                       <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link" href="#">Сейшелы</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--seychelles" href="#">Сейшелы</a>
                       </li>
                     </ul>
                   </div>
@@ -150,10 +167,10 @@
                     <div class="catalog-profile-card__transport-wrapper">
                       <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
                       <ul class="catalog-profile-card__transport-list">
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Авиаперелет</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Автотранспорт</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Велосипед</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Пешком</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
                       </ul>
                     </div>
 
@@ -169,7 +186,9 @@
 
                 <a class="catalog-profile-card__userpic-link" href="#">
                   <picture class="catalog-profile-card__userpic-picture">
-                    <img class="catalog-profile-card__userpic-img" src="https://via.placeholder.com/150x150" alt="Фото пользователя Петя Демин" width="70" height="70">
+                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                    <img class="catalog-profile-card__userpic-img" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg" alt="Фото пользователя Таня Фирсова" width="70" height="70">
                   </picture>
                 </a>
 
@@ -212,10 +231,10 @@
                     <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
                     <ul class="catalog-profile-card__countries-list">
                       <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link" href="#">Бельгия</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--belgium" href="#">Бельгия</a>
                       </li>
                       <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link" href="#">Чехия</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--czech" href="#">Чехия</a>
                       </li>
                     </ul>
                   </div>
@@ -224,10 +243,10 @@
                     <div class="catalog-profile-card__transport-wrapper">
                       <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
                       <ul class="catalog-profile-card__transport-list">
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Авиаперелет</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Автотранспорт</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Велосипед</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Пешком</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
                       </ul>
                     </div>
 
@@ -243,7 +262,9 @@
 
                 <a class="catalog-profile-card__userpic-link" href="#">
                   <picture class="catalog-profile-card__userpic-picture">
-                    <img class="catalog-profile-card__userpic-img" src="https://via.placeholder.com/150x150" alt="Фото пользователя Марк Смолов" width="70" height="70">
+                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                    <img class="catalog-profile-card__userpic-img" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg" alt="Фото пользователя Таня Фирсова" width="70" height="70">
                   </picture>
                 </a>
 
@@ -286,13 +307,13 @@
                     <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
                     <ul class="catalog-profile-card__countries-list">
                       <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link" href="#">США</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--usa" href="#">США</a>
                       </li>
                       <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link" href="#">Австралия</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--australia" href="#">Австралия</a>
                       </li>
                       <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link" href="#">Доминикана</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--dominica" href="#">Доминикана</a>
                       </li>
                     </ul>
                   </div>
@@ -301,10 +322,10 @@
                     <div class="catalog-profile-card__transport-wrapper">
                       <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
                       <ul class="catalog-profile-card__transport-list">
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Авиаперелет</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Автотранспорт</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Велосипед</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Пешком</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
                       </ul>
                     </div>
 
@@ -320,7 +341,9 @@
 
                 <a class="catalog-profile-card__userpic-link" href="#">
                   <picture class="catalog-profile-card__userpic-picture">
-                    <img class="catalog-profile-card__userpic-img" src="https://via.placeholder.com/150x150" alt="Фото пользователя Лариса Роговая" width="70" height="70">
+                    <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                    <img class="catalog-profile-card__userpic-img" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg" alt="Фото пользователя Таня Фирсова" width="70" height="70">
                   </picture>
                 </a>
 
@@ -360,10 +383,10 @@
                     <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
                     <ul class="catalog-profile-card__countries-list">
                       <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link" href="#">Великобритания</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--united-kingdom" href="#">Великобритания</a>
                       </li>
                       <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link" href="#">Германия</a>
+                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--germany" href="#">Германия</a>
                       </li>
                     </ul>
                   </div>
@@ -372,10 +395,10 @@
                     <div class="catalog-profile-card__transport-wrapper">
                       <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
                       <ul class="catalog-profile-card__transport-list">
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Авиаперелет</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Автотранспорт</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Велосипед</span></li>
-                        <li class="catalog-profile-card__transport-item"><span class="visually-hidden">Пешком</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
+                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
                       </ul>
                     </div>
 
@@ -417,7 +440,9 @@
       <div class="page-footer__container container">
         <a class="page-footer__logo" href="index.html">
           <picture>
-            <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
           </picture>
         </a>
         <ul class="page-footer__social social">
@@ -431,7 +456,13 @@
             <a class="social__link social__link--instagram social__link--bg-yellow" href="#"><span class="visually-hidden">Instagram</span></a>
           </li>
         </ul>
-        <p class="page-footer__copyright copyright">Разработано <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a></p>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span>Разработано</span>
+          <span class="visually-hidden">HTML Academy</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34">
+            <path d="M13.6 0h-.2L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm5.7 16.8l-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8L25 13.5l-4.5 2.6-7.1-4.2v1.4l5.9 3.5zM1.9 15.1l11.4 6.8v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.6 6.9-11.4-7v-9.8zm0-3v-9l11.6-1.2 11.6 1.2v9L13.5 5.3v-.1h-.2v.1L1.9 12.1z" fill="#231f20"/>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>

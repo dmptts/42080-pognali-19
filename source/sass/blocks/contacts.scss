@@ -5,103 +5,112 @@
 .contacts__link {
   position: relative;
 
-  display: block;
-  padding-top: 13px;
-  padding-bottom: 10px;
-  padding-left: 60px;
+  display: flex;
+  align-items: center;
 
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
   font-style: normal;
-  color: $color-dark-blue;
+  color: #ffd64b;
   text-transform: uppercase;
 
-  &::before {
+  &:hover svg {
+    fill: #ffbd30;
+  }
+
+  &:hover .contacts__text {
+    color: #ffbd30;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__icon {
+  position: relative;
+
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+
+  border-radius: 50%;
+  background-color: #121936;
+
+  svg {
     position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
 
-    width: 45px;
-    height: 45px;
+    width: 18px;
+    height: 18px;
 
-    background-color: $color-dark-blue;
-    border-radius: 50%;
-  }
-
-  &--yellow::before {
-    background-color: $color-yellow;
-  }
-
-  &--hidden-text {
-    height: 40px;
-    padding-left: 40px;
-  }
-
-  &--hidden-text::before {
-    width: 40px;
-    height: 40px;
+    fill: #ffd74b;
+    transform: translate(-50%, -50%);
   }
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__link {
-    padding-top: 25px;
-    padding-bottom: 15px;
-    padding-left: 90px;
+  .contacts__icon {
+    width: 68px;
+    height: 68px;
+    margin-right: 23px;
 
+    & svg {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  .contacts__text {
     font-size: 28px;
     line-height: 28px;
-
-    &::before {
-      width: 68px;
-      height: 68px;
-    }
   }
 }
 
-@media (min-width: $desktop-width) {
-  .contacts {
-    display: flex;
-    flex-direction: row;
-  }
+// @media (min-width: $desktop-width) {
+//   .contacts {
+//     display: flex;
+//     flex-direction: row;
+//   }
 
-  .contacts__link {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 50px;
+//   .contacts__link {
+//     padding-top: 25px;
+//     padding-bottom: 25px;
+//     padding-left: 50px;
 
-    font-size: 0;
-    line-height: 0;
+//     font-size: 0;
+//     line-height: 0;
 
-    &::before {
-      width: 50px;
-      height: 50px;
-    }
+//     &::before {
+//       width: 50px;
+//       height: 50px;
+//     }
 
-    &--phone::before {
-      background-color: #ff8d30;
-    }
+//     &--phone::before {
+//       background-color: #ff8d30;
+//     }
 
-    &--phone:hover::before {
-      background-color: #f26926;
-    }
+//     &--phone:hover::before {
+//       background-color: #f26926;
+//     }
 
-    &--phone:active::before {
-      background-color: #f26926;
-    }
+//     &--phone:active::before {
+//       background-color: #f26926;
+//     }
 
-    &--email::before {
-      background-color: #ffbd30;
-    }
+//     &--email::before {
+//       background-color: #ffbd30;
+//     }
 
-    &--email:hover::before {
-      background-color: #ff8d30;
-    }
+//     &--email:hover::before {
+//       background-color: #ff8d30;
+//     }
 
-    &--email:active::before {
-      background-color: #ff8d30;
-    }
-  }
-}
+//     &--email:active::before {
+//       background-color: #ff8d30;
+//     }
+//   }
+// }
