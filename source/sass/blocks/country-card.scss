@@ -74,10 +74,27 @@
   top: 24px;
   right: 25px;
 
+  padding-left: 19px;
+
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
   color: rgba(#444444, 0.3);
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 0;
+
+    width: 11px;
+    height: 11px;
+
+    background-image: url("../img/user.svg");
+    background-size: 11px;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -132,11 +149,22 @@
   .country-card__counter {
     top: auto;
     bottom: 16px;
-    left: 60px;
+    left: 30px;
     right: auto;
+
+    padding-left: 31px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &::before {
+      top: 2px;
+
+      width: 20px;
+      height: 20px;
+
+      background-size: 20px;
+    }
   }
 }
 

@@ -41,6 +41,56 @@
   margin-top: -20px;
 }
 
+.intro__contacts-link {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  &:hover svg {
+    fill: #161c35;
+  }
+
+  &:hover .intro__contacts-icon--phone {
+    background-color: #f26926;
+  }
+
+  &:hover .intro__contacts-icon--email {
+    background-color: #ff8d30;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &:active .intro__contacts-icon--phone{
+    background-color: #f26926;
+  }
+
+  &:active .intro__contacts-icon--email {
+    background-color: #ff8d30;
+  }
+}
+
+.intro__contacts-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0;
+
+  background-color: $color-yellow;
+
+  &--phone {
+    background-color: #ff8d30;
+  }
+
+  svg {
+    fill: #161c35;
+  }
+}
+
 .intro__user-list {
   @include list-reset;
   width: 100%;

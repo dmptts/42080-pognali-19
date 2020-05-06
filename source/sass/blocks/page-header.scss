@@ -34,13 +34,33 @@
 }
 
 .page-header__dropdown-menu-container {
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 
 .page-header__social {
   @include list-reset;
   display: flex;
   justify-content: center;
+}
+
+.page-header__contacts-link {
+
+  &:hover .page-header__contacts-text {
+    color: #161c35;
+  }
+}
+
+.page-header__contacts-icon {
+  background-color: #121936;
+}
+
+#topmenu-phone-desktop,
+#topmenu-email-desktop {
+  display: none;
+}
+
+.page-header__contacts-text {
+  color: #161c35;
 }
 
 .page-header__toggle {
@@ -167,6 +187,13 @@
     height: 42px;
   }
 
+  .page-header__toggle {
+    top: 53px;
+    right: 50%;
+
+    transform: translateX(50%);
+  }
+
   .page-header__dropdown-menu-container {
     position: relative;
 
@@ -177,17 +204,14 @@
     padding-bottom: 74px;
   }
 
+  .page-header__contacts-text {
+    margin-bottom: -7px;
+  }
+
   .page-header__social {
     justify-content: flex-start;
     margin-top: auto;
     padding-left: 59px;
-  }
-
-  .page-header__toggle {
-    top: 53px;
-    right: 50%;
-
-    transform: translateX(50%);
   }
 
   .page-header__menu--opened .page-header__dropdown-menu {
@@ -265,16 +289,87 @@
     height: 52px;
   }
 
+  .page-header__toggle {
+    display: none;
+  }
+
   .page-header__logo-img {
     width: 200px;
     height: 52px;
   }
 
-  .page-header__social {
+  .page-header__contacts {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__contacts-link {
+    &:hover svg {
+      fill: #161c35;
+    }
+
+    &:hover .page-header__contacts-icon--phone {
+      background-color: #f26926;
+    }
+
+    &:hover .page-header__contacts-icon--email {
+      background-color: #ff8d30;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
+
+    &:active .page-header__contacts-icon--phone{
+      background-color: #f26926;
+    }
+
+    &:active .page-header__contacts-icon--email {
+      background-color: #ff8d30;
+    }
+  }
+
+  .page-header__contacts-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
+
+    svg {
+      width: 18px;
+      height: 18px;
+
+      fill: #161c35;
+    }
+
+    &--phone {
+      background-color: #ff8d30;
+    }
+
+    &--email {
+      background-color: #ffbd30;
+    }
+  }
+
+  #topmenu-phone-mobile,
+  #topmenu-email-mobile {
     display: none;
   }
 
-  .page-header__toggle {
+  #topmenu-phone-desktop,
+  #topmenu-email-desktop {
+    display: block;
+  }
+
+
+  .page-header__contacts-text {
+    display: none;
+  }
+
+  .page-header__social {
     display: none;
   }
 }
