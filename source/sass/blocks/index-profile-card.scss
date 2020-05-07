@@ -17,7 +17,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
   }
 
   &:hover .index-profile-card__userpic-img {
@@ -184,7 +184,7 @@
     content: "Шри-Ланка";
   }
 
-  &--thailand::before{
+  &--thailand::before {
     content: "Тайланд";
   }
 
