@@ -714,10 +714,24 @@
 
 @media (min-width: $desktop-width) {
   .catalog-profile-card {
+    position: relative;
+
     width: 950px;
     min-height: 285px;
     margin-bottom: 30px;
     padding: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 49px;
+      bottom: 49px;
+      right: 319px;
+
+      width: 1px;
+
+      background: linear-gradient(#fdfdfd 0%, #e6e6e6 50%, #fdfdfd 110%);
+    }
   }
 
   /* Контейнеры и обертки */
