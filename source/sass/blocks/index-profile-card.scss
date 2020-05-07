@@ -6,7 +6,7 @@
   align-items: center;
   width: 270px;
   margin-bottom: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
 
   background-color: #ffffff;
 
@@ -26,7 +26,6 @@
 
 .index-profile-card__userpic-link {
   line-height: 0;
-  // border-radius: 10px 10px 0 0;
 }
 
 .index-profile-card__userpic-img {
@@ -249,92 +248,59 @@
 .index-profile-card__transport-item {
   position: relative;
 
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   margin-right: 3px;
 
   &:last-child {
     margin-right: 0;
   }
 
-  & svg {
+  &::before {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    content: "";
+    top: 0;
+    left: 0;
 
-    fill: #1d2e5b;
+    width: 32px;
+    height: 32px;
+
+    background-repeat: no-repeat;
     opacity: 0.15;
-
-    transform: translate(-50%, -50%);
   }
 
-  &--active svg {
+  &--active::before {
     opacity: 1;
   }
 
-  &--avia svg {
-    width: 19px;
-    height: 21px;
-  }
-
-  &--bus svg {
-    width: 19px;
-    height: 21px;
-  }
-
-  &--bike svg {
-    width: 24px;
-    height: 21px;
-  }
-
-  &--tracking svg {
-    width: 20px;
-    height: 21px;
-  }
-
-  &::before {
-    position: absolute;
-    top: 37px;
-    left: -50%;
-    z-index: 2;
-
-    display: none;
-    padding-top: 18px;
-    padding-bottom: 14px;
-    padding-left: 22px;
-    padding-right: 22px;
-
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 400;
-    color: white;
-
-    background-color: #101d41;
-    border-radius: 3px;
-
-    transform: translateX(-50%) translateX(30px);
-  }
-
   &--avia::before {
-    content: "Авиаперелет";
+    background-image: url("../img/plane.svg");
+    background-size: 19px 21px;
+    background-position: 8px 4px;
   }
 
   &--auto::before {
-    content: "Автотранспорт";
+    background-image: url("../img/bus.svg");
+    background-size: 19px 21px;
+    background-position: 8px 4px;
   }
 
   &--bike::before {
-    content: "Велосипед";
+    background-image: url("../img/bike.svg");
+    background-size: 24px 21px;
+    background-position: 4px 4px;
   }
 
   &--tracking::before {
-    content: "Пешком";
+    background-image: url("../img/run.svg");
+    background-size: 20px 21px;
+    background-position: 4px 4px;
   }
 
   &::after {
     position: absolute;
     content: "";
-    bottom: -7px;
+    bottom: -12px;
     left: 50%;
     z-index: 2;
 
@@ -349,12 +315,37 @@
     transform: translateX(-50%);
   }
 
-  &:hover::before,
   &:hover::after {
+    display: block;
+  }
+
+  &:hover .index-profile-card__transport-text {
     display: block;
   }
 }
 
+.index-profile-card__transport-text {
+  position: absolute;
+  top: 44px;
+  left: -50%;
+  z-index: 2;
+
+  display: none;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+
+  background-color: #101d41;
+  border-radius: 3px;
+
+  transform: translateX(-50%) translateX(30px);
+}
 
 @media (min-width: $tablet-width) {
   .index-profile-card {

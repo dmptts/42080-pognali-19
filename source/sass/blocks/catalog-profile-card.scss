@@ -438,32 +438,31 @@
   }
 
   &:hover .catalog-profile-card__transport-text {
-    position: absolute;
-    top: 44px;
-    left: -50%;
-    z-index: 2;
-
     display: block;
-    padding-top: 18px;
-    padding-bottom: 14px;
-    padding-left: 22px;
-    padding-right: 22px;
-
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 400;
-    color: white;
-
-    background-color: #101d41;
-    border-radius: 3px;
-
-    transform: translateX(-50%) translateX(30px);
   }
-
 }
 
 .catalog-profile-card__transport-text {
+  position: absolute;
+  top: 44px;
+  left: -50%;
+  z-index: 2;
+
   display: none;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+
+  background-color: #101d41;
+  border-radius: 3px;
+
+  transform: translateX(-50%) translateX(30px);
 }
 
 .catalog-profile-card__level {

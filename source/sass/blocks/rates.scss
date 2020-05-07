@@ -199,11 +199,31 @@
       height: 67px;
 
       background-color: #e2e5f2;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 67px;
+      height: 67px;
+
       background-image: url("../img/business.svg");
       background-size: 17px 21px;
       background-position: 50%;
       background-repeat: no-repeat;
       border-radius: 50%;
+    }
+
+    &:hover::after {
+      opacity: 0.7;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }
