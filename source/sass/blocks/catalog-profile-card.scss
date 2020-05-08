@@ -14,6 +14,14 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  &:hover .catalog-profile-card__userpic-img {
+    transform: scale(1.15);
+  }
 }
 
 /* Контейнеры и обертки */
@@ -51,6 +59,7 @@
   left: 18px;
 
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .catalog-profile-card__userpic-picture {
@@ -438,32 +447,31 @@
   }
 
   &:hover .catalog-profile-card__transport-text {
-    position: absolute;
-    top: 44px;
-    left: -50%;
-    z-index: 2;
-
     display: block;
-    padding-top: 18px;
-    padding-bottom: 14px;
-    padding-left: 22px;
-    padding-right: 22px;
-
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 400;
-    color: white;
-
-    background-color: #101d41;
-    border-radius: 3px;
-
-    transform: translateX(-50%) translateX(30px);
   }
-
 }
 
 .catalog-profile-card__transport-text {
+  position: absolute;
+  top: 44px;
+  left: -50%;
+  z-index: 2;
+
   display: none;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+
+  background-color: #101d41;
+  border-radius: 3px;
+
+  transform: translateX(-50%) translateX(30px);
 }
 
 .catalog-profile-card__level {
@@ -706,10 +714,24 @@
 
 @media (min-width: $desktop-width) {
   .catalog-profile-card {
+    position: relative;
+
     width: 950px;
     min-height: 285px;
     margin-bottom: 30px;
     padding: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 49px;
+      bottom: 49px;
+      right: 319px;
+
+      width: 1px;
+
+      background: linear-gradient(#fdfdfd 0%, #e6e6e6 50%, #fdfdfd 110%);
+    }
   }
 
   /* Контейнеры и обертки */
@@ -798,6 +820,5 @@
 
   .catalog-profile-card__transport-list {
     flex-direction: row;
-
   }
 }
