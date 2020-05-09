@@ -21,8 +21,34 @@ window.onscroll = function() {
 function pageHeaderPinner() {
   if (window.pageYOffset > 50) {
     pageHeader.classList.add("page-header--fixed");
-    // pageHeader.classList.add("page-header--bg-white");
   } else {
     pageHeader.classList.remove("page-header--fixed");
   };
 };
+
+let modal = document.querySelector(".modal-business-rates");
+let ratesLink = document.querySelector(".rates__link");
+let modalOverlay = document.querySelector(".modal-overlay");
+let modalCloseBtn = document.querySelector(".modal-business-rates__btn-close")
+
+ratesLink.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modal.classList.add("modal-business-rates--opened");
+  modalOverlay.classList.add("modal-overlay--modal-opened");
+});
+
+modalCloseBtn.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modal.classList.remove("modal-business-rates--opened");
+  modalOverlay.classList.remove("modal-overlay--modal-opened");
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (modal.classList.contains("modal-business-rates--opened")) {
+      evt.preventDefault();
+      modal.classList.remove("modal-business-rates--opened");
+      modalOverlay.classList.remove("modal-overlay--modal-opened");
+    };
+  };
+});
