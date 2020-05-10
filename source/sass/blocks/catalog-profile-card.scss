@@ -475,12 +475,57 @@
 }
 
 .catalog-profile-card__level {
+  position: relative;
+
   width: 45px;
   height: 45px;
   margin-top: 7px;
   margin-left: 9px;
+}
 
-  background-color: $color-light-grey;
+.catalog-profile-card__level-caption {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.catalog-profile-card__level-text {
+  display: none;
+}
+
+.catalog-profile-card__level-icon {
+  display: block;
+  width: 45px;
+  height: 45px;
+
+  fill: none;
+
+  stroke: #ff8d30;
+  stroke-width: 2px;
+
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+
+  &--99 {
+    stroke-dasharray: 180px;
+  }
+
+  &--80 {
+    stroke-dasharray: 146px;
+  }
+
+  &--25 {
+    stroke-dasharray: 47px 135px;
+  }
+
+  &--50 {
+    stroke-dasharray: 91px;
+  }
 }
 
 @media (max-width: $mobile-only) {
@@ -709,6 +754,38 @@
     width: 60px;
     height: 60px;
     margin: 0;
+  }
+
+  .catalog-profile-card__level-caption {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 21px;
+      left: -3px;
+
+      width: 31px;
+      height: 1px;
+
+      background-color: rgba(#000000, 0.1);
+    }
+  }
+
+  .catalog-profile-card__level-text {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: rgba(#444444, 0.4);
+  }
+
+  .catalog-profile-card__level-icon {
+    width: 60px;
+    height: 60px;
   }
 }
 
