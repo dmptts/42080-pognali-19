@@ -15,11 +15,19 @@
         <div class="page-header__top-container container">
           <a class="page-header__logo">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
               <img class="page-header__logo-img page-header__logo-img--blue" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+              <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
+
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
               <img class="page-header__logo-img page-header__logo-img--white" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
@@ -143,6 +151,9 @@
           <ul class="destinations__list">
             <li class="destinations__list-item country-card country-card--thailand">
               <picture class="country-card__picture">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x">
+                <source type="image/webp" src="img/thailand-mobile@1x.webp" srcset="img/thailand-mobile@2x.webp">
+
                 <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
                 <img class="country-card__img" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg" alt="Морские рифы Тайланда" width="270" height="110">
               </picture>
@@ -154,6 +165,9 @@
             </li>
             <li class="destinations__list-item country-card country-card--france">
               <picture class="country-card__picture">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
+                <source type="image/webp" src="img/france-mobile@1x.webp" srcset="img/france-mobile@2x.webp">
+
                 <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
                 <img class="country-card__img" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg" alt="Морские рифы Тайланда" width="270" height="110">
               </picture>
@@ -165,6 +179,9 @@
             </li>
             <li class="destinations__list-item country-card country-card--czech">
               <picture class="country-card__picture">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
+                <source type="image/webp" src="img/czech-mobile@1x.webp" srcset="img/czech-mobile@2x.webp">
+
                 <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
                 <img class="country-card__img" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg" alt="Морские рифы Тайланда" width="270" height="110">
               </picture>
@@ -192,7 +209,10 @@
             <li class="companions__list-item index-profile-card">
               <div class="index-profile-card__header">
                 <a class="index-profile-card__userpic-link" href="#">
-                  <img class="index-profile-card__userpic-img" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" alt="Фото пользователя Таня Фирсова" width="270" height="270">
+                  <picture>
+                    <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                    <img class="index-profile-card__userpic-img" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" alt="Фото пользователя Таня Фирсова" width="270" height="270">
+                  </picture>
                 </a>
                 <a class="index-profile-card__name-wrapper" href="#">
                   <span class="index-profile-card__status index-profile-card__status--offline">
@@ -272,7 +292,10 @@
             <li class="companions__list-item index-profile-card">
               <div class="index-profile-card__header">
                 <a class="index-profile-card__userpic-link" href="#">
-                  <img class="index-profile-card__userpic-img" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="Фото пользователя Петя Демин" width="270" height="270">
+                  <picture>
+                    <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                    <img class="index-profile-card__userpic-img" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="Фото пользователя Петя Демин" width="270" height="270">
+                  </picture>
                 </a>
                 <a class="index-profile-card__name-wrapper" href="#">
                   <span class="index-profile-card__status index-profile-card__status--online">
@@ -373,6 +396,10 @@
       <div class="page-footer__container container">
         <a class="page-footer__logo">
           <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
             <img class="page-footer__logo-img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
