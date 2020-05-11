@@ -69,6 +69,8 @@
 
 .catalog-profile-card__userpic-img {
   border-radius: 50%;
+
+  transition: transform 0.1s;
 }
 
 /* Имя пользователя */
