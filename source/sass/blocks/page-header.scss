@@ -205,16 +205,16 @@
   .page-header {
     background-color: #182044;
 
+    &--inner-page {
+      background-color: #161c35;
+    }
+
     &--bg-white {
       background-color: #ffffff;
     }
 
     &--fixed {
       background-color: #ffffff;
-    }
-
-    &--inner-page {
-      background-color: #161c35;
     }
   }
 
@@ -278,6 +278,10 @@
   .page-header {
     background-color: #161c34;
 
+    &--inner-page {
+      background-color: #161c35;
+    }
+
     &--fixed {
       background-color: #ffffff;
     }
@@ -301,10 +305,6 @@
 
     &--fixed .page-header__site-list {
       color: $color-dark-blue;
-    }
-
-    &--inner-page {
-      background-color: #161c35;
     }
   }
 

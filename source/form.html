@@ -4,23 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <!-- Модификатор для смены background-color на белый - "bg-white" -->
-    <header class="page-header">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header page-header--inner-page page-header--bg-white">
       <div class="page-header__container container">
         <div class="page-header__top-container page-header__top-container--inner-page container">
           <a class="page-header__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1440px)"  srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
-                <source media="(min-width: 768px)"  srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-                <img class="page-header__logo-img" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <img class="page-header__logo-img page-header__logo-img--blue" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <img class="page-header__logo-img page-header__logo-img--white" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Логотип &#34;Погнали&#34;" width="100" height="19">
             </picture>
           </a>
-          <button class="page-header__toggle page-header__toggle--inner-page page-header__toggle--menu-closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="page-header__toggle page-header__toggle--inner-page page-header__toggle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
-        <div class="page-header__menu page-header__menu--closed">
+        <div class="page-header__menu page-header__menu--no-js">
           <div class="page-header__dropdown-menu page-header__dropdown-menu--inner-page">
             <div class="page-header__dropdown-menu-container container">
               <nav class="page-header__main-nav main-nav">
@@ -50,7 +57,7 @@
 
                   <a class="main-nav__contacts-link contacts__link" href="mailto:mail@htmlacademy.ru">
                     <span class="main-nav__contacts-icon-wrapper main-nav__contacts-icon-wrapper--email contacts__icon-wrapper">
-                      <svg class="main-nav__contacts-icon contacts__icon" width="18px" height="18px"><use xlink:href="img/sprite.svg#icon-email"></use></svg>
+                      <svg class="main-nav__contacts-icon contacts__icon" width="18px" height="18px"><use xlink:href="#icon-mail"></use></svg>
                     </span>
                     <span class="main-nav__contacts-text contacts__text">mail@htmlacademy.ru</span>
                   </a>
@@ -109,5 +116,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
