@@ -736,8 +736,75 @@
       <div class="catalog__container container">
 
         <section class="catalog__companions-filter companions-filter">
-          <h2 class="visually-hidden">Фильтрация по параметрам попутчика</h2>
-          <!-- Здесь будет форма фильтра -->
+          <h2>Подберите идеального попутчика</h2>
+          <form  class="companions-filter__form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="companions-filter__hobby">
+              <legend class="companions-filter__legend">Хобби:</legend>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="hobby-sport" id="filter-hobby-sport">
+              <label class="companions-filter__label" for="filter-hobby-sport">Спортзал</label>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="hobby-hookah" id="filter-hobby-hookah">
+              <label class="companions-filter__label" for="filter-hobby-hookah">Кальян</label>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="hobby-coach" id="filter-hobby-coach">
+              <label class="companions-filter__label" for="filter-hobby-coach">Диван</label>
+            </fieldset>
+            <fieldset class="companions-filter__music">
+              <legend class="companions-filter__legend">Музыка:</legend>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="music-hardrock" id="filter-music-hardrock">
+              <label class="companions-filter__label" for="filter-music-hardrock">Тяжелый рок</label>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="music-russian-rap" id="filter-music-russian-rap">
+              <label class="companions-filter__label" for="filter-music-russian-rap">Русский рэп</label>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="music-eurodance" id="filter-music-eurodance">
+              <label class="companions-filter__label" for="filter-music-eurodance">Евродэнс</label>
+            </fieldset>
+            <fieldset class="companions-filter__food">
+              <legend class="companions-filter__legend">Еда:</legend>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="food-meat" id="filter-food-meat">
+              <label class="companions-filter__label" for="filter-food-meat">Мясоед</label>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="food-proper-nutrition" id="filter-food-proper-nutrition">
+              <label class="companions-filter__label" for="filter-food-proper-nutrition">ПП</label>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="food-raw-vegan" id="filter-food-raw-vegan">
+              <label class="companions-filter__label" for="filter-food-raw-vegan">Веган-сыроед</label>
+            </fieldset>
+            <fieldset class="companions-filter__transport">
+              <legend class="companions-filter__legend">Транспорт:</legend>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="transport-avia" id="filter-transport-avia">
+              <label class="companions-filter__label" for="filter-transport-avia">Авиаперелет</label>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="transport-auto" id="filter-transport-auto">
+              <label class="companions-filter__label" for="filter-transport-auto">Автотранспорт</label>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="transport-bike" id="filter-transport-bike">
+              <label class="companions-filter__label" for="filter-transport-bike">Велосипед</label>
+
+              <input class="companions-filter__checkbox" type="checkbox" name="transport-tracking" id="filter-transport-tracking">
+              <label class="companions-filter__label" for="filter-transport-tracking">Пешком</label>
+            </fieldset>
+            <fieldset class="companions-filter__level">
+              <legend>Левел:</legend>
+              <div class="companions-filter__range-scale-ctrl">
+                <div class="companions-filter__range-scale">
+                  <div class="companions-filter__range-bar"></div>
+                </div>
+                <div class="companions-filter__range-toggle companions-filter__range-toggle--min"></div>
+                <div class="companions-filter__range-toggle companions-filter__range-toggle--max"></div>
+              </div>
+              <div class="companions-filter__num-ctrl">
+                <input type="text" name="min-level" value="1">
+                <input type="text" name="max-level" value="100">
+              </div>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
         </section>
 
         <section class="catalog__companions">
