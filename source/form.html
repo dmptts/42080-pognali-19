@@ -92,9 +92,200 @@
     <main>
       <div class="page-title">
         <div class="page-title__container container">
-          <h1 class="page-title__page-heading">Направления</h1>
+          <h1 class="page-title__page-heading">Попутчики</h1>
+          <a class="page-title__link" href="index.html">На главную</a>
         </div>
       </div>
+      <section class="general-info">
+        <div class="general-info__container container">
+          <h2 class="visually-hidden">Основная информация</h2>
+          <picture class="general-info__userpic-picture">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+            <img class="general-info__userpic-img" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Фото пользователя Петя Демин" width="70" height="70">
+          </picture>
+          <button class="general-info__btn">Сменить фото</button>
+          <div class="general-info__level">
+            <div class="general-info__level-caption">
+              <div class="general-info__level-counter">80</div>
+              <div class="general-info__level-text">level</div>
+            </div>
+            <svg class="general-info__level-icon general-info__level-icon--80" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
+          </div>
+          <ul class="general-info__tags-list">
+            <li class="general-info__tags-item">
+              <a class="general-info__tags-link" href="#">#бургер</a>
+            </li>
+            <li class="general-info__tags-item">
+              <a class="general-info__tags-link" href="#">#бар</a>
+            </li>
+            <li class="general-info__tags-item">
+              <a class="general-info__tags-link" href="#">#футбол</a>
+            </li>
+            <li class="general-info__tags-item">
+              <a class="general-info__tags-link" href="#">#концерт</a>
+            </li>
+            <li class="general-info__tags-item">
+              <a class="general-info__tags-link" href="#">#крафт</a>
+            </li>
+          </ul>
+          <ul class="general-info__transport-list">
+            <li class="general-info__transport-item general-info__transport-item--active general-info__transport-item--avia"><span class="general-info__transport-text">Авиаперелет</span></li>
+            <li class="general-info__transport-item general-info__transport-item--auto"><span class="general-info__transport-text">Автотранспорт</span></li>
+            <li class="general-info__transport-item general-info__transport-item--active general-info__transport-item--bike"><span class="general-info__transport-text">Велосипед</span></li>
+            <li class="general-info__transport-item general-info__transport-item--active general-info__transport-item--tracking"><span class="general-info__transport-text">Пешком</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="plans">
+        <div class="plans__container container">
+          <h2 class="plans__heading">Мои планы:</h2>
+          <ol class="plans__list">
+            <li class="plans__item">
+              <h3 class="plans__item-heading">Франция, Италия</h3>
+              <span class="plans__companions-counter">3 попутчика</span>
+              <span class="plans__dates">26 мар — 29 мар</span>
+              <a class="plans__link" href="#">Изменить</a>
+            </li>
+            <li class="plans__item">
+              <h3 class="plans__item-heading">Таиланд, Индонезия</h3>
+              <span class="plans__companions-counter">1 попутчик</span>
+              <span class="plans__dates">1 июл — 15 июл</span>
+              <a class="plans__link" href="#">Изменить</a>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="new-plan">
+        <div class="new-plan__container container">
+          <h2 class="new-plan__heading">Добавить план:</h2>
+          <form class="new-plan__form" action="https://echo.htmlacademy.ru" action="post">
+            <ol class="new-plan__steps">
+              <li class="new-plan__steps-item">
+                <h3 class="new-plan__steps-heading">Даты пребывания</h3>
+                <p class="new-plan__steps-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
+                <div class="new-plan__field">
+                  <label for="companions-input">Ищу попутчиков:</label>
+                  <span class="new-plan__field-unit">Чел.</span>
+                  <button class="new-plan__field-ctrl new-plan__field-ctrl--decrement">Меньше попутчиков</button>
+                  <input class="new-plan__field-input" id="companions-input" type="text" min="1" value="2">
+                  <button class="new-plan__field-ctrl new-plan__field-ctrl--increment">Больше попутчиков</button>
+                </div>
+                <div class="new-plan__field">
+                  <label for="companions-input">Длительность:</label>
+                  <span class="new-plan__field-unit">Дн.</span>
+                  <button class="new-plan__field-ctrl new-plan__field-ctrl--decrement">Меньше длительность</button>
+                  <input class="new-plan__field-input" id="companions-input" type="text" min="1" value="2">
+                  <button class="new-plan__field-ctrl new-plan__field-ctrl--increment">Больше длительность</button>
+                </div>
+                <input class="new-plan__checkbox" id="children-checkbox" type="checkbox" name="with-children">
+                <label for="children-checkbox">Можно с детьми</label>
+
+                <div class="new-plan__calendar calendar">
+                  <div class="calendar__month-picker">
+                    <button class="calendar__month-picker-btn calendar__month-picker-btn--prev">Предыдущий</button>
+                    <p class="calendar__current-month">Март 2029</p>
+                    <button class="calendar__month-picker-btn calendar__month-picker-btn--next">Следующий</button>
+                  </div>
+                  <ul class="calendar__weekdays-list">
+                    <li class="calendar__weekday">П</li>
+                    <li class="calendar__weekday">В</li>
+                    <li class="calendar__weekday">С</li>
+                    <li class="calendar__weekday">Ч</li>
+                    <li class="calendar__weekday">П</li>
+                    <li class="calendar__weekday">С</li>
+                    <li class="calendar__weekday">В</li>
+                  </ul>
+                  <ul class="calendar__date-list">
+                    <li class="calendar__date calendar__date--disabled">23</li>
+                    <li class="calendar__date calendar__date--disabled">24</li>
+                    <li class="calendar__date calendar__date--disabled">25</li>
+                    <li class="calendar__date calendar__date--disabled">26</li>
+                    <li class="calendar__date calendar__date--disabled">27</li>
+                    <li class="calendar__date calendar__date--disabled">28</li>
+                    <li class="calendar__date calendar__date--disabled">1</li>
+                    <li class="calendar__date calendar__date--disabled">2</li>
+                    <li class="calendar__date calendar__date--disabled">3</li>
+                    <li class="calendar__date calendar__date--disabled">4</li>
+                    <li class="calendar__date calendar__date--disabled">5</li>
+                    <li class="calendar__date calendar__date--disabled">6</li>
+                    <li class="calendar__date calendar__date--disabled">7</li>
+                    <li class="calendar__date calendar__date--disabled">8</li>
+                    <li class="calendar__date calendar__date--disabled">9</li>
+                    <li class="calendar__date calendar__date--disabled">10</li>
+                    <li class="calendar__date calendar__date--disabled">11</li>
+                    <li class="calendar__date calendar__date--disabled">12</li>
+                    <li class="calendar__date calendar__date--disabled">13</li>
+                    <li class="calendar__date calendar__date--disabled">14</li>
+                    <li class="calendar__date calendar__date--disabled">15</li>
+                    <li class="calendar__date calendar__date--disabled">16</li>
+                    <li class="calendar__date calendar__date--disabled">17</li>
+                    <li class="calendar__date calendar__date--disabled">18</li>
+                    <li class="calendar__date calendar__date--disabled">19</li>
+                    <li class="calendar__date calendar__date--disabled">20</li>
+                    <li class="calendar__date calendar__date--disabled">21</li>
+                    <li class="calendar__date calendar__date--disabled">22</li>
+                    <li class="calendar__date calendar__date--disabled">23</li>
+                    <li class="calendar__date calendar__date--disabled">24</li>
+                    <li class="calendar__date calendar__date--disabled">25</li>
+                    <li class="calendar__date calendar__date--active">26</li>
+                    <li class="calendar__date calendar__date--active">27</li>
+                    <li class="calendar__date calendar__date--active">28</li>
+                    <li class="calendar__date">29</li>
+                    <li class="calendar__date">30</li>
+                    <li class="calendar__date">31</li>
+                    <li class="calendar__date">1</li>
+                    <li class="calendar__date">2</li>
+                    <li class="calendar__date">3</li>
+                    <li class="calendar__date">4</li>
+                    <li class="calendar__date">5</li>
+                  </ul>
+                  <a class="new-plan__btn btn" href="#">Следующий шаг</a>
+                </div>
+              </li>
+              <li class="new-plan__steps-item">
+                <h3 class="new-plan__steps-heading">Даты пребывания</h3>
+                <p class="new-plan__steps-description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                <ul class="new-plan__route">
+                  <li class="new-plan__route-item">
+                    <button class="new-plan__route-btn new-plan__route-btn--chosen">Босния и Герцеговина</button>
+                  </li>
+                  <li class="new-plan__route-item">
+                    <button class="new-plan__route-btn new-plan__route-btn--chosen">Чехия</button>
+                  </li>
+                  <li class="new-plan__route-item">
+                    <button class="new-plan__route-btn">Выберите страну</button>
+                  </li>
+                  <button class="new-plan__route-add">Добавить страну</button>
+                </ul>
+                <button class="new-plan__btn btn" type="submit">Отправить</button>
+                <a class="new-plan__btn new-plan__btn--prev btn" href="#">На шаг назад</a>
+              </li>
+              <li class="new-plan__steps-item">
+                <h3 class="new-plan__steps-heading">Развлечения</h3>
+                <p class="new-plan__steps-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                <ul class="new-plan__plans-list">
+                  <li class="new-plan__plans-item">
+                    <label for="form-plan-input">Босния и Герцеговина</label>
+                    <textarea class="new-plan__textarea" name="plan-input" id="form-plan-input-1" cols="30" rows="10" placeholder="План действий" required></textarea>
+                  </li>
+                  <li class="new-plan__plans-item">
+                    <label for="form-plan-input-2">Чехия</label>
+                    <textarea class="new-plan__textarea" name="plan-input" id="form-plan-input-2" cols="30" rows="10" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  </li>
+                </ul>
+                <button class="new-plan__btn btn" type="submit">Отправить</button>
+                <a class="new-plan__btn new-plan__btn--prev btn" href="#">На шаг назад</a>
+              </li>
+            </ol>
+          </form>
+        </div>
+      </section>
       <!-- Здесь будут формы -->
     </main>
 
