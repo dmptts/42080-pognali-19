@@ -99,6 +99,25 @@
   }
 }
 
+.catalog-profile-card__status {
+  position: absolute;
+  top: 23px;
+  right: 22px;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  &--online {
+    background-color: #81e31e;
+  }
+
+  &--offline {
+    background-color: #f97676;
+  }
+}
+
 /* Кнопка и лайки */
 
 .catalog-profile-card__btn {
@@ -611,6 +630,8 @@
   /* Имя пользователя */
 
   .catalog-profile-card__name-link {
+    position: relative;
+
     display: block;
     width: auto;
     margin-bottom: 18px;
@@ -620,6 +641,14 @@
   .catalog-profile-card__name {
     font-size: 30px;
     line-height: 30px;
+  }
+
+  .catalog-profile-card__status {
+    top: 11px;
+    right: -30px;
+
+    width: 7px;
+    height: 7px;
   }
 
   /* Кнопка и лайки */
