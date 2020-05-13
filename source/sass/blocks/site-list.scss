@@ -82,19 +82,19 @@
       transform: translateY(100%);
     }
 
-    &:hover span{
+    &:hover span {
       transform: translateY(-100%);
     }
 
-    &:hover span::before{
+    &:hover span::before {
       transform: translateY(0);
     }
 
-    &:active span{
+    &:active span {
       transform: translateY(-100%);
     }
 
-    &:active span::before{
+    &:active span::before {
       transform: translateY(0);
       color: rgba(#ffd74b, 0.3);
     }
