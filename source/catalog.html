@@ -809,391 +809,374 @@
 
         <section class="catalog__companions">
           <h2 class="visually-hidden">Список попутчиков</h2>
-          <!-- <div class="catalog__companions-container container"> -->
-            <ul class="catalog__companions-list">
 
-              <li class="catalog__companions-item catalog-profile-card">
+          <ul class="catalog__companions-list">
 
-                <a class="catalog-profile-card__userpic-link" href="#">
-                  <picture class="catalog-profile-card__userpic-picture">
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+            <li class="catalog__companions-item catalog-profile-card">
 
-                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                    <img class="catalog-profile-card__userpic-img" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фото пользователя Таня Фирсова" width="70" height="70">
-                  </picture>
+              <a class="catalog-profile-card__userpic-link" href="#">
+                <picture class="catalog-profile-card__userpic-picture">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                  <img class="catalog-profile-card__userpic-img" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фото пользователя Таня Фирсова" width="70" height="70">
+                </picture>
+              </a>
+
+              <div class="catalog-profile-card__column-1">
+                <a class="catalog-profile-card__name-link" href="#">
+                  <span class="catalog-profile-card__status catalog-profile-card__status--offline">
+                    <span class="visually-hidden">Офлайн</span>
+                  </span>
+                  <b class="catalog-profile-card__name">Таня Фирсова</b>
                 </a>
-
-                <div class="catalog-profile-card__column-1">
-                  <a class="catalog-profile-card__name-link" href="#">
-                    <span class="catalog-profile-card__status catalog-profile-card__status--offline">
-                      <span class="visually-hidden">Офлайн</span>
-                    </span>
-                    <b class="catalog-profile-card__name">Таня Фирсова</b>
-                  </a>
-                  <div class="catalog-profile-card__row-1">
-                    <a class="catalog-profile-card__btn btn" href="#">Позвать!</a>
-                    <a class="catalog-profile-card__like-btn catalog-profile-card__like-btn--active" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
-                    <div class="catalog-profile-card__like-counter"><span class="visually-hidden">Лайков: </span>1,5 М</div>
-                  </div>
-
-                  <p class="visually-hidden">Тэги:</p>
-                  <ul class="catalog-profile-card__tags-list">
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#ЗОЖ</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#ПП</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#Фитнес</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#пляж</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#авокадо</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#смузи</a>
-                    </li>
-                  </ul>
+                <div class="catalog-profile-card__row-1">
+                  <a class="catalog-profile-card__btn btn" href="#">Позвать!</a>
+                  <a class="catalog-profile-card__like-btn catalog-profile-card__like-btn--active" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
+                  <div class="catalog-profile-card__like-counter"><span class="visually-hidden">Лайков: </span>1,5 М</div>
                 </div>
 
-                <!-- <span class="catalog-profile-card__status catalog-profile-card__status--offline">
-                  <span class="visually-hidden">Офлайн</span>
-                </span> -->
-
-                <div class="catalog-profile-card__column-2">
-                  <div class="catalog-profile-card__countries-wrapper">
-                    <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
-                    <ul class="catalog-profile-card__countries-list">
-                      <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--sri-lanka" href="#">Шри-ланка</a>
-                      </li>
-                      <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--thailand" href="#">Тайланд</a>
-                      </li>
-                      <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--seychelles" href="#">Сейшелы</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="catalog-profile-card__row-2">
-                    <div class="catalog-profile-card__transport-wrapper">
-                      <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
-                      <ul class="catalog-profile-card__transport-list">
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
-                      </ul>
-                    </div>
-
-                    <div class="catalog-profile-card__level-wrapper">
-                      <p class="catalog-profile-card__text catalog-profile-card__text--level">Левел:</p>
-                      <div class="catalog-profile-card__level">
-                        <div class="catalog-profile-card__level-caption">
-                          <div class="catalog-profile-card__level-counter">99</div>
-                          <div class="catalog-profile-card__level-text">level</div>
-                        </div>
-                        <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--99" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="catalog__companions-item catalog-profile-card">
-
-                <a class="catalog-profile-card__userpic-link" href="#">
-                  <picture class="catalog-profile-card__userpic-picture">
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
-
-                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                    <img class="catalog-profile-card__userpic-img" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Фото пользователя Петя Демин" width="70" height="70">
-                  </picture>
-                </a>
-
-                <div class="catalog-profile-card__column-1">
-                  <a class="catalog-profile-card__name-link" href="#">
-                    <span class="catalog-profile-card__status catalog-profile-card__status--offline">
-                      <span class="visually-hidden">Офлайн</span>
-                    </span>
-                    <b class="catalog-profile-card__name">Петя Демин</b>
-                  </a>
-                  <div class="catalog-profile-card__row-1">
-                    <a class="catalog-profile-card__btn btn btn--rounded" href="#">Позвать!</a>
-                    <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
-                    <div class="catalog-profile-card__like-counter"><span class="visually-hidden">Лайков: </span>1500</div>
-                  </div>
-
-                  <p class="visually-hidden">Тэги:</p>
-                  <ul class="catalog-profile-card__tags-list">
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#бургер</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#бар</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#футбол</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#концерт</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#крафт</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- <span class="catalog-profile-card__status catalog-profile-card__status--offline">
-                  <span class="visually-hidden">Офлайн</span>
-                </span> -->
-
-                <div class="catalog-profile-card__column-2">
-                  <div class="catalog-profile-card__countries-wrapper">
-                    <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
-                    <ul class="catalog-profile-card__countries-list">
-                      <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--belgium" href="#">Бельгия</a>
-                      </li>
-                      <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--czech" href="#">Чехия</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="catalog-profile-card__row-2">
-                    <div class="catalog-profile-card__transport-wrapper">
-                      <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
-                      <ul class="catalog-profile-card__transport-list">
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
-                      </ul>
-                    </div>
-
-                    <div class="catalog-profile-card__level-wrapper">
-                      <p class="catalog-profile-card__text catalog-profile-card__text--level">Левел:</p>
-                      <div class="catalog-profile-card__level">
-                        <div class="catalog-profile-card__level-caption">
-                          <div class="catalog-profile-card__level-counter">80</div>
-                          <div class="catalog-profile-card__level-text">level</div>
-                        </div>
-                        <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--80" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="catalog__companions-item catalog-profile-card">
-
-                <a class="catalog-profile-card__userpic-link" href="#">
-                  <picture class="catalog-profile-card__userpic-picture">
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
-
-                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                    <img class="catalog-profile-card__userpic-img" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Фото пользователя Таня Фирсова" width="70" height="70">
-                  </picture>
-                </a>
-
-                <div class="catalog-profile-card__column-1">
-                  <a class="catalog-profile-card__name-link" href="#">
-                    <span class="catalog-profile-card__status catalog-profile-card__status--offline">
-                      <span class="visually-hidden">Офлайн</span>
-                    </span>
-                    <b class="catalog-profile-card__name">Марк Смолов</b>
-                  </a>
-                  <div class="catalog-profile-card__row-1">
-                    <a class="catalog-profile-card__btn btn btn--rounded" href="#">Позвать!</a>
-                    <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
-                    <div class="catalog-profile-card__like-counter"><span class="visually-hidden">Лайков: </span>170</div>
-                  </div>
-
-                  <p class="visually-hidden">Тэги:</p>
-                  <ul class="catalog-profile-card__tags-list">
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#рэп</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#тату</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#хайпбист</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#кроссовки</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#суприм</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- <span class="catalog-profile-card__status catalog-profile-card__status--offline">
-                  <span class="visually-hidden">Офлайн</span>
-                </span> -->
-
-                <div class="catalog-profile-card__column-2">
-                  <div class="catalog-profile-card__countries-wrapper">
-                    <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
-                    <ul class="catalog-profile-card__countries-list">
-                      <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--usa" href="#">США</a>
-                      </li>
-                      <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--australia" href="#">Австралия</a>
-                      </li>
-                      <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--dominica" href="#">Доминикана</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="catalog-profile-card__row-2">
-                    <div class="catalog-profile-card__transport-wrapper">
-                      <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
-                      <ul class="catalog-profile-card__transport-list">
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
-                      </ul>
-                    </div>
-
-                    <div class="catalog-profile-card__level-wrapper">
-                      <p class="catalog-profile-card__text catalog-profile-card__text--level">Левел:</p>
-                      <div class="catalog-profile-card__level">
-                        <div class="catalog-profile-card__level-caption">
-                          <div class="catalog-profile-card__level-counter">25</div>
-                          <div class="catalog-profile-card__level-text">level</div>
-                        </div>
-                        <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--25" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="catalog__companions-item catalog-profile-card">
-
-                <a class="catalog-profile-card__userpic-link" href="#">
-                  <picture class="catalog-profile-card__userpic-picture">
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
-
-                    <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                    <img class="catalog-profile-card__userpic-img" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Фото пользователя Таня Фирсова" width="70" height="70">
-                  </picture>
-                </a>
-
-                <div class="catalog-profile-card__column-1">
-                  <a class="catalog-profile-card__name-link" href="#">
-                    <span class="catalog-profile-card__status catalog-profile-card__status--online">
-                      <span class="visually-hidden">Онлайн</span>
-                    </span>
-                    <b class="catalog-profile-card__name">Лариса Роговая</b>
-                  </a>
-                  <div class="catalog-profile-card__row-1">
-                    <a class="catalog-profile-card__btn btn btn--rounded" href="#">Позвать!</a>
-                    <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
-                    <div class="catalog-profile-card__like-counter"><span class="visually-hidden">Лайков: </span>23</div>
-                  </div>
-
-                  <p class="visually-hidden">Тэги:</p>
-                  <ul class="catalog-profile-card__tags-list">
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#образование</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#карьера</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#учеба</a>
-                    </li>
-                    <li class="catalog-profile-card__tags-item">
-                      <a class="catalog-profile-card__tags-link" href="#">#линкедин</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- <span class="catalog-profile-card__status catalog-profile-card__status--offline">
-                  <span class="visually-hidden">Офлайн</span>
-                </span> -->
-
-                <div class="catalog-profile-card__column-2">
-                  <div class="catalog-profile-card__countries-wrapper">
-                    <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
-                    <ul class="catalog-profile-card__countries-list">
-                      <li class="catalog-profile-card__countries-item">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--united-kingdom" href="#">Великобритания</a>
-                      </li>
-                      <li class="catalog-profile-card__countries-item ">
-                        <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--germany" href="#">Германия</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="catalog-profile-card__row-2">
-                    <div class="catalog-profile-card__transport-wrapper">
-                      <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
-                      <ul class="catalog-profile-card__transport-list">
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
-                        <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
-                      </ul>
-                    </div>
-
-                    <div class="catalog-profile-card__level-wrapper">
-                      <p class="catalog-profile-card__text catalog-profile-card__text--level">Левел:</p>
-                      <div class="catalog-profile-card__level">
-                        <div class="catalog-profile-card__level-caption">
-                          <div class="catalog-profile-card__level-counter">50</div>
-                          <div class="catalog-profile-card__level-text">level</div>
-                        </div>
-                        <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--50" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-            <a class="catalog__show-more-link" href="#">Показать еще</a>
-
-            <ul class="catalog__paginator paginator">
-              <li class="paginator__item">
-                <ul class="paginator__pages-list">
-                  <li class="paginator__pages-item"><a class="paginator__pages-link paginator__pages-link--active">1</a></li>
-                  <li class="paginator__pages-item"><a class="paginator__pages-link" href="#">2</a></li>
-                  <li class="paginator__pages-item"><a class="paginator__pages-link" href="#">3</a></li>
-                  <li class="paginator__pages-item"><a class="paginator__pages-link" href="#">4</a></li>
+                <p class="visually-hidden">Тэги:</p>
+                <ul class="catalog-profile-card__tags-list">
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#ЗОЖ</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#ПП</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#Фитнес</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#пляж</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#авокадо</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#смузи</a>
+                  </li>
                 </ul>
-              </li>
-              <li class="paginator__item paginator__item--prev">
-                <a class="paginator__link paginator__link--prev" href="#"><span class="visually-hidden">Предыдущая страница</span></a>
-              </li>
-              <li class="paginator__item paginator__item--next">
-                <a class="paginator__link paginator__link--next" href="#"><span class="visually-hidden">Следующая страница</span></a>
-              </li>
-            </ul>
-          <!-- </div> -->
+              </div>
+
+              <div class="catalog-profile-card__column-2">
+                <div class="catalog-profile-card__countries-wrapper">
+                  <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
+                  <ul class="catalog-profile-card__countries-list">
+                    <li class="catalog-profile-card__countries-item">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--sri-lanka" href="#">Шри-ланка</a>
+                    </li>
+                    <li class="catalog-profile-card__countries-item ">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--thailand" href="#">Тайланд</a>
+                    </li>
+                    <li class="catalog-profile-card__countries-item">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--seychelles" href="#">Сейшелы</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="catalog-profile-card__row-2">
+                  <div class="catalog-profile-card__transport-wrapper">
+                    <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
+                    <ul class="catalog-profile-card__transport-list">
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
+                    </ul>
+                  </div>
+
+                  <div class="catalog-profile-card__level-wrapper">
+                    <p class="catalog-profile-card__text catalog-profile-card__text--level">Левел:</p>
+                    <div class="catalog-profile-card__level">
+                      <div class="catalog-profile-card__level-caption">
+                        <div class="catalog-profile-card__level-counter">99</div>
+                        <div class="catalog-profile-card__level-text">level</div>
+                      </div>
+                      <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--99" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__companions-item catalog-profile-card">
+
+              <a class="catalog-profile-card__userpic-link" href="#">
+                <picture class="catalog-profile-card__userpic-picture">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                  <img class="catalog-profile-card__userpic-img" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Фото пользователя Петя Демин" width="70" height="70">
+                </picture>
+              </a>
+
+              <div class="catalog-profile-card__column-1">
+                <a class="catalog-profile-card__name-link" href="#">
+                  <span class="catalog-profile-card__status catalog-profile-card__status--offline">
+                    <span class="visually-hidden">Офлайн</span>
+                  </span>
+                  <b class="catalog-profile-card__name">Петя Демин</b>
+                </a>
+                <div class="catalog-profile-card__row-1">
+                  <a class="catalog-profile-card__btn btn btn--rounded" href="#">Позвать!</a>
+                  <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
+                  <div class="catalog-profile-card__like-counter"><span class="visually-hidden">Лайков: </span>1500</div>
+                </div>
+
+                <p class="visually-hidden">Тэги:</p>
+                <ul class="catalog-profile-card__tags-list">
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#бургер</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#бар</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#футбол</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#концерт</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#крафт</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-profile-card__column-2">
+                <div class="catalog-profile-card__countries-wrapper">
+                  <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
+                  <ul class="catalog-profile-card__countries-list">
+                    <li class="catalog-profile-card__countries-item">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--belgium" href="#">Бельгия</a>
+                    </li>
+                    <li class="catalog-profile-card__countries-item ">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--czech" href="#">Чехия</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="catalog-profile-card__row-2">
+                  <div class="catalog-profile-card__transport-wrapper">
+                    <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
+                    <ul class="catalog-profile-card__transport-list">
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
+                    </ul>
+                  </div>
+
+                  <div class="catalog-profile-card__level-wrapper">
+                    <p class="catalog-profile-card__text catalog-profile-card__text--level">Левел:</p>
+                    <div class="catalog-profile-card__level">
+                      <div class="catalog-profile-card__level-caption">
+                        <div class="catalog-profile-card__level-counter">80</div>
+                        <div class="catalog-profile-card__level-text">level</div>
+                      </div>
+                      <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--80" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__companions-item catalog-profile-card">
+
+              <a class="catalog-profile-card__userpic-link" href="#">
+                <picture class="catalog-profile-card__userpic-picture">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                  <img class="catalog-profile-card__userpic-img" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Фото пользователя Таня Фирсова" width="70" height="70">
+                </picture>
+              </a>
+
+              <div class="catalog-profile-card__column-1">
+                <a class="catalog-profile-card__name-link" href="#">
+                  <span class="catalog-profile-card__status catalog-profile-card__status--offline">
+                    <span class="visually-hidden">Офлайн</span>
+                  </span>
+                  <b class="catalog-profile-card__name">Марк Смолов</b>
+                </a>
+                <div class="catalog-profile-card__row-1">
+                  <a class="catalog-profile-card__btn btn btn--rounded" href="#">Позвать!</a>
+                  <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
+                  <div class="catalog-profile-card__like-counter"><span class="visually-hidden">Лайков: </span>170</div>
+                </div>
+
+                <p class="visually-hidden">Тэги:</p>
+                <ul class="catalog-profile-card__tags-list">
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#рэп</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#тату</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#хайпбист</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#кроссовки</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#суприм</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-profile-card__column-2">
+                <div class="catalog-profile-card__countries-wrapper">
+                  <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
+                  <ul class="catalog-profile-card__countries-list">
+                    <li class="catalog-profile-card__countries-item">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--usa" href="#">США</a>
+                    </li>
+                    <li class="catalog-profile-card__countries-item ">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--australia" href="#">Австралия</a>
+                    </li>
+                    <li class="catalog-profile-card__countries-item ">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--dominica" href="#">Доминикана</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="catalog-profile-card__row-2">
+                  <div class="catalog-profile-card__transport-wrapper">
+                    <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
+                    <ul class="catalog-profile-card__transport-list">
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
+                    </ul>
+                  </div>
+
+                  <div class="catalog-profile-card__level-wrapper">
+                    <p class="catalog-profile-card__text catalog-profile-card__text--level">Левел:</p>
+                    <div class="catalog-profile-card__level">
+                      <div class="catalog-profile-card__level-caption">
+                        <div class="catalog-profile-card__level-counter">25</div>
+                        <div class="catalog-profile-card__level-text">level</div>
+                      </div>
+                      <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--25" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="catalog__companions-item catalog-profile-card">
+
+              <a class="catalog-profile-card__userpic-link" href="#">
+                <picture class="catalog-profile-card__userpic-picture">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                  <img class="catalog-profile-card__userpic-img" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Фото пользователя Таня Фирсова" width="70" height="70">
+                </picture>
+              </a>
+
+              <div class="catalog-profile-card__column-1">
+                <a class="catalog-profile-card__name-link" href="#">
+                  <span class="catalog-profile-card__status catalog-profile-card__status--online">
+                    <span class="visually-hidden">Онлайн</span>
+                  </span>
+                  <b class="catalog-profile-card__name">Лариса Роговая</b>
+                </a>
+                <div class="catalog-profile-card__row-1">
+                  <a class="catalog-profile-card__btn btn btn--rounded" href="#">Позвать!</a>
+                  <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
+                  <div class="catalog-profile-card__like-counter"><span class="visually-hidden">Лайков: </span>23</div>
+                </div>
+
+                <p class="visually-hidden">Тэги:</p>
+                <ul class="catalog-profile-card__tags-list">
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#образование</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#карьера</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#учеба</a>
+                  </li>
+                  <li class="catalog-profile-card__tags-item">
+                    <a class="catalog-profile-card__tags-link" href="#">#линкедин</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-profile-card__column-2">
+                <div class="catalog-profile-card__countries-wrapper">
+                  <p class="catalog-profile-card__text catalog-profile-card__text--countries">Хочет посетить:</p>
+                  <ul class="catalog-profile-card__countries-list">
+                    <li class="catalog-profile-card__countries-item">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--united-kingdom" href="#">Великобритания</a>
+                    </li>
+                    <li class="catalog-profile-card__countries-item ">
+                      <a class="catalog-profile-card__countries-link catalog-profile-card__countries-link--germany" href="#">Германия</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="catalog-profile-card__row-2">
+                  <div class="catalog-profile-card__transport-wrapper">
+                    <p class="catalog-profile-card__text catalog-profile-card__text--transport">Транспорт:</p>
+                    <ul class="catalog-profile-card__transport-list">
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--avia"><span class="catalog-profile-card__transport-text">Авиаперелет</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--active catalog-profile-card__transport-item--auto"><span class="catalog-profile-card__transport-text">Автотранспорт</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--bike"><span class="catalog-profile-card__transport-text">Велосипед</span></li>
+                      <li class="catalog-profile-card__transport-item catalog-profile-card__transport-item--tracking"><span class="catalog-profile-card__transport-text">Пешком</span></li>
+                    </ul>
+                  </div>
+
+                  <div class="catalog-profile-card__level-wrapper">
+                    <p class="catalog-profile-card__text catalog-profile-card__text--level">Левел:</p>
+                    <div class="catalog-profile-card__level">
+                      <div class="catalog-profile-card__level-caption">
+                        <div class="catalog-profile-card__level-counter">50</div>
+                        <div class="catalog-profile-card__level-text">level</div>
+                      </div>
+                      <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--50" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a class="catalog__show-more-link" href="#">Показать еще</a>
+
+          <ul class="catalog__paginator paginator">
+            <li class="paginator__item">
+              <ul class="paginator__pages-list">
+                <li class="paginator__pages-item"><a class="paginator__pages-link paginator__pages-link--active">1</a></li>
+                <li class="paginator__pages-item"><a class="paginator__pages-link" href="#">2</a></li>
+                <li class="paginator__pages-item"><a class="paginator__pages-link" href="#">3</a></li>
+                <li class="paginator__pages-item"><a class="paginator__pages-link" href="#">4</a></li>
+              </ul>
+            </li>
+            <li class="paginator__item paginator__item--prev">
+              <a class="paginator__link paginator__link--prev" href="#"><span class="visually-hidden">Предыдущая страница</span></a>
+            </li>
+            <li class="paginator__item paginator__item--next">
+              <a class="paginator__link paginator__link--next" href="#"><span class="visually-hidden">Следующая страница</span></a>
+            </li>
+          </ul>
 
         </section>
       </div>
@@ -1231,5 +1214,6 @@
       </div>
     </footer>
     <script src="js/app.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
