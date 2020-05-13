@@ -59,15 +59,43 @@
   .site-list__link {
     font-size: 20px;
     line-height: 30px;
-    // color: inherit;
     font-weight: 500;
     letter-spacing: 0;
+    overflow: hidden;
 
-    &:hover {
-      color: #ffd74b;
+    & span {
+      position: relative;
+
+      display: block;
+
+      transition: transform 0.3s;
     }
 
-    &:active {
+    & span::before {
+      position: absolute;
+      content: attr(data);
+      top: 100%;
+
+      font: inherit;
+      color: #ffd74b;
+
+      transform: translateY(100%);
+    }
+
+    &:hover span{
+      transform: translateY(-100%);
+    }
+
+    &:hover span::before{
+      transform: translateY(0);
+    }
+
+    &:active span{
+      transform: translateY(-100%);
+    }
+
+    &:active span::before{
+      transform: translateY(0);
       color: rgba(#ffd74b, 0.3);
     }
   }
