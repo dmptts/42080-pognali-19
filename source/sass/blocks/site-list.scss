@@ -73,7 +73,7 @@
 
     & span::before {
       position: absolute;
-      content: attr(data);
+      content: attr(data-hover);
       top: 100%;
 
       font: inherit;
