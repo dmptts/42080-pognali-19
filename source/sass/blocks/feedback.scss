@@ -78,7 +78,7 @@
   &::placeholder {
     font-size: 18px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: 700;
     color: rgba(#444444, 0.3);
   }
 }
@@ -122,4 +122,79 @@
 
 .feedback__contacts {
   align-self: stretch;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin-top: -60px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .feedback__container{
+    padding-top: 135px;
+    padding-bottom: 57px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .feedback__heading {
+    margin-bottom: 58px;
+  }
+
+  .feedback__text,
+  .feedback__authorisation-text:first-child {
+    width: auto;
+  }
+
+  .feedback__authorisation {
+    margin-bottom: 62px;
+  }
+
+  .feedback__registration {
+    display: flex;
+    margin-bottom: 58px;
+  }
+
+  .feedback__input {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 31px;
+    padding-right: 20px;
+
+    border-radius: 20px 0 0 20px;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &:focus {
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+      color: white;
+
+      background-color: #192144;
+    }
+
+    &:focus::placeholder {
+      color: white;
+    }
+  }
+
+  .feedback__registration-form-btn {
+    position: relative;
+
+    flex-shrink: 0;
+    width: 82px;
+    height: 82px;
+
+    border-radius: 0 20px 20px 0;
+  }
+
+  .feedback__contacts-text {
+    margin-bottom: 41px;
+  }
 }
