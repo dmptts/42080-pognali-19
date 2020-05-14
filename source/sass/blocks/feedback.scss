@@ -85,6 +85,15 @@
     font-weight: 700;
     color: rgba(#444444, 0.3);
   }
+
+  &--error {
+    background-color: #ffefef;
+    border-color: #ffefef;
+  }
+
+  &--error::placeholder {
+    color: #ff0000;
+  }
 }
 
 .feedback__registration-form-btn {
