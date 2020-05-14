@@ -42,13 +42,13 @@
 
                 <ul class="page-header__site-list main-nav__site-list site-list">
                   <li class="site-list__item">
-                    <a class="site-list__link" href="#">О сервисе</a>
+                    <a class="site-list__link" href="#"><span data="О сервисе">О сервисе</span></a>
                   </li>
                   <li class="site-list__item">
-                    <a class="site-list__link" href="form.html">Направления</a>
+                    <a class="site-list__link" href="form.html"><span data="Направления">Направления</span></a>
                   </li>
                   <li class="site-list__item">
-                    <a class="site-list__link" href="catalog.html">Попутчики</a>
+                    <a class="site-list__link" href="catalog.html"><span data="Попутчики">Попутчики</span></a>
                   </li>
                 </ul>
 
@@ -389,7 +389,38 @@
           <a class="rates__link" href="#">Показать тарифы для бизнеса</a>
         </div>
       </section>
-      <!-- Здесь будут форма обратной связи и карта -->
+
+      <section class="feedback">
+        <div class="feedback__container container">
+          <h2 class="feedback__heading heading">Заинтересовались?</h2>
+          <div class="feedback__description">
+            <p class="feedback__text">Зарегистрируйтесь, это быстро и бесплатно!</p>
+            <p  class="feedback__text">Уже зарегистрированы? Тогда скорее <a class="feedback__authorization-link">авторизуйтесь</a>.</p>
+          </div>
+          <form class="feedback__registration-form" action="post">
+            <label class="feedback__label" for="e-mail">Ваш e-mail:</label>
+            <input class="feedback__input" id="e-mail" type="email" name="email" placeholder="E-mail" required>
+            <button type="submit">Регистрация</button>
+          </form>
+          <p class="feedback__text">Остались вопросы? Мы с радостью на них ответим!</p>
+          <address class="feedback__contacts contacts">
+            <a class="feedback__contacts-link contacts__link" href="tel:+78005558628">8 800 555-86-28</a>
+            <a class="feedback__contacts-link contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </address>
+        </div>
+      </section>
+
+      <section class="route">
+        <div class="route__container container">
+          <h2 class="visually-hidden">Адрес и маршрут</h2>
+          <address class="route__contacts contacts">
+            <a class="feedback__contacts-link contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
+          </address>
+          <a class="route__btn btn" href="#">Проложить маршрут</a>
+        </div>
+      </section>
+
+      <!-- Здесь будут карта -->
     </main>
 
     <footer class="page-footer">
@@ -447,6 +478,8 @@
       <button class="modal-business-rates__btn-close">Закрыть окно</button>
     </section>
     <div class="modal-overlay"></div>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

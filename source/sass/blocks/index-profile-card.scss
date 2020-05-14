@@ -437,6 +437,14 @@
     padding-top: 32px;
   }
 
+  .index-profile-card__status {
+    bottom: 9px;
+    left: -22px;
+
+    width: 7px;
+    height: 7px;
+  }
+
   .index-profile-card__name {
     font-size: 24px;
     line-height: 24px;
@@ -459,5 +467,12 @@
   .index-profile-card__tags-link {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-profile-card__level {
+    top: 23px;
+    left: 23px;
   }
 }
