@@ -70,3 +70,20 @@
     line-height: 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__icon-wrapper {
+    width: 90px;
+    height: 90px;
+    margin-right: 31px;
+  }
+
+  .contacts__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .contacts__text {
+    margin-top: 5px;
+  }
+}

@@ -66,10 +66,14 @@
 .feedback__input {
   width: 100%;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 16px;
   padding-left: 20px;
   padding-right: 80px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
 
   background-color: #ffffff;
   border: 4px solid #ffffff;
@@ -163,6 +167,9 @@
     padding-left: 31px;
     padding-right: 20px;
 
+    font-size: 24px;
+    line-height: 24px;
+
     border-radius: 20px 0 0 20px;
 
     &::placeholder {
@@ -171,9 +178,9 @@
     }
 
     &:focus {
-      font-size: 18px;
-      line-height: 18px;
-      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
       color: white;
 
       background-color: #192144;
@@ -196,5 +203,51 @@
 
   .feedback__contacts-text {
     margin-bottom: 41px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__container {
+    padding-top: 167px;
+    padding-bottom: 104px;
+    padding-left: 131px;
+    padding-right: 131px;
+  }
+
+  .feedback__authorisation {
+    margin-bottom: 56px;
+  }
+
+  .feedback__registration {
+    margin-bottom: 68px;
+  }
+
+  .feedback__registration-form-btn {
+    width: 327px;
+    padding-left: 36px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1d2e5b;
+    text-align: left;
+    text-transform: none;
+
+
+    &::before {
+      left: auto;
+      right: 34px;
+    }
+  }
+
+  .feedback__contacts-text {
+    letter-spacing: 0.4px;
+  }
+
+  .feedback__contacts {
+    display: flex;
+    align-self: center;
+    width: 867px;
+    justify-content: space-between;
   }
 }
