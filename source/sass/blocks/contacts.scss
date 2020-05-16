@@ -41,8 +41,6 @@
 
   top: 50%;
   left: 50%;
-  width: 18px;
-  height: 18px;
 
   fill: #ffd74b;
 
@@ -77,8 +75,20 @@
   }
 
   .contacts__icon {
-    width: 27px;
-    height: 27px;
+    &--phone {
+      width: 27px;
+      height: 27px;
+    }
+
+    &--mail {
+      width: 27px;
+      height: 20px;
+    }
+
+    &--location {
+      width: 21px;
+      height: 32px;
+    }
   }
 
   .contacts__text {

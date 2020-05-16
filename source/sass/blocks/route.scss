@@ -76,3 +76,43 @@
     border-color: transparent transparent transparent rgba(#ffffff, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .route {
+    margin-top: -60px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .route__container {
+    padding-top: 60px + 48px;
+    padding-bottom: 85px;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  .route__contacts {
+    width: 100%;
+    margin-bottom: 43px;
+  }
+
+  .route__contacts-icon-wrapper {
+    margin-right: 26px;
+  }
+
+  .route__btn {
+    padding-top: 27px;
+    padding-bottom: 24px;
+    padding-left: 34px;
+    padding-right: 73px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px;
+
+    &::before {
+      right: 34px;
+    }
+  }
+}
