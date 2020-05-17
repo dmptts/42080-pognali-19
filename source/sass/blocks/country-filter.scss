@@ -14,6 +14,7 @@
   padding-left: 27px;
 
   font-size: 16px;
+  line-height: 22px;
   text-transform: uppercase;
   color: $color-dark-blue;
 
@@ -206,19 +207,13 @@
   }
 
   &:hover {
-    color: rgba($color-dark-blue, 0.6);
-
-    background-color: #d6daed;
-  }
-
-  &:hover::before {
-    opacity: 0.6;
+    background-color: #c8cee8;
   }
 
   &:active {
     color: rgba($color-dark-blue, 0.3);
 
-    background-color: #d6daed;
+    background-color: #c8cee8;
   }
 
   &:active::before {
@@ -380,5 +375,83 @@
       width: 18px;
       height: 18px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country-filter__container {
+    padding-top: 113px;
+    padding-bottom: 49px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .country-filter__heading {
+    display: inline-block;
+    padding-left: 63px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    background-size: 23px 15px;
+    background-position: top 2px left 20px;
+  }
+
+  .country-filter__heading-colon {
+    display: inline;
+  }
+
+  .country-filter__toggle {
+    right: 124px;
+  }
+
+  .country-filter__dropdown {
+    padding: 0;
+
+    &--opened {
+      padding-top: 68px;
+      padding-bottom: 103px - 49px;
+    }
+  }
+
+  .country-filter__mainland-list {
+    position: absolute;
+    top: -33px;
+    left: 345px;
+
+    margin-bottom: 0;
+  }
+
+  .country-filter__alphabet-list {
+    width: 100%;
+    margin-bottom: 14px;
+    padding-left: 38px;
+  }
+
+  .country-filter__alphabet-item {
+    margin-right: 52px;
+    margin-bottom: 52px;
+
+     &:nth-last-child(-n+5) .country-filter__country-list {
+       min-height: auto;
+       margin-bottom: 0;
+     }
+  }
+
+  .country-filter__alphabet-link {
+    margin-bottom: 31px;
+  }
+
+  .country-filter__country-list {
+    position: static;
+    display: block;
+    width: 200px;
+    min-height: 300px;
+    flex-shrink: 0;
+    padding-left: 2px;
+  }
+
+  .country-filter__close-btn::before {
+    left: 594px;
   }
 }
