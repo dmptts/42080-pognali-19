@@ -83,8 +83,9 @@ window.addEventListener("load", function(evt) {
 
   let filterToggler = document.querySelector(".country-filter__toggle");
   let filterDropdown = document.querySelector(".country-filter__dropdown");
+  let filterCloseBtn = document.querySelector(".country-filter__close-btn");
 
-  if (filterToggler !== null || filterDropdown !== null) {
+  if (filterToggler !== null || filterDropdown !== null || filterCloseBtn !== null) {
     filterDropdown.classList.remove("country-filter__dropdown--no-js");
     filterToggler.classList.remove("country-filter__toggle--no-js");
 
@@ -92,6 +93,12 @@ window.addEventListener("load", function(evt) {
       evt.preventDefault();
       filterDropdown.classList.toggle("country-filter__dropdown--opened");
       filterToggler.classList.toggle("country-filter__toggle--opened");
-    })
+    });
+
+    filterCloseBtn.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      filterDropdown.classList.remove("country-filter__dropdown--opened");
+      filterToggler.classList.remove("country-filter__toggle--opened");
+    });
   }
 });
