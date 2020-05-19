@@ -58,9 +58,21 @@
     background-size: 12px 12px;
   }
 
+  &--opened .country-filter__toggle-text--opened {
+    display: block;
+  }
+
+  &--opened .country-filter__toggle-text--closed {
+    display: none;
+  }
+
   &--no-js {
     display: none;
   }
+}
+
+.country-filter__toggle-text--opened {
+  display: none;
 }
 
 .country-filter__dropdown {
