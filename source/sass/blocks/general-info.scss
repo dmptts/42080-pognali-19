@@ -233,3 +233,135 @@
 
   transform: translateX(-50%);
 }
+
+@media (min-width: $tablet-width) {
+  .general-info {
+    margin-top: -60px;
+  }
+
+  .general-info__container {
+    padding-top: 123px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .general-info__userpic-picture {
+    order: 3;
+    margin-right: 0;
+  }
+
+  .general-info__userpic-img {
+    width: 94px;
+    height: 94px;
+
+    border-radius: 5px;
+  }
+
+  .general-info__btn {
+    order: 4;
+    margin-top: 52px;
+    margin-bottom: 51px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2.1px;
+
+    border-radius: 10px;
+  }
+
+  .general-info__level {
+    width: 95px;
+    height: 95px;
+    margin-left: 0;
+  }
+
+  .general-info__level-icon {
+    width: 95px;
+    height: 95px;
+  }
+
+  .general-info__tags-legend {
+    position: absolute;
+    top: auto;
+    bottom: -1px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2.1px;
+  }
+
+  .general-info__tags-input {
+    height: 94px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 39px;
+    padding-right: 39px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .general-info__transport {
+    order: 2;
+    width: 306px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .general-info__transport-legend {
+    position: absolute;
+    top: auto;
+    bottom: -11px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2.1px;
+  }
+
+  .general-info__transport-label {
+    width: 43px;
+    height: 43px;
+  }
+
+  .general-info__transport-checkbox + .general-info__transport-label {
+    &--avia::before {
+      top: 12px;
+      left: 10px;
+
+      width: 19px;
+      height: 21px;
+    }
+
+    &--auto::before {
+      top: 12px;
+      left: 13px;
+
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike::before {
+      top: 11px;
+      left: 9px;
+
+      width: 24px;
+      height: 21px;
+    }
+
+    &--tracking::before {
+      top: 12px;
+      left: 11px;
+
+      width: 20px;
+      height: 21px;
+    }
+  }
+}

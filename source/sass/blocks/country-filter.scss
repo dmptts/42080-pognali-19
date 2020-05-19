@@ -444,10 +444,10 @@
     margin-right: 52px;
     margin-bottom: 52px;
 
-     &:nth-last-child(-n+5) .country-filter__country-list {
-       min-height: auto;
-       margin-bottom: 0;
-     }
+    &:nth-last-child(-n+5) .country-filter__country-list {
+      min-height: auto;
+      margin-bottom: 0;
+    }
   }
 
   .country-filter__alphabet-link {
