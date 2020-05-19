@@ -92,7 +92,7 @@
     <main>
       <div class="page-title">
         <div class="page-title__container container">
-          <h1 class="page-title__page-heading">Попутчики</h1>
+          <h1 class="page-title__page-heading">Направления</h1>
           <a class="page-title__link" href="index.html">На главную</a>
         </div>
       </div>
@@ -108,7 +108,7 @@
             <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
             <img class="general-info__userpic-img" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Фото пользователя Петя Демин" width="70" height="70">
           </picture>
-          <button class="general-info__btn">Сменить фото</button>
+          <button class="general-info__btn btn">Сменить фото</button>
           <div class="general-info__level">
             <div class="general-info__level-caption">
               <div class="general-info__level-counter">80</div>
@@ -116,29 +116,24 @@
             </div>
             <svg class="general-info__level-icon general-info__level-icon--80" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
           </div>
-          <ul class="general-info__tags-list">
-            <li class="general-info__tags-item">
-              <a class="general-info__tags-link" href="#">#бургер</a>
-            </li>
-            <li class="general-info__tags-item">
-              <a class="general-info__tags-link" href="#">#бар</a>
-            </li>
-            <li class="general-info__tags-item">
-              <a class="general-info__tags-link" href="#">#футбол</a>
-            </li>
-            <li class="general-info__tags-item">
-              <a class="general-info__tags-link" href="#">#концерт</a>
-            </li>
-            <li class="general-info__tags-item">
-              <a class="general-info__tags-link" href="#">#крафт</a>
-            </li>
-          </ul>
-          <ul class="general-info__transport-list">
-            <li class="general-info__transport-item general-info__transport-item--active general-info__transport-item--avia"><span class="general-info__transport-text">Авиаперелет</span></li>
-            <li class="general-info__transport-item general-info__transport-item--auto"><span class="general-info__transport-text">Автотранспорт</span></li>
-            <li class="general-info__transport-item general-info__transport-item--active general-info__transport-item--bike"><span class="general-info__transport-text">Велосипед</span></li>
-            <li class="general-info__transport-item general-info__transport-item--active general-info__transport-item--tracking"><span class="general-info__transport-text">Пешком</span></li>
-          </ul>
+          <div class="general-info__tags">
+            <span class="general-info__tags-legend">Тэги</span>
+            <textarea class="general-info__tags-input" name="tags" cols="30" rows="5">#бургер #бар #футбол #концерт #крафт</textarea>
+          </div>
+          <div class="general-info__transport">
+            <span class="general-info__transport-legend">Транспорт</span>
+            <input class="general-info__transport-checkbox" type="checkbox" name="transport-avia" id="filter-transport-avia" checked>
+            <label class="general-info__transport-label general-info__transport-label--avia" for="filter-transport-avia"><span class="visually-hidden">Авиаперелет</span></label>
+
+            <input class="general-info__transport-checkbox" type="checkbox" name="transport-auto" id="filter-transport-auto" checked>
+            <label class="general-info__transport-label general-info__transport-label--auto" for="filter-transport-auto"><span class="visually-hidden">Автотранспорт</span></label>
+
+            <input class="general-info__transport-checkbox" type="checkbox" name="transport-bike" id="filter-transport-bike">
+            <label class="general-info__transport-label general-info__transport-label--bike" for="filter-transport-bike"><span class="visually-hidden">Велосипед</span></label>
+
+            <input class="general-info__transport-checkbox" type="checkbox" name="transport-tracking" id="filter-transport-tracking" checked>
+            <label class="general-info__transport-label general-info__transport-label--tracking" for="filter-transport-tracking"><span class="visually-hidden">Пешком</span></label>
+          </div>
         </div>
       </section>
       <section class="plans">
