@@ -745,8 +745,8 @@
           <h2 class="companions-filter__heading">Подберите идеального попутчика</h2>
           <form  class="companions-filter__form" action="https://echo.htmlacademy.ru" method="get">
 
-            <fieldset class="companions-filter__fieldset">
-              <legend class="companions-filter__legend companions-filter__legend--hobby companions-filter__legend--no-js ">Хобби<span class="companions-filter__legend-colon">:</span></legend>
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--hobby companions-filter__legend--no-js ">Хобби<span class="companions-filter__legend-colon">:</span></span>
 
               <div class="companions-filter__wrapper companions-filter__wrapper--hobby companions-filter__wrapper--no-js">
                 <input class="companions-filter__checkbox" type="checkbox" name="hobby-sport" id="filter-hobby-sport">
@@ -758,10 +758,10 @@
                 <input class="companions-filter__checkbox" type="checkbox" name="hobby-coach" id="filter-hobby-coach">
                 <label class="companions-filter__label" for="filter-hobby-coach">Диван</label>
               </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="companions-filter__fieldset">
-              <legend class="companions-filter__legend companions-filter__legend--music companions-filter__legend--no-js companions-filter__legend--opened">Музыка<span class="companions-filter__legend-colon">:</span></legend>
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--music companions-filter__legend--no-js companions-filter__legend--opened">Музыка<span class="companions-filter__legend-colon">:</span></span>
 
               <div class="companions-filter__wrapper companions-filter__wrapper--music companions-filter__wrapper--no-js companions-filter__wrapper--opened">
                 <input class="companions-filter__checkbox" type="checkbox" name="music-hardrock" id="filter-music-hardrock" checked>
@@ -773,25 +773,28 @@
                 <input class="companions-filter__checkbox" type="checkbox" name="music-eurodance" id="filter-music-eurodance">
                 <label class="companions-filter__label" for="filter-music-eurodance">Евродэнс</label>
               </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="companions-filter__fieldset">
-              <legend class="companions-filter__legend companions-filter__legend--food companions-filter__legend--no-js">Еда<span class="companions-filter__legend-colon">:</span></legend>
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--food companions-filter__legend--no-js">Еда<span class="companions-filter__legend-colon">:</span></span>
 
               <div class="companions-filter__wrapper companions-filter__wrapper--food companions-filter__wrapper--no-js">
                 <input class="companions-filter__checkbox" type="checkbox" name="food-meat" id="filter-food-meat">
                 <label class="companions-filter__label" for="filter-food-meat">Мясоед</label>
 
                 <input class="companions-filter__checkbox" type="checkbox" name="food-proper-nutrition" id="filter-food-proper-nutrition">
-                <label class="companions-filter__label" for="filter-food-proper-nutrition">ПП</label>
+                <label class="companions-filter__label" for="filter-food-proper-nutrition">
+                  <span class="companions-filter__label--short-text">ПП</span>
+                  <span class="companions-filter__label--full-text">Сидит на ПП</span>
+                </label>
 
                 <input class="companions-filter__checkbox" type="checkbox" name="food-raw-vegan" id="filter-food-raw-vegan">
                 <label class="companions-filter__label" for="filter-food-raw-vegan">Веган-сыроед</label>
               </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="companions-filter__fieldset companions-filter__transport">
-              <legend class="companions-filter__legend companions-filter__legend--transport companions-filter__legend--no-js companions-filter__legend--opened">Транспорт<span class="companions-filter__legend-colon">:</span></legend>
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--transport companions-filter__legend--no-js companions-filter__legend--opened">Транспорт<span class="companions-filter__legend-colon">:</span></span>
 
               <div class="companions-filter__wrapper companions-filter__wrapper--transport companions-filter__wrapper--opened companions-filter__wrapper--no-js">
                 <input class="companions-filter__transport-checkbox" type="checkbox" name="transport-avia" id="filter-transport-avia" checked>
@@ -806,10 +809,10 @@
                 <input class="companions-filter__transport-checkbox" type="checkbox" name="transport-tracking" id="filter-transport-tracking" checked>
                 <label class="companions-filter__transport-label companions-filter__transport-label--tracking" for="filter-transport-tracking"><span class="visually-hidden">Пешком</span></label>
               </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="companions-filter__fieldset">
-              <legend class="companions-filter__legend companions-filter__legend--level companions-filter__legend--no-js companions-filter__legend--opened">Левел:</legend>
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--level companions-filter__legend--no-js companions-filter__legend--opened">Левел:</span>
               <div class="companions-filter__wrapper companions-filter__wrapper--level companions-filter__wrapper--opened companions-filter__wrapper--no-js">
                 <div class="companions-filter__num-ctrl">
                   <input class="companions-filter__num-input companions-filter__num-input--min" type="text" name="min-level" value="30">
@@ -823,7 +826,7 @@
                   <div class="companions-filter__range-ctrl companions-filter__range-ctrl--max"></div>
                 </div>
               </div>
-            </fieldset>
+            </div>
 
             <button class="companions-filter__btn btn" type="submit">Показать</button>
           </form>
