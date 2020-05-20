@@ -83,8 +83,9 @@ window.addEventListener("load", function(evt) {
 
   let filterToggler = document.querySelector(".country-filter__toggle");
   let filterDropdown = document.querySelector(".country-filter__dropdown");
+  let filterCloseBtn = document.querySelector(".country-filter__close-btn");
 
-  if (filterToggler !== null || filterDropdown !== null) {
+  if (filterToggler !== null || filterDropdown !== null || filterCloseBtn !== null) {
     filterDropdown.classList.remove("country-filter__dropdown--no-js");
     filterToggler.classList.remove("country-filter__toggle--no-js");
 
@@ -92,6 +93,70 @@ window.addEventListener("load", function(evt) {
       evt.preventDefault();
       filterDropdown.classList.toggle("country-filter__dropdown--opened");
       filterToggler.classList.toggle("country-filter__toggle--opened");
-    })
+    });
+
+    filterCloseBtn.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      filterDropdown.classList.remove("country-filter__dropdown--opened");
+      filterToggler.classList.remove("country-filter__toggle--opened");
+    });
   }
+
+  // Показ/скрытие секций фильтра компаньонов
+
+  let companionsFilter = document.querySelector(".companions-filter");
+  let legendHobby = document.querySelector(".companions-filter__legend--hobby");
+  let filterHobby = document.querySelector(".companions-filter__wrapper--hobby");
+  let legendMusic = document.querySelector(".companions-filter__legend--music");
+  let filterMusic = document.querySelector(".companions-filter__wrapper--music");
+  let legendFood = document.querySelector(".companions-filter__legend--food");
+  let filterFood = document.querySelector(".companions-filter__wrapper--food");
+  let legendTransport = document.querySelector(".companions-filter__legend--transport");
+  let filterTransport = document.querySelector(".companions-filter__wrapper--transport");
+  let legendLevel = document.querySelector(".companions-filter__legend--level");
+  let filterLevel = document.querySelector(".companions-filter__wrapper--level");
+
+
+  if (companionsFilter !== null) {
+    legendHobby.classList.remove("companions-filter__legend--no-js");
+    filterHobby.classList.remove("companions-filter__wrapper--no-js");
+    legendMusic.classList.remove("companions-filter__legend--no-js");
+    filterMusic.classList.remove("companions-filter__wrapper--no-js");
+    legendFood.classList.remove("companions-filter__legend--no-js");
+    filterFood.classList.remove("companions-filter__wrapper--no-js");
+    legendTransport.classList.remove("companions-filter__legend--no-js");
+    filterTransport.classList.remove("companions-filter__wrapper--no-js");
+    legendLevel.classList.remove("companions-filter__legend--no-js");
+    filterLevel.classList.remove("companions-filter__wrapper--no-js");
+
+    legendHobby.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      legendHobby.classList.toggle("companions-filter__legend--opened");
+      filterHobby.classList.toggle("companions-filter__wrapper--opened");
+    });
+
+    legendMusic.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      legendMusic.classList.toggle("companions-filter__legend--opened");
+      filterMusic.classList.toggle("companions-filter__wrapper--opened");
+    });
+
+    legendFood.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      legendFood.classList.toggle("companions-filter__legend--opened");
+      filterFood.classList.toggle("companions-filter__wrapper--opened");
+    });
+
+    legendTransport.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      legendTransport.classList.toggle("companions-filter__legend--opened");
+      filterTransport.classList.toggle("companions-filter__wrapper--opened");
+    });
+
+    legendLevel.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      legendLevel.classList.toggle("companions-filter__legend--opened");
+      filterLevel.classList.toggle("companions-filter__wrapper--opened");
+    });
+  };
 });
