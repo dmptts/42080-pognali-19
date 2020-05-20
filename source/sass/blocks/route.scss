@@ -1,0 +1,144 @@
+.route {
+  position: relative;
+  z-index: 1;
+
+  margin-top: -25px;
+
+  background-color: $color-yellow;
+  border-radius: 0 0 25px 25px;
+}
+
+.route__container {
+  padding-top: 25px + 33px;
+  padding-bottom: 35px;
+}
+
+.route__contacts {
+  width: 205px;
+  margin-bottom: 31px;
+}
+
+.route__contacts-link:hover .route__contacts-text {
+  color: rgba($color-dark-blue, 0.6);
+}
+
+.route__contacts-text {
+  color: $color-dark-blue;
+}
+
+.route__btn {
+  position: relative;
+
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 50px;
+
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: none;
+  text-align: left;
+
+  border: 3px solid $color-dark-blue;
+  border-radius: 10px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 20px;
+
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent #1d2d5b;
+
+    transform: translateY(-50%);
+  }
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: $color-dark-blue;
+  }
+
+  &:hover::before {
+    border-color: transparent transparent transparent #ffffff;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &:active::before {
+    border-color: transparent transparent transparent rgba(#ffffff, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .route {
+    margin-top: -60px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .route__container {
+    padding-top: 60px + 48px;
+    padding-bottom: 85px;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  .route__contacts {
+    width: 100%;
+    margin-bottom: 43px;
+  }
+
+  .route__contacts-icon-wrapper {
+    margin-right: 26px;
+  }
+
+  .route__btn {
+    padding-top: 27px;
+    padding-bottom: 24px;
+    padding-left: 34px;
+    padding-right: 73px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px;
+
+    &::before {
+      right: 34px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .route__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 114px;
+    padding-bottom: 56px;
+    padding-left: 283px;
+    padding-right: 134px;
+  }
+
+  .route__contacts {
+    margin-bottom: 0;
+  }
+
+  .route__btn {
+    flex-shrink: 0;
+    width: 324px;
+    padding-right: 60px;
+  }
+
+  .route__contacts-icon-wrapper {
+    margin-right: 31px;
+  }
+}

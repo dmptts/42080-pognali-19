@@ -1,0 +1,262 @@
+.feedback {
+  position: relative;
+  z-index: 2;
+
+  margin-top: -25px;
+
+  background-color: #192144;
+  border-radius: 0 0 25px 25px;
+}
+
+.feedback__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 97px;
+  padding-bottom: 28px;
+}
+
+.feedback__heading {
+  margin-bottom: 19px;
+}
+
+.feedback__text {
+  width: 215px;
+  margin: 0;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.feedback__authorisation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 29px;
+}
+
+.feedback__authorisation-text:first-child {
+  width: 165px;
+}
+
+.feedback__authorization-link {
+  color: $color-yellow;
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  &:hover {
+    color: #ff8d30;
+  }
+
+  &:active {
+    color: rgba(#ff8d30, 0.3);
+  }
+}
+
+.feedback__registration {
+  position: relative;
+  align-self: stretch;
+
+  margin-bottom: 29px;
+}
+
+.feedback__input {
+  width: 100%;
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 80px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  background-color: #ffffff;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: rgba(#444444, 0.3);
+  }
+
+  &--error {
+    background-color: #ffefef;
+    border-color: #ffefef;
+  }
+
+  &--error::placeholder {
+    color: #ff0000;
+  }
+}
+
+.feedback__registration-form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 62px;
+
+  font-size: 0;
+
+  border-radius: 9px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent #1d2d5b;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.feedback__contacts-text {
+  margin-bottom: 18px;
+}
+
+.feedback__contacts {
+  align-self: stretch;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    margin-top: -60px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .feedback__container{
+    padding-top: 135px;
+    padding-bottom: 57px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .feedback__heading {
+    margin-bottom: 58px;
+  }
+
+  .feedback__text,
+  .feedback__authorisation-text:first-child {
+    width: auto;
+  }
+
+  .feedback__authorisation {
+    margin-bottom: 62px;
+  }
+
+  .feedback__registration {
+    display: flex;
+    margin-bottom: 58px;
+  }
+
+  .feedback__input {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 31px;
+    padding-right: 20px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 20px 0 0 20px;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &:focus {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+      color: white;
+
+      background-color: #192144;
+    }
+
+    &:focus::placeholder {
+      color: white;
+    }
+  }
+
+  .feedback__registration-form-btn {
+    position: relative;
+
+    flex-shrink: 0;
+    width: 82px;
+    height: 82px;
+
+    border-radius: 0 20px 20px 0;
+  }
+
+  .feedback__contacts-text {
+    margin-bottom: 41px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__container {
+    padding-top: 167px;
+    padding-bottom: 104px;
+    padding-left: 131px;
+    padding-right: 131px;
+  }
+
+  .feedback__authorisation {
+    margin-bottom: 56px;
+  }
+
+  .feedback__registration {
+    margin-bottom: 68px;
+  }
+
+  .feedback__registration-form-btn {
+    width: 327px;
+    padding-left: 36px;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #1d2e5b;
+    text-align: left;
+    text-transform: none;
+
+
+    &::before {
+      left: auto;
+      right: 34px;
+    }
+  }
+
+  .feedback__contacts-text {
+    letter-spacing: 0.4px;
+  }
+
+  .feedback__contacts {
+    display: flex;
+    align-self: center;
+    width: 867px;
+    justify-content: space-between;
+  }
+}
