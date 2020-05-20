@@ -129,6 +129,14 @@
   background-color: #edeff6;
   border: 1px solid #cbced9;
   border-radius: 10px;
+
+  &:hover {
+    border-color: #aeb4cb;
+  }
+
+  &:active {
+    border-color: #161c35;
+  }
 }
 
 .general-info__transport {
@@ -167,11 +175,33 @@
     background-repeat: no-repeat;
     opacity: 0.15;
   }
+
+  &:hover::before {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: #e2e5f1;
+  }
 }
 
 .general-info__transport-checkbox:checked + .general-info__transport-label::before {
   opacity: 1;
 }
+
+.general-info__transport-checkbox:checked + .general-info__transport-label:hover::before {
+  opacity: 0.7;
+}
+
+.general-info__transport-checkbox:checked + .general-info__transport-label:active {
+  background-color: #e2e5f1;
+}
+
+.general-info__transport-checkbox:checked + .general-info__transport-label:active::before {
+  opacity: 0.3;
+}
+
+
 
 .general-info__transport-checkbox + .general-info__transport-label {
   &--avia::before {
@@ -369,6 +399,10 @@
 @media (min-width: $desktop-width) {
   .general-info__container {
     position: relative;
+
+    padding-top: 133px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .general-info__userpic-picture {
@@ -420,5 +454,22 @@
 
   .general-info__level-caption {
     color: #ffffff;
+  }
+
+  .general-info__tags {
+    order: 1;
+    width: 730px;
+    margin-left: 64px;
+  }
+
+  .general-info__tags-legend {
+    left: 19px;
+
+    transform: none;
+  }
+
+  .general-info__transport {
+    align-self: flex-start;
+    width: 384px;
   }
 }
