@@ -141,6 +141,10 @@
   }
 }
 
+.calendar__month-text {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .calendar__month-picker {
     padding-top: 26px;
@@ -191,5 +195,62 @@
 
       border-width: 4px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar__month-picker {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .calendar__weekdays-list {
+    padding-top: 12px;
+    padding-bottom: 13px;
+  }
+
+  .calendar__weekday {
+    width: 143px;
+    padding-left: 16px;
+
+    text-align: left;
+  }
+
+  .calendar__date {
+    position: relative;
+
+    width: 143px;
+    padding-top: 7px;
+    padding-bottom: 33px;
+    padding-left: 15px;
+
+    font-weight: 400;
+    text-align: left;
+
+    &:hover::before {
+      width: 143px;
+      height: 72px;
+    }
+  }
+
+  .calendar__month-text {
+    display: inline;
+  }
+
+  .calendar__date--first-active::after,
+  .calendar__date--last-active::after {
+    position: absolute;
+    left: 14px;
+    bottom: 7px;
+
+    letter-spacing: 1.7px;
+  }
+
+  .calendar__date--first-active::after {
+    content: "Заезд";
+  }
+
+  .calendar__date--last-active::after {
+    content: "Выезд";
   }
 }

@@ -399,3 +399,96 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .new-plan {
+    margin-top: -37px;
+  }
+
+  .new-plan__container {
+    padding-top: 56px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .new-plan__heading {
+
+    padding-left: 70px;
+  }
+
+  .new-plan__steps-item {
+    margin-bottom: 44px;
+    padding-top: 99px;
+    padding-bottom: 105px;
+    padding-left: 160px;
+    padding-right: 160px;
+
+    border-radius: 60px;
+  }
+
+  .new-plan__steps-heading {
+    display: flex;
+  }
+
+  .new-plan__steps-number {
+    margin-right: 7px;
+  }
+
+  .new-plan__steps-description {
+    width: 580px;
+    margin-bottom: 54px;
+  }
+
+  .new-plan__qty-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 32px;
+    padding-top: 30px;
+
+    border-top: 1px solid #d6d9e6;
+  }
+
+  .new-plan__fieldset {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 506px;
+    margin-bottom: 14px;
+    padding-top: 0;
+
+    border: none;
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .new_plan__input-label {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .new-plan__input-unit {
+    order: 1;
+    width: 70px;
+    margin-left: 35px;
+  }
+
+  .new-plan__input-wrapper {
+    width: auto;
+  }
+
+  .new-plan__input {
+    width: 181px;
+  }
+
+  .new-plan__checkbox-label {
+    margin-bottom: 14px;
+  }
+
+  .new-plan__calendar {
+    margin-bottom: 56px;
+  }
+}
