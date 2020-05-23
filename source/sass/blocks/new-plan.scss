@@ -1,0 +1,401 @@
+.new-plan {
+  margin-top: -25px;
+
+  background-color: #d4d9eb;
+  border-radius: 20px 20px 0 0;
+}
+
+.new-plan__container {
+  padding-top: 30px;
+}
+
+.new-plan__heading {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.new-plan__steps {
+  @include list-reset;
+}
+
+.new-plan__steps-item {
+  margin-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 23px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.new-plan__steps-heading {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.new-plan__steps-number {
+  display: block;
+}
+
+.new-plan__steps-description {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.new-plan__qty-wrapper {
+  margin-bottom: 22px;
+}
+
+.new-plan__fieldset {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 21px;
+
+  &:nth-child(2) {
+    margin-bottom: 24px;
+  }
+}
+
+.new_plan__input-label {
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.new-plan__input-unit {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgba(#1d2e5b, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.new-plan__input-wrapper {
+  position: relative;
+}
+
+.new-plan__input {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 9px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  color: #1d2e5b;
+  text-align: center;
+
+  border: 1px solid #cbced9;
+  border-radius: 3px;
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #161c35;
+  }
+}
+
+.new-plan__input-ctrl {
+  position: absolute;
+
+  width: 40px;
+  height: 39px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  &--decrement {
+    top: 2px;
+    left: 1px;
+  }
+
+  &--increment {
+    top: 2px;
+    right: 1px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+
+    background-color: #cccccc;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #999999;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: #e5e5e5;
+  }
+
+  &--decrement::before,
+  &--increment::before {
+    width: 15px;
+    height: 2px;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &--increment::after {
+    width: 15px;
+    height: 2px;
+
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
+.new-plan__checkbox {
+  display: none;
+}
+
+.new-plan__checkbox-label {
+  position: relative;
+
+  margin-top: 28px;
+  padding-top: 7px;
+  padding-bottom: 4px;
+  padding-left: 39px;
+
+  font-size: 15px;
+  line-height: 15px;
+  color: #444444;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 26px;
+    height: 26px;
+
+    border: 1px solid #cbced9;
+    border-radius: 3px;
+  }
+
+  &:hover::before {
+    border-color: #959bb2;
+  }
+
+  &:active::before {
+    background-color: #e2e5f1;
+    border-color: #e2e5f1;
+  }
+}
+
+.new-plan__checkbox:checked + .new-plan__checkbox-label::before {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position: 50%;
+}
+
+.new-plan__checkbox:checked + .new-plan__checkbox-label:active::before {
+  opacity: 0.3;
+}
+
+.new-plan__calendar {
+  margin-bottom: 22px;
+}
+
+.new-plan__btn {
+  padding-top: 7px;
+  padding-bottom: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .new-plan__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .new-plan__heading {
+    margin-bottom: 56px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .new-plan__steps-item {
+    margin-bottom: 40px;
+    padding-top: 48px;
+    padding-bottom: 55px;
+    padding-left: 43px;
+    padding-right: 43px;
+
+    border-radius: 30px;
+  }
+
+  .new-plan__steps-heading {
+    margin-bottom: 34px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .new-plan__steps-description {
+    margin-bottom: 38px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .new-plan__qty-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .new-plan__fieldset {
+    margin-bottom: 25px;
+    padding-top: 24px;
+
+    border-top: 1px solid #d6d9e6;
+
+    &--days {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 37px;
+    }
+  }
+
+  .new_plan__input-label {
+    margin-bottom: 23px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  .new-plan__input-unit {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  .new-plan__input-wrapper {
+    width: 100%;
+  }
+
+  .new-plan__input {
+    padding-top: 24px;
+    padding-bottom: 22px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .new-plan__input-ctrl {
+    width: 58px;
+    height: 66px;
+
+    &::before,
+    &::after {
+      width: 20px;
+      height: 2px;
+    }
+
+    &--decrement::after {
+      display: none;
+    }
+  }
+
+  .new-plan__checkbox-label {
+    margin-top: 0;
+    margin-bottom: 27px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 60px;
+
+
+    font-size: 20px;
+    line-height: 20px;
+    color: #1d2e5b;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+
+    &::before {
+      width: 37px;
+      height: 36px;
+    }
+  }
+
+  .new-plan__checkbox:checked + .new-plan__checkbox-label::before {
+    background-size: 12px;
+  }
+
+  .new-plan__calendar {
+    margin-bottom: 46px;
+  }
+
+  .new-plan__btn {
+    position: relative;
+
+    width: 285px;
+    padding-top: 30px;
+    padding-bottom: 27px;
+    padding-left: 33px;
+    padding-right: 45px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: none;
+
+    border-radius: 20px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 35px;
+
+      width: 0;
+      height: 0;
+
+      border-style: solid;
+      border-width: 7px 0 7px 10px;
+      border-color: transparent transparent transparent #1d2d5b;
+
+      transform: translateY(-50%);
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+}
