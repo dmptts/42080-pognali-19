@@ -26,12 +26,20 @@
 .new-plan__steps-item {
   margin-bottom: 10px;
   padding-top: 25px;
-  padding-bottom: 23px;
+  padding-bottom: 9px;
   padding-left: 25px;
   padding-right: 25px;
 
   background-color: #ffffff;
   border-radius: 10px;
+
+  &:first-child {
+    padding-bottom: 23px;
+  }
+
+  &:first-child .new-plan__btn {
+    margin-bottom: 0;
+  }
 }
 
 .new-plan__steps-heading {
@@ -229,9 +237,365 @@
 }
 
 .new-plan__btn {
+  margin-bottom: 14px;
   padding-top: 7px;
   padding-bottom: 2px;
+
+  &--prev,
+  &--prev:hover,
+  &--prev:active {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &--prev:hover {
+    color: rgba(#1d2e5b, 0.7);
+  }
+
+  &--prev:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
 }
+
+.new-plan__route-wrapper {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.new-plan__route {
+  @include list-reset;
+  width: 166px;
+}
+
+.new-plan__route-item {
+  position: relative;
+
+  width: 167px;
+  margin-bottom: 22px;
+
+  line-height: 0;
+
+  border: 1px solid #cbced9;
+  border-radius: 3px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--not-selected,
+  &--add {
+    width: 220px;
+  }
+
+  &--add {
+    background-color: #edeff6;
+    border-color: #edeff6;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -17px;
+    left: 164px;
+
+    width: 5px;
+    height: 10px;
+
+    background-image: url("../img/small-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--add::before {
+    display: none;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #1d2e5b;
+    border: 1px solid #1d2e5b;
+    border-radius: 50%;
+
+    transform: translate(50%, -50%);
+  }
+
+  &--not-selected::after,
+  &--add::after {
+    right: 52px;
+    background-color: transparent;
+    border: 1px solid #cbced9;
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:hover .new-plan__dropdown-icon {
+    opacity: 0.5;
+  }
+
+  &--opened {
+    background-color: #1d2e5b;
+    border-color: #1d2e5b;
+    border-radius: 3px 3px 0 0;
+  }
+
+  &--opened::after {
+    display: none;
+  }
+
+  &--opened .new-plan__route-btn {
+    color: #ffffff;
+  }
+
+  &--opened .new-plan__route-btn::before {
+    display: none;
+  }
+
+  &--opened .new-plan__route-btn-remove {
+    top: 50%;
+    right: 21px;
+    background-color: #1d2e5b;
+  }
+
+  &--opened .new-plan__route-btn-remove::before,
+  &--opened .new-plan__route-btn-remove::after {
+    background-color: #ffffff;
+  }
+
+  &--opened .new-plan__country-picker {
+    display: block;
+  }
+}
+
+.new-plan__route-btn {
+  position: relative;
+
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 1.3px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 0;
+    z-index: 1;
+
+    width: 49px;
+    height: 36px;
+
+    background-image: linear-gradient(to right, transparent, #ffffff 17px, #ffffff 100%);
+  }
+
+  &--add::before,
+  &--add::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 13px;
+
+    width: 14px;
+    height: 2px;
+
+    background-color: #c2c4c9;
+    background-image: none;
+  }
+
+  &--add::after {
+    transform: rotate(90deg);
+  }
+}
+
+.new-plan__dropdown-icon {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 13px;
+  z-index: 1;
+
+  width: 12px;
+  height: 7px;
+
+  background-image: url("../img/dropdown-form.svg");
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+  transform: translateY(-50%);
+}
+
+.new-plan__route-flags {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 52px;
+}
+
+.new-plan__route-flag {
+  position: relative;
+
+  width: 54px;
+  height: 42px;
+  margin-bottom: 22px;
+
+  border: 1px solid #cbced9;
+  border-radius: 3px;
+  background-size: 35px 24px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--bosnia {
+    background-image: url("../img/flag-bosnia.svg");
+  }
+
+  &--czech {
+    background-image: url("../img/flag-czech.svg");
+  }
+}
+
+.new-plan__route-btn-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  width: 21px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #edeff6;
+  border: none;
+  border-radius: 50%;
+
+  transform: translate(50%, -50%);
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+
+    width: 12px;
+    height: 1px;
+
+    background-color: #a5a7ac;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.new-plan__country-picker {
+  position: absolute;
+  top: 41px;
+  left: -1px;
+  z-index: 2;
+
+  display: none;
+  width: 220px;
+  min-height: 475px;
+
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.new-plan__alphabet-list {
+  @include list-reset;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.new-plan__alphabet-item {
+  flex-grow: 1;
+  width: 43px;
+
+  line-height: 0;
+
+  border-right: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+
+  &:nth-child(5n+5) {
+    border-right: none;
+  }
+
+  &--active {
+    background-color: #edeff6;
+  }
+}
+
+.new-plan__alphabet-link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #1d2e5b;
+}
+
+.new-plan__country-list {
+  @include list-reset;
+  position: absolute;
+  top: 218px;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // height: 200px;
+  padding-left: 19px;
+}
+
+.new-plan__country-item {
+  height: 22px;
+}
+
+.new-plan__country-link {
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+}
+
 
 @media (min-width: $tablet-width) {
   .new-plan__container {

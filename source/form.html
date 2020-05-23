@@ -266,21 +266,168 @@
                 <a class="new-plan__btn btn" href="#">Следующий шаг</a>
               </li>
               <li class="new-plan__steps-item">
-                <h3 class="new-plan__steps-heading">Даты пребывания</h3>
+                <h3 class="new-plan__steps-heading">
+                  <span class="new-plan__steps-number">Шаг 2.</span>
+                  Маршрут
+                </h3>
                 <p class="new-plan__steps-description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
-                <ul class="new-plan__route">
-                  <li class="new-plan__route-item">
-                    <button class="new-plan__route-btn new-plan__route-btn--chosen">Босния и Герцеговина</button>
-                  </li>
-                  <li class="new-plan__route-item">
-                    <button class="new-plan__route-btn new-plan__route-btn--chosen">Чехия</button>
-                  </li>
-                  <li class="new-plan__route-item">
-                    <button class="new-plan__route-btn">Выберите страну</button>
-                  </li>
-                  <button class="new-plan__route-add">Добавить страну</button>
-                </ul>
-                <button class="new-plan__btn btn" type="submit">Отправить</button>
+                <div class="new-plan__route-wrapper">
+                  <ul class="new-plan__route">
+                    <li class="new-plan__route-item">
+                      <button class="new-plan__route-btn">Босния и Герцеговина</button>
+                      <div class="new-plan__dropdown-icon">
+                        <span class="visually-hidden">Показать/скрыть</span>
+                      </div>
+                    </li>
+                    <li class="new-plan__route-item">
+                      <button class="new-plan__route-btn">Чехия</button>
+                      <div class="new-plan__dropdown-icon">
+                        <span class="visually-hidden">Показать/скрыть</span>
+                      </div>
+                    </li>
+                    <li class="new-plan__route-item new-plan__route-item--not-selected new-plan__route-item--opened">
+                      <button class="new-plan__route-btn">Выберите страну</button>
+                      <div class="new-plan__dropdown-icon">
+                        <span class="visually-hidden">Показать/скрыть</span>
+                      </div>
+                      <button class="new-plan__route-btn-remove">
+                        <span class="visually-hidden">Убрать</span>
+                      </button>
+                      <div class="new-plan__country-picker">
+                        <ul class="new-plan__alphabet-list">
+                          <li class="new-plan__alphabet-item new-plan__alphabet-item--active">
+                            <a href="#" class="new-plan__alphabet-link">А</a>
+                            <ul class="new-plan__country-list">
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Австралия</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Австрия</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Азербайджан</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Албания</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Алжир</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Ангола</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Андорра</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Антигуа и Барбуда</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Аргентина</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Армения</a>
+                              </li>
+                              <li class="new-plan__country-item">
+                                <a class="new-plan__country-link" href="#">Афганистан</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Б</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">В</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Г</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Д</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Е</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">З</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">И</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">К</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Л</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">М</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Н</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">О</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">П</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Р</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">С</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Т</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">У</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Ф</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Х</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Ч</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Ш</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Э</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Ю</a>
+                          </li>
+                          <li class="new-plan__alphabet-item">
+                            <a href="#" class="new-plan__alphabet-link">Я</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="new-plan__route-item new-plan__route-item--add">
+                      <button class="new-plan__route-btn new-plan__route-btn--add">Добавить страну</button>
+                    </li>
+                  </ul>
+                  <ul class="new-plan__route-flags">
+                    <li class="new-plan__route-flag new-plan__route-flag--bosnia">
+                      <span class="visually-hidden">Босния и Герцеговина</span>
+                      <button class="new-plan__route-btn-remove">
+                        <span class="visually-hidden">Убрать</span>
+                      </button>
+                    </li>
+                    <li class="new-plan__route-flag new-plan__route-flag--czech">
+                      <span class="visually-hidden">Чехия</span>
+                      <button class="new-plan__route-btn-remove">
+                        <span class="visually-hidden">Убрать</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <button class="new-plan__btn btn" type="submit">Cледующий шаг</button>
                 <a class="new-plan__btn new-plan__btn--prev btn" href="#">На шаг назад</a>
               </li>
               <li class="new-plan__steps-item">
