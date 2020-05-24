@@ -139,6 +139,7 @@
   margin: 0;
   padding: 0;
 
+  background-color: transparent;
   border: none;
 
   &--decrement {
@@ -676,6 +677,21 @@
 
   line-height: 22px;
   color: #444444;
+
+  border: 1px solid #cbced9;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: rgba(#444444, 0.3);
+  }
+
+  &:focus {
+    border-color: #161c35;
+  }
+
+  &:invalid {
+    border-color: #f47e7e;
+  }
 }
 
 .new-plan__textarea-label {
@@ -1497,6 +1513,14 @@
     width: 730px;
     padding: 24px;
     padding-right: 20px;
+
+    &:hover {
+      border-color: #959bb2;
+    }
+
+    &:active {
+      border-color: #161c35;
+    }
   }
 
   .new-plan__textarea-label {
