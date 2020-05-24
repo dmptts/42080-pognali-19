@@ -735,7 +735,9 @@
   .new-plan__btn {
     position: relative;
 
+    flex-shrink: 0;
     width: 285px;
+    margin-bottom: 0;
     padding-top: 30px;
     padding-bottom: 27px;
     padding-left: 33px;
@@ -767,6 +769,33 @@
     &:active::after {
       opacity: 0.3;
     }
+
+    &--prev {
+      width: auto;
+      padding: 0;
+    }
+
+    &--prev::after {
+      top: 50%;
+      right: auto;
+      left: -30px;
+
+      width: 0;
+      height: 0;
+
+      border-style: solid;
+      border-width: 7px 10px 7px 0;
+      border-color: transparent #1d2d5b transparent transparent;
+      transform: translateY(-50%);
+    }
+
+    &--prev:hover::after {
+      opacity: 0.7;
+    }
+
+    &--prev:active::after {
+      opacity: 0.3;
+    }
   }
 
   .new-plan__route-wrapper {
@@ -780,7 +809,7 @@
     padding-top: 41px;
     padding-right: 25px;
 
-    border-right: 1px solid #d6d9e6;;
+    border-right: 1px solid #d6d9e6;
   }
 
   .new-plan__route-item {
@@ -895,39 +924,6 @@
     align-items: baseline;
   }
 
-  .new-plan__btn {
-    flex-shrink: 0;
-    width: 285px;
-    margin-bottom: 0;
-
-    &--prev {
-      width: auto;
-      padding: 0;
-    }
-
-    &--prev::after {
-      top: 50%;
-      right: auto;
-      left: -30px;
-
-      width: 0;
-      height: 0;
-
-      border-style: solid;
-      border-width: 7px 10px 7px 0;
-      border-color: transparent #1d2d5b transparent transparent;
-      transform: translateY(-50%);
-    }
-
-    &--prev:hover::after {
-      opacity: 0.7;
-    }
-
-    &--prev:active::after {
-      opacity: 0.3;
-    }
-  }
-
   .new-plan__country-picker {
     top: 69px;
 
@@ -935,7 +931,7 @@
     min-height: 416px;
 
     border: none;
-    box-shadow: 0px 20px 50px 0 rgba(#1d2e5b, 0.08);
+    box-shadow: 0 20px 50px 0 rgba(#1d2e5b, 0.08);
   }
 
   .new-plan__alphabet-list {
@@ -1003,9 +999,6 @@
   .new-plan__country-item {
     height: 30px;
 
-  }
-
-  .new-plan__country-item {
     font-size: 20px;
     line-height: 30px;
   }
@@ -1193,6 +1186,7 @@
       color: rgba(#1d2e5b, 0.3);
       background-color: #dfe3f0;
     }
+
     &--add:active .new-plan__route-btn::before,
     &--add:active .new-plan__route-btn::after {
       background-color: #c8ccd8;
