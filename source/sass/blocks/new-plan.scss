@@ -439,6 +439,8 @@
 
   opacity: 0.3;
   transform: translateY(-50%);
+
+  cursor: pointer;
 }
 
 .new-plan__route-flags {
@@ -491,6 +493,8 @@
   border-radius: 50%;
 
   transform: translate(50%, -50%);
+
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -1019,7 +1023,6 @@
   }
 
   .new-plan__heading {
-
     padding-left: 70px;
   }
 
@@ -1031,6 +1034,14 @@
     padding-right: 160px;
 
     border-radius: 60px;
+
+    &:first-child {
+      padding-bottom: 105px;
+    }
+
+    &:nth-child(2) .new-plan__steps-description {
+      margin-bottom: 54px;
+    }
   }
 
   .new-plan__steps-heading {
@@ -1097,5 +1108,169 @@
 
   .new-plan__calendar {
     margin-bottom: 56px;
+  }
+
+  .new-plan__route-wrapper {
+    margin-bottom: 55px;
+  }
+
+  .new-plan__route {
+    position: relative;
+
+    width: 775px;
+    padding-top: 62px;
+    padding-right: 44px;
+
+    border-right: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+
+      width: 1px;
+      height: 520px;
+
+      background: linear-gradient(to bottom, #d6d9e6 400px, #ffffff 520px);
+    }
+  }
+
+  .new-plan__route-item {
+    &:hover {
+      border-color: #959bb2;
+    }
+
+    &:hover .new-plan__dropdown-icon {
+      opacity: 0.5;
+    }
+
+    &--add:hover {
+      border-color: #dfe3f0;
+    }
+
+    &--add:hover .new-plan__route-btn {
+      background-color: #dfe3f0;
+    }
+
+    &--add:hover .new-plan__route-btn::before,
+    &--add:hover .new-plan__route-btn::after {
+      background-color: #9c9ea8;
+    }
+
+    &--add:active {
+      border-color: #dfe3f0;
+    }
+
+    &--opened:hover,
+    &--opened:active {
+      border-color: #1d2e5b;
+    }
+
+    &--opened .new-plan__dropdown-icon {
+      opacity: 0.3;
+    }
+
+    &--opened:hover .new-plan__dropdown-icon {
+      opacity: 1;
+    }
+
+    &--opened:active .new-plan__dropdown-icon {
+      opacity: 0.1;
+    }
+
+    &::after {
+      right: -46px;
+    }
+
+    &--not-selected .new-plan__route-btn-remove {
+      right: -255px;
+    }
+  }
+
+  .new-plan__route-btn {
+    &--add:active {
+      color: rgba(#1d2e5b, 0.3);
+      background-color: #dfe3f0;
+    }
+    &--add:active .new-plan__route-btn::before,
+    &--add:active .new-plan__route-btn::after {
+      background-color: #c8ccd8;
+    }
+  }
+
+  .new-plan__route-flags {
+    padding-top: 75px;
+    padding-left: 40px;
+  }
+
+  .new-plan__route-btn-remove {
+    right: -100px;
+
+    &::before,
+    &::after {
+      background-color: #d5d7dd;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: #a5a7ac;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: #e1e3e9;
+    }
+  }
+
+  .new-plan__country-picker {
+    width: 731px;
+    min-width: 476px;
+  }
+
+  .new-plan__alphabet-list {
+    width: 490px;
+    min-width: 476px;
+    padding-right: 102px;
+  }
+
+  .new-plan__alphabet-item {
+    width: 60px;
+    margin-bottom: 0;
+    margin-right: 15px;
+
+    border-radius: 3px;
+
+    &:nth-child(5n+5) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(1n+6) {
+      margin-bottom: 15px;
+    }
+
+    &:hover {
+      border-color: #959bb2;
+    }
+
+    &:active .new-plan__alphabet-link {
+      color: #ffffff;
+
+      background-color: #1d2e5b;
+    }
+  }
+
+  .new-plan__country-list {
+    width: 241px;
+  }
+
+  .new-plan__country-link {
+    &:hover {
+      color: #1d2e5b;
+    }
+
+    &:active {
+      color: rgba(#1d2e5b, 0.3);
+    }
   }
 }
