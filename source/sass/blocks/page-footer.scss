@@ -103,6 +103,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__container {
+    justify-content: flex-start;
+  }
+
   .page-footer__logo {
     width: 198px;
     height: 52px;

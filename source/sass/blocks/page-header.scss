@@ -48,7 +48,7 @@
   border-bottom: 1px solid transparent;
 
   &--inner-page {
-    min-height: 53px;
+    height: 53px;
   }
 }
 
@@ -315,7 +315,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
-    min-height: 100px;
+    height: 100px;
 
     &::before {
       position: absolute;
