@@ -285,7 +285,8 @@
                         <span class="visually-hidden">Показать/скрыть</span>
                       </div>
                     </li>
-                    <li class="new-plan__route-item new-plan__route-item--not-selected new-plan__route-item--opened">
+                    <!-- Для открытия дропдауна используется модификатор opened на new-plan__route-item -->
+                    <li class="new-plan__route-item new-plan__route-item--opened new-plan__route-item--not-selected">
                       <button class="new-plan__route-btn">Выберите страну</button>
                       <div class="new-plan__dropdown-icon">
                         <span class="visually-hidden">Показать/скрыть</span>
@@ -427,8 +428,10 @@
                     </li>
                   </ul>
                 </div>
-                <button class="new-plan__btn btn" type="submit">Cледующий шаг</button>
-                <a class="new-plan__btn new-plan__btn--prev btn" href="#">На шаг назад</a>
+                <div class="new-plan__btn-wrapper">
+                  <button class="new-plan__btn btn" type="submit">Cледующий шаг</button>
+                  <a class="new-plan__btn new-plan__btn--prev btn" href="#">На шаг назад</a>
+                </div>
               </li>
               <li class="new-plan__steps-item">
                 <h3 class="new-plan__steps-heading">Развлечения</h3>
