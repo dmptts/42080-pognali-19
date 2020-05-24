@@ -1231,8 +1231,17 @@
       padding-bottom: 105px;
     }
 
+    &:nth-child(2) {
+      margin-bottom: 44px;
+    }
+
     &:nth-child(2) .new-plan__steps-description {
       margin-bottom: 54px;
+    }
+
+    &:last-child .new-plan__steps-description {
+      width: 480px;
+      margin-bottom: 55px;
     }
   }
 
@@ -1464,6 +1473,37 @@
 
     &:active {
       color: rgba(#1d2e5b, 0.3);
+    }
+  }
+
+  .new-plan__plans-list {
+    width: 885px;
+
+    margin-bottom: 55px;
+    padding-top: 80px;
+
+    &::before {
+      top: 92px;
+      right: 109px;
+    }
+  }
+
+  .new-plan__plans-item::after {
+    top: -6px;
+    right: 0;
+  }
+
+  .new-plan__textarea {
+    width: 730px;
+    padding: 24px;
+    padding-right: 20px;
+  }
+
+  .new-plan__textarea-label {
+    width: 730px;
+
+    &::before {
+      right: -52px;
     }
   }
 }
