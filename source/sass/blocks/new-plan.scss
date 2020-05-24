@@ -750,8 +750,16 @@
       padding-bottom: 55px;
     }
 
+    &:nth-child(2) {
+      margin-bottom: 50px;
+    }
+
     &:nth-child(2) .new-plan__steps-description {
       width: 400px;
+      margin-bottom: 33px;
+    }
+
+    &:last-child .new-plan__steps-description {
       margin-bottom: 33px;
     }
   }
@@ -1128,6 +1136,70 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .new-plan__plans-list {
+    margin-bottom: 45px;
+    padding-top: 36px;
+
+    border-top: 1px solid #d6d9e6;
+
+    &::before {
+      top: 50px;
+      bottom: 190px;
+      left: auto;
+      right: 3px;
+
+      width: 3px;
+    }
+  }
+
+  .new-plan__plans-item {
+    margin-bottom: 52px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: -9px;
+      right: 32px;
+
+      width: 70px;
+      height: 47px;
+
+      background-size: 70px 47px;
+    }
+  }
+
+  .new-plan__textarea-label {
+    margin-bottom: 37px;
+    padding-left: 0;
+
+    font-size: 30px;
+    line-height: 30px;
+
+    &::before {
+      top: 15px;
+      left: auto;
+      right: -3px;
+
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .new-plan__textarea {
+    width: 500px;
+    height: 142px;
+    padding: 17px 19px;
+
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
