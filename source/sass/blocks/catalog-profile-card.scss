@@ -523,29 +523,31 @@
   display: block;
   width: 45px;
   height: 45px;
-
-  fill: none;
-
-  stroke: #ff8d30;
-  stroke-width: 2px;
-
   transform: rotate(-90deg);
-  transform-origin: 50%;
 
-  &--99 {
-    stroke-dasharray: 180px;
+  & circle {
+    fill: none;
+
+    stroke: #ff8d30;
+    stroke-width: 2px;
+  
+    transform-origin: 50%;
   }
 
-  &--80 {
-    stroke-dasharray: 146px;
+  &--99 circle{
+    stroke-dasharray: 123px;
   }
 
-  &--25 {
+  &--80 circle{
+    stroke-dasharray: 107px;
+  }
+
+  &--25 circle{
     stroke-dasharray: 47px 135px;
   }
 
-  &--50 {
-    stroke-dasharray: 91px;
+  &--50 circle{
+    stroke-dasharray: 76px;
   }
 }
 
