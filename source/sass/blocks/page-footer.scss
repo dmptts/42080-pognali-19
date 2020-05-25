@@ -4,6 +4,7 @@
   margin-top: -25px;
 
   border-radius: 25px 25px 0 0;
+  background-color: #ffffff;
 }
 
 .page-footer__container {
@@ -64,6 +65,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    margin-top: -60px;
     border-radius: 60px 60px 0 0;
   }
 

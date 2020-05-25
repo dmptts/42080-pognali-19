@@ -58,6 +58,45 @@ window.addEventListener("load", function(evt) {
     });
   }
 
+  // Карта
+
+  ymaps.ready(init);
+
+  function init() {
+    // Создание карты.
+    let myMap = new ymaps.Map("map", {
+        center: [59.936178, 30.321914],
+        zoom: 16
+    });
+
+    let myPlacemark = new ymaps.Placemark(
+      myMap.getCenter(),
+      {
+         hintContent: "Собственный значок метки",
+         balloonContent: "Это красивая метка",
+      },
+      {
+         iconLayout: "default#image",
+         iconImageHref: "../img/map-marker.svg",
+         iconImageSize: [56, 69],
+         iconImageOffset: [-5, -38],
+      }
+    );
+
+    myMap.geoObjects
+        .add(myPlacemark)
+
+    myMap.controls
+      .remove("trafficControl")
+      .remove("searchControl")
+      .remove("typeSelector")
+      .remove("geolocationControl")
+      .remove("fullscreenControl")
+      .remove("rulerControl")
+  }
+
+
+
   // Валидация форм
 
   let registrationForm = document.querySelector(".feedback__registration");
@@ -77,7 +116,6 @@ window.addEventListener("load", function(evt) {
       registrationEmailInput.classList.remove("feedback__input--error");
     });
   }
-
 
   // Показ/скрытие фильтра стран
 

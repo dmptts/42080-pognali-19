@@ -46,6 +46,10 @@
   }
 }
 
+.general-info__btn-text--short {
+  display: none;
+}
+
 .general-info__level {
   position: relative;
 
@@ -64,11 +68,15 @@
   width: 99px;
   height: 99px;
 
-  fill: none;
-  stroke: #ff8d30;
-  stroke-width: 2px;
   transform: rotate(-90deg);
-  transform-origin: 50%;
+
+  & circle {
+    fill: none;
+    stroke: #ff8d30;
+    stroke-width: 2px;
+    stroke-dasharray: 107px;
+    transform-origin: 50%;
+  }
 }
 
 .general-info__level-caption {

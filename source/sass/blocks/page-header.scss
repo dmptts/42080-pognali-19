@@ -169,6 +169,18 @@
   .page-header__menu--closed .page-header__dropdown-menu {
     display: none;
   }
+
+  .page-header--inner-page .page-header__logo {
+    margin-top: -16px;
+  }
+
+  .page-header--fixed .page-header__logo {
+    margin-top: 0;
+  }
+
+  .page-header--inner-page.page-header--fixed .page-header__toggle {
+    top: 22px;
+  }
 }
 
 @media (max-width: $mobile-devices-only) {
