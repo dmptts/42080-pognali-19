@@ -855,7 +855,7 @@
     display: flex;
     justify-content: space-between;
     width: 237px;
-    min-height: 285px;
+    height: 285px;
     margin: 0;
     padding-top: 49px;
     padding-bottom: 42px;
@@ -863,7 +863,7 @@
 
   .catalog-profile-card__countries-wrapper {
     position: static;
-    // margin-bottom: 30px;
+    margin-bottom: auto;
   }
 
   .catalog-profile-card__row-2 {
