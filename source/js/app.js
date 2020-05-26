@@ -61,8 +61,11 @@ window.addEventListener("load", function(evt) {
   // Карта
 
   let mapContainer = document.querySelector(".map");
+  let mapPicture = document.querySelector(".map__picture");
 
   if (mapContainer !== null) {
+    mapPicture.classList.remove("map__picture--no-js");
+
     ymaps.ready(init);
 
     function init() {
