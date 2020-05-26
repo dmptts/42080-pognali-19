@@ -60,40 +60,45 @@ window.addEventListener("load", function(evt) {
 
   // Карта
 
-  ymaps.ready(init);
+  let mapContainer = document.querySelector(".map");
 
-  function init() {
-    // Создание карты.
-    let myMap = new ymaps.Map("map", {
-        center: [59.936178, 30.321914],
-        zoom: 16
-    });
+  if (mapContainer !== null) {
+    ymaps.ready(init);
 
-    let myPlacemark = new ymaps.Placemark(
-      myMap.getCenter(),
-      {
-        hintContent: "Собственный значок метки",
-        balloonContent: "Это красивая метка",
-      },
-      {
-        iconLayout: "default#image",
-        iconImageHref: "../img/map-marker.svg",
-        iconImageSize: [56, 69],
-        iconImageOffset: [-5, -38],
-      }
-    );
+    function init() {
+      // Создание карты.
+      let myMap = new ymaps.Map("map", {
+          center: [59.936178, 30.321914],
+          zoom: 16
+      });
 
-    myMap.geoObjects
-        .add(myPlacemark)
+      let myPlacemark = new ymaps.Placemark(
+        myMap.getCenter(),
+        {
+          hintContent: "Собственный значок метки",
+          balloonContent: "Это красивая метка",
+        },
+        {
+          iconLayout: "default#image",
+          iconImageHref: "../img/map-marker.svg",
+          iconImageSize: [56, 69],
+          iconImageOffset: [-5, -38],
+        }
+      );
 
-    myMap.controls
-      .remove("trafficControl")
-      .remove("searchControl")
-      .remove("typeSelector")
-      .remove("geolocationControl")
-      .remove("fullscreenControl")
-      .remove("rulerControl")
-  }
+      myMap.geoObjects
+          .add(myPlacemark)
+
+      myMap.controls
+        .remove("trafficControl")
+        .remove("searchControl")
+        .remove("typeSelector")
+        .remove("geolocationControl")
+        .remove("fullscreenControl")
+        .remove("rulerControl")
+    };
+  };
+
 
 
 

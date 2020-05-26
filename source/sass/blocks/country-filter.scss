@@ -199,7 +199,7 @@
 
 .country-filter__close-btn {
   position: absolute;
-  bottom: 0;
+  bottom: 13px;
 
   padding-top: 7px;
   padding-bottom: 4px;
@@ -377,11 +377,12 @@
   }
 
   .country-filter__close-btn {
+    position: static;
+
     display: none;
     padding-top: 37px;
     padding-bottom: 34px;
     padding-left: 43px;
-
 
     &::before {
       left: 243px;
