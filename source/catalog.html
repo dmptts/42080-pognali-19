@@ -101,11 +101,14 @@
         <div class="country-filter__container container">
           <h2 class="country-filter__heading">Фильтрация по странам<span class="country-filter__heading-colon">:</span></h2>
           <!-- для изменения иконки используется модификатор opened -->
-          <button class="country-filter__toggle country-filter__toggle--no-js">Показать все</button>
+          <button class="country-filter__toggle country-filter__toggle--no-js">
+            <span class="country-filter__toggle-text--closed">Показать все</span>
+            <span class="country-filter__toggle-text--opened">Свернуть</span>
+          </button>
           <div class="country-filter__dropdown country-filter__dropdown--no-js">
             <ul class="country-filter__mainland-list">
               <li class="country-filter__mainland-item">
-                <a href="#" class="country-filter__mainland-link country-filter__mainland-link--active">Европа</a>
+                <a href="#" class="country-filter__mainland-link">Европа</a>
               </li>
               <li class="country-filter__mainland-item">
                 <a href="#" class="country-filter__mainland-link">Азия</a>
@@ -742,75 +745,94 @@
       <div class="catalog__container container">
 
         <section class="catalog__companions-filter companions-filter">
-          <!-- <h2>Подберите идеального попутчика</h2>
+          <h2 class="companions-filter__heading">Подберите идеального попутчика</h2>
           <form  class="companions-filter__form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="companions-filter__hobby">
-              <legend class="companions-filter__legend">Хобби:</legend>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="hobby-sport" id="filter-hobby-sport">
-              <label class="companions-filter__label" for="filter-hobby-sport">Спортзал</label>
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--hobby companions-filter__legend--no-js ">Хобби<span class="companions-filter__legend-colon">:</span></span>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="hobby-hookah" id="filter-hobby-hookah">
-              <label class="companions-filter__label" for="filter-hobby-hookah">Кальян</label>
+              <div class="companions-filter__wrapper companions-filter__wrapper--hobby companions-filter__wrapper--no-js">
+                <input class="companions-filter__checkbox" type="checkbox" name="hobby-sport" id="filter-hobby-sport">
+                <label class="companions-filter__label" for="filter-hobby-sport">Спортзал</label>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="hobby-coach" id="filter-hobby-coach">
-              <label class="companions-filter__label" for="filter-hobby-coach">Диван</label>
-            </fieldset>
-            <fieldset class="companions-filter__music">
-              <legend class="companions-filter__legend">Музыка:</legend>
+                <input class="companions-filter__checkbox" type="checkbox" name="hobby-hookah" id="filter-hobby-hookah">
+                <label class="companions-filter__label" for="filter-hobby-hookah">Кальян</label>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="music-hardrock" id="filter-music-hardrock">
-              <label class="companions-filter__label" for="filter-music-hardrock">Тяжелый рок</label>
+                <input class="companions-filter__checkbox" type="checkbox" name="hobby-coach" id="filter-hobby-coach">
+                <label class="companions-filter__label" for="filter-hobby-coach">Диван</label>
+              </div>
+            </div>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="music-russian-rap" id="filter-music-russian-rap">
-              <label class="companions-filter__label" for="filter-music-russian-rap">Русский рэп</label>
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--music companions-filter__legend--no-js companions-filter__legend--opened">Музыка<span class="companions-filter__legend-colon">:</span></span>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="music-eurodance" id="filter-music-eurodance">
-              <label class="companions-filter__label" for="filter-music-eurodance">Евродэнс</label>
-            </fieldset>
-            <fieldset class="companions-filter__food">
-              <legend class="companions-filter__legend">Еда:</legend>
+              <div class="companions-filter__wrapper companions-filter__wrapper--music companions-filter__wrapper--no-js companions-filter__wrapper--opened">
+                <input class="companions-filter__checkbox" type="checkbox" name="music-hardrock" id="filter-music-hardrock" checked>
+                <label class="companions-filter__label" for="filter-music-hardrock">Тяжелый рок</label>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="food-meat" id="filter-food-meat">
-              <label class="companions-filter__label" for="filter-food-meat">Мясоед</label>
+                <input class="companions-filter__checkbox" type="checkbox" name="music-russian-rap" id="filter-music-russian-rap">
+                <label class="companions-filter__label" for="filter-music-russian-rap">Русский рэп</label>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="food-proper-nutrition" id="filter-food-proper-nutrition">
-              <label class="companions-filter__label" for="filter-food-proper-nutrition">ПП</label>
+                <input class="companions-filter__checkbox" type="checkbox" name="music-eurodance" id="filter-music-eurodance">
+                <label class="companions-filter__label" for="filter-music-eurodance">Евродэнс</label>
+              </div>
+            </div>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="food-raw-vegan" id="filter-food-raw-vegan">
-              <label class="companions-filter__label" for="filter-food-raw-vegan">Веган-сыроед</label>
-            </fieldset>
-            <fieldset class="companions-filter__transport">
-              <legend class="companions-filter__legend">Транспорт:</legend>
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--food companions-filter__legend--no-js">Еда<span class="companions-filter__legend-colon">:</span></span>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="transport-avia" id="filter-transport-avia">
-              <label class="companions-filter__label" for="filter-transport-avia">Авиаперелет</label>
+              <div class="companions-filter__wrapper companions-filter__wrapper--food companions-filter__wrapper--no-js">
+                <input class="companions-filter__checkbox" type="checkbox" name="food-meat" id="filter-food-meat">
+                <label class="companions-filter__label" for="filter-food-meat">Мясоед</label>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="transport-auto" id="filter-transport-auto">
-              <label class="companions-filter__label" for="filter-transport-auto">Автотранспорт</label>
+                <input class="companions-filter__checkbox" type="checkbox" name="food-proper-nutrition" id="filter-food-proper-nutrition">
+                <label class="companions-filter__label" for="filter-food-proper-nutrition">
+                  <span class="companions-filter__label--short-text">ПП</span>
+                  <span class="companions-filter__label--full-text">Сидит на ПП</span>
+                </label>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="transport-bike" id="filter-transport-bike">
-              <label class="companions-filter__label" for="filter-transport-bike">Велосипед</label>
+                <input class="companions-filter__checkbox" type="checkbox" name="food-raw-vegan" id="filter-food-raw-vegan">
+                <label class="companions-filter__label" for="filter-food-raw-vegan">Веган-сыроед</label>
+              </div>
+            </div>
 
-              <input class="companions-filter__checkbox" type="checkbox" name="transport-tracking" id="filter-transport-tracking">
-              <label class="companions-filter__label" for="filter-transport-tracking">Пешком</label>
-            </fieldset>
-            <fieldset class="companions-filter__level">
-              <legend>Левел:</legend>
-              <div class="companions-filter__range-scale-ctrl">
-                <div class="companions-filter__range-scale">
-                  <div class="companions-filter__range-bar"></div>
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--transport companions-filter__legend--no-js companions-filter__legend--opened">Транспорт<span class="companions-filter__legend-colon">:</span></span>
+
+              <div class="companions-filter__wrapper companions-filter__wrapper--transport companions-filter__wrapper--opened companions-filter__wrapper--no-js">
+                <input class="companions-filter__transport-checkbox" type="checkbox" name="transport-avia" id="filter-transport-avia" checked>
+                <label class="companions-filter__transport-label companions-filter__transport-label--avia" for="filter-transport-avia"><span class="visually-hidden">Авиаперелет</span></label>
+
+                <input class="companions-filter__transport-checkbox" type="checkbox" name="transport-auto" id="filter-transport-auto" checked>
+                <label class="companions-filter__transport-label companions-filter__transport-label--auto" for="filter-transport-auto"><span class="visually-hidden">Автотранспорт</span></label>
+
+                <input class="companions-filter__transport-checkbox" type="checkbox" name="transport-bike" id="filter-transport-bike">
+                <label class="companions-filter__transport-label companions-filter__transport-label--bike" for="filter-transport-bike"><span class="visually-hidden">Велосипед</span></label>
+
+                <input class="companions-filter__transport-checkbox" type="checkbox" name="transport-tracking" id="filter-transport-tracking" checked>
+                <label class="companions-filter__transport-label companions-filter__transport-label--tracking" for="filter-transport-tracking"><span class="visually-hidden">Пешком</span></label>
+              </div>
+            </div>
+
+            <div class="companions-filter__fieldset">
+              <span class="companions-filter__legend companions-filter__legend--level companions-filter__legend--no-js companions-filter__legend--opened">Левел:</span>
+              <div class="companions-filter__wrapper companions-filter__wrapper--level companions-filter__wrapper--opened companions-filter__wrapper--no-js">
+                <div class="companions-filter__num-ctrl">
+                  <input class="companions-filter__num-input companions-filter__num-input--min" type="text" name="min-level" value="30">
+                  <input class="companions-filter__num-input companions-filter__num-input--max" type="text" name="max-level" value="100">
                 </div>
-                <div class="companions-filter__range-toggle companions-filter__range-toggle--min"></div>
-                <div class="companions-filter__range-toggle companions-filter__range-toggle--max"></div>
+                <div class="companions-filter__range-scale-ctrl">
+                  <div class="companions-filter__range-scale">
+                    <div class="companions-filter__range-bar"></div>
+                  </div>
+                  <div class="companions-filter__range-ctrl companions-filter__range-ctrl--min"></div>
+                  <div class="companions-filter__range-ctrl companions-filter__range-ctrl--max"></div>
+                </div>
               </div>
-              <div class="companions-filter__num-ctrl">
-                <input type="text" name="min-level" value="1">
-                <input type="text" name="max-level" value="100">
-              </div>
-            </fieldset>
-            <button type="submit">Показать</button>
-          </form> -->
+            </div>
+
+            <button class="companions-filter__btn btn" type="submit">Показать</button>
+          </form>
         </section>
 
         <section class="catalog__companions">
@@ -839,7 +861,6 @@
                   </span>
                   <b class="catalog-profile-card__name">Таня Фирсова</b>
                 </a>
-                
                 <div class="catalog-profile-card__row-1">
                   <a class="catalog-profile-card__btn btn" href="#">Позвать!</a>
                   <a class="catalog-profile-card__like-btn catalog-profile-card__like-btn--active" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
@@ -903,7 +924,21 @@
                         <div class="catalog-profile-card__level-counter">99</div>
                         <div class="catalog-profile-card__level-text">level</div>
                       </div>
-                      <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--99" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
+                      <svg
+                        class="catalog-profile-card__level-icon catalog-profile-card__level-icon--99"
+                        viewBox="0 0 33.83098862 33.83098862"
+                        width="60"
+                        height="60"
+                      >
+                        <circle
+                          stroke-width="2"
+                          r="15.91549431"
+                          cx="16.91549431"
+                          cy="16.91549431"
+                          stroke-dasharray="80,20"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -931,7 +966,6 @@
                   </span>
                   <b class="catalog-profile-card__name">Петя Демин</b>
                 </a>
-                
                 <div class="catalog-profile-card__row-1">
                   <a class="catalog-profile-card__btn btn btn--rounded" href="#">Позвать!</a>
                   <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
@@ -989,7 +1023,21 @@
                         <div class="catalog-profile-card__level-counter">80</div>
                         <div class="catalog-profile-card__level-text">level</div>
                       </div>
-                      <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--80" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
+                      <svg
+                        class="catalog-profile-card__level-icon catalog-profile-card__level-icon--80"
+                        viewBox="0 0 33.83098862 33.83098862"
+                        width="60"
+                        height="60"
+                      >
+                        <circle
+                          stroke-width="2"
+                          r="15.91549431"
+                          cx="16.91549431"
+                          cy="16.91549431"
+                          stroke-dasharray="80,20"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -1017,7 +1065,6 @@
                   </span>
                   <b class="catalog-profile-card__name">Марк Смолов</b>
                 </a>
-                
                 <div class="catalog-profile-card__row-1">
                   <a class="catalog-profile-card__btn btn btn--rounded" href="#">Позвать!</a>
                   <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
@@ -1078,7 +1125,21 @@
                         <div class="catalog-profile-card__level-counter">25</div>
                         <div class="catalog-profile-card__level-text">level</div>
                       </div>
-                      <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--25" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
+                      <svg
+                        class="catalog-profile-card__level-icon catalog-profile-card__level-icon--25"
+                        viewBox="0 0 33.83098862 33.83098862"
+                        width="60"
+                        height="60"
+                      >
+                        <circle
+                          stroke-width="2"
+                          r="15.91549431"
+                          cx="16.91549431"
+                          cy="16.91549431"
+                          stroke-dasharray="80,20"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -1106,7 +1167,7 @@
                   </span>
                   <b class="catalog-profile-card__name">Лариса Роговая</b>
                 </a>
-                
+
                 <div class="catalog-profile-card__row-1">
                   <a class="catalog-profile-card__btn btn btn--rounded" href="#">Позвать!</a>
                   <a class="catalog-profile-card__like-btn" href="#"><span class="visually-hidden">Лайкнуть!</span></a>
@@ -1161,7 +1222,21 @@
                         <div class="catalog-profile-card__level-counter">50</div>
                         <div class="catalog-profile-card__level-text">level</div>
                       </div>
-                      <svg class="catalog-profile-card__level-icon catalog-profile-card__level-icon--50" width="45" height="45"><use xlink:href="img/sprite.svg#icon-progress"></use></svg>
+                      <svg
+                        class="catalog-profile-card__level-icon catalog-profile-card__level-icon--50"
+                        viewBox="0 0 33.83098862 33.83098862"
+                        width="60"
+                        height="60"
+                      >
+                        <circle
+                          stroke-width="2"
+                          r="15.91549431"
+                          cx="16.91549431"
+                          cy="16.91549431"
+                          stroke-dasharray="80,20"
+                          stroke-dashoffset="25"
+                        ></circle>
+                      </svg>
                     </div>
                   </div>
                 </div>

@@ -1,0 +1,482 @@
+.general-info {
+  margin-top: -20px;
+
+  background-color: #edeff6;
+}
+
+.general-info__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 44px;
+  padding-bottom: 56px;
+}
+
+.general-info__userpic-picture {
+  order: 2;
+  margin-right: 17px;
+
+  line-height: 0;
+}
+
+.general-info__userpic-img {
+  width: 99px;
+  height: 99px;
+
+  border-radius: 50%;
+}
+
+.general-info__btn {
+  order: 3;
+  margin-top: 18px;
+  margin-bottom: 33px;
+  padding-top: 8px;
+  padding-bottom: 3px;
+
+  background-color: #dfe3f0;
+
+  &:hover {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: rgba($color-dark-blue, 0.3);
+    background-color: #c8cee8;
+  }
+}
+
+.general-info__btn-text--short {
+  display: none;
+}
+
+.general-info__level {
+  position: relative;
+
+  order: 1;
+  width: 99px;
+  height: 99px;
+  margin-left: 20px;
+}
+
+.general-info__level-icon--80 {
+  stroke-dasharray: 152px;
+}
+
+.general-info__level-icon {
+  display: block;
+  width: 99px;
+  height: 99px;
+
+  transform: rotate(-90deg);
+
+  & circle {
+    fill: none;
+    stroke: #ff8d30;
+    stroke-width: 2px;
+    stroke-dasharray: 107px;
+    transform-origin: 50%;
+  }
+}
+
+.general-info__level-caption {
+  position: absolute;
+  top: 22px;
+  left: 28px;
+
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.general-info__level-text {
+  display: block;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: #888788;
+}
+
+.general-info__tags {
+  position: relative;
+
+  order: 4;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.general-info__tags-legend {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  background-color: #edeff6;
+
+  transform: translateX(-50%);
+}
+
+.general-info__tags-input {
+  width: 100%;
+  height: 89px;
+  padding: 22px 24px;
+
+  line-height: 22px;
+
+  background-color: #edeff6;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: #aeb4cb;
+  }
+
+  &:active {
+    border-color: #161c35;
+  }
+}
+
+.general-info__transport {
+  position: relative;
+
+  order: 5;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 14px;
+
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+
+.general-info__transport-checkbox {
+  display: none;
+}
+
+.general-info__transport-label {
+  position: relative;
+
+  width: 33px;
+  height: 33px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    background-repeat: no-repeat;
+    opacity: 0.15;
+  }
+
+  &:hover::before {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: #e2e5f1;
+  }
+}
+
+.general-info__transport-checkbox:checked + .general-info__transport-label::before {
+  opacity: 1;
+}
+
+.general-info__transport-checkbox:checked + .general-info__transport-label:hover::before {
+  opacity: 0.7;
+}
+
+.general-info__transport-checkbox:checked + .general-info__transport-label:active {
+  background-color: #e2e5f1;
+}
+
+.general-info__transport-checkbox:checked + .general-info__transport-label:active::before {
+  opacity: 0.3;
+}
+
+.general-info__transport-checkbox + .general-info__transport-label {
+  &--avia::before {
+    top: 9px;
+    left: 8px;
+
+    width: 14px;
+    height: 16px;
+
+    background-image: url("../img/plane.svg");
+  }
+
+  &--auto::before {
+    top: 9px;
+    left: 10px;
+
+    width: 13px;
+    height: 16px;
+
+    background-image: url("../img/bus.svg");
+  }
+
+  &--bike::before {
+    top: 7px;
+    left: 7px;
+
+    width: 19px;
+    height: 17px;
+
+    background-image: url("../img/bike.svg");
+  }
+
+  &--tracking::before {
+    top: 8px;
+    left: 8px;
+
+    width: 15px;
+    height: 17px;
+
+    background-image: url("../img/run.svg");
+  }
+}
+
+.general-info__transport-legend {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  background-color: #edeff6;
+
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .general-info {
+    margin-top: -60px;
+  }
+
+  .general-info__container {
+    padding-top: 123px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .general-info__userpic-picture {
+    order: 3;
+    margin-right: 0;
+  }
+
+  .general-info__userpic-img {
+    width: 94px;
+    height: 94px;
+
+    border-radius: 5px;
+  }
+
+  .general-info__btn {
+    order: 4;
+    margin-top: 52px;
+    margin-bottom: 51px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2.1px;
+
+    border-radius: 10px;
+  }
+
+  .general-info__level {
+    width: 95px;
+    height: 95px;
+    margin-left: 0;
+  }
+
+  .general-info__level-icon {
+    width: 95px;
+    height: 95px;
+  }
+
+  .general-info__tags-legend {
+    position: absolute;
+    top: auto;
+    bottom: -1px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2.1px;
+  }
+
+  .general-info__tags-input {
+    height: 94px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 39px;
+    padding-right: 39px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .general-info__transport {
+    order: 2;
+    width: 306px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .general-info__transport-legend {
+    position: absolute;
+    top: auto;
+    bottom: -11px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2.1px;
+  }
+
+  .general-info__transport-label {
+    width: 43px;
+    height: 43px;
+  }
+
+  .general-info__transport-checkbox + .general-info__transport-label {
+    &--avia::before {
+      top: 12px;
+      left: 10px;
+
+      width: 19px;
+      height: 21px;
+    }
+
+    &--auto::before {
+      top: 12px;
+      left: 13px;
+
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike::before {
+      top: 11px;
+      left: 9px;
+
+      width: 24px;
+      height: 21px;
+    }
+
+    &--tracking::before {
+      top: 12px;
+      left: 11px;
+
+      width: 20px;
+      height: 21px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .general-info__container {
+    position: relative;
+
+    padding-top: 133px;
+    padding-bottom: 99px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .general-info__userpic-picture {
+    position: absolute;
+    top: -130px;
+    right: 155px;
+    z-index: 4;
+
+    order: 0;
+  }
+
+  .general-info__userpic-img {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 5px 5px 0 0;
+  }
+
+  .general-info__btn {
+    position: absolute;
+    top: 8px;
+    right: 155px;
+    width: 190px;
+
+    padding-top: 10px;
+    padding-bottom: 7px;
+
+    border-radius: 0 0 10px 10px;
+  }
+
+  .general-info__btn-text {
+    &--full {
+      display: none;
+    }
+
+    &--short {
+      display: block;
+    }
+  }
+
+  .general-info__level {
+    position: absolute;
+    top: -88px;
+    right: 390px;
+    z-index: 4;
+
+    order: 0;
+  }
+
+  .general-info__level-caption {
+    color: #ffffff;
+  }
+
+  .general-info__tags {
+    order: 1;
+    width: 730px;
+    margin-left: 64px;
+  }
+
+  .general-info__tags-legend {
+    left: 19px;
+
+    transform: none;
+  }
+
+  .general-info__transport {
+    align-self: flex-start;
+    width: 384px;
+  }
+}

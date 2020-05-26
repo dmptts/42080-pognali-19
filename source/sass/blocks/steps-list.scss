@@ -61,6 +61,7 @@
   .steps-list {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
   }
 
   .steps-list__item {

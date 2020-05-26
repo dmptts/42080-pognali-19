@@ -1,0 +1,256 @@
+.calendar__month-picker {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 10px;
+
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+}
+
+.calendar__month-picker-btn {
+  width: 9px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+
+  background-repeat: no-repeat;
+  background-size: 9px 18px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+
+  &--prev {
+    background-image: url("../../img/month-arrow-left.svg");
+  }
+
+  &--next {
+    background-image: url("../../img/month-arrow-right.svg");
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.calendar__current-month {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.calendar__weekdays-list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 7px;
+}
+
+.calendar__weekday {
+  display: block;
+  width: 31px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  text-align: center;
+
+  &--weekend {
+    color: #ff5c23;
+  }
+}
+
+.calendar__weekday-second-letter {
+  display: none;
+}
+
+.calendar__date-list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calendar__date {
+  position: relative;
+
+  width: 32px;
+  margin-left: -1px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  text-align: center;
+
+  border: 1px solid #cbced9;
+  background-color: #edeff6;
+
+  &:nth-child(7n+1) {
+    margin-left: 0;
+  }
+
+  &:nth-child(1n+8) {
+    margin-top: -1px;
+  }
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: #1d2e5b;
+  }
+
+  &:hover::before {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    z-index: 1;
+
+    width: 32px;
+    height: 32px;
+
+    border: 2px solid #ff5c23;
+  }
+
+  &--active {
+    color: #ffffff;
+
+    background-color: #101d41;
+  }
+
+  &--disabled,
+  &--disabled:hover {
+    color: rgba(#444444, 0.3);
+
+    background-color: #ffffff;
+  }
+
+  &--disabled::before {
+    display: none;
+  }
+}
+
+.calendar__month-text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .calendar__month-picker {
+    padding-top: 26px;
+    padding-bottom: 23px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .calendar__month-picker-btn {
+    width: 19px;
+    height: 34px;
+
+    background-size: 19px 34px;
+  }
+
+  .calendar__current-month {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .calendar__weekdays-list {
+    padding-top: 33px;
+    padding-bottom: 2px;
+  }
+
+  .calendar__weekday {
+    width: 74px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .calendar__weekday-second-letter {
+    display: inline;
+  }
+
+  .calendar__date {
+    width: 76px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+
+    &:hover::before {
+      width: 76px;
+      height: 69px;
+
+      border-width: 4px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar__month-picker {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .calendar__weekdays-list {
+    padding-top: 12px;
+    padding-bottom: 13px;
+  }
+
+  .calendar__weekday {
+    width: 143px;
+    padding-left: 16px;
+
+    text-align: left;
+  }
+
+  .calendar__date {
+    position: relative;
+
+    width: 143px;
+    padding-top: 7px;
+    padding-bottom: 33px;
+    padding-left: 15px;
+
+    font-weight: 400;
+    text-align: left;
+
+    &:hover::before {
+      width: 143px;
+      height: 72px;
+    }
+  }
+
+  .calendar__month-text {
+    display: inline;
+  }
+
+  .calendar__date--first-active::after,
+  .calendar__date--last-active::after {
+    position: absolute;
+    left: 14px;
+    bottom: 7px;
+
+    letter-spacing: 1.7px;
+  }
+
+  .calendar__date--first-active::after {
+    content: "Заезд";
+  }
+
+  .calendar__date--last-active::after {
+    content: "Выезд";
+  }
+}

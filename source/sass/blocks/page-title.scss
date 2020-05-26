@@ -7,7 +7,7 @@
 }
 
 .page-title__container {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -119,5 +119,9 @@
     padding-top: 118px;
     padding-left: 126px;
     padding-right: 123px;
+  }
+
+  .page-title__link--form-page {
+    display: none;
   }
 }

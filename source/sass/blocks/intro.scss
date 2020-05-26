@@ -42,9 +42,9 @@
 }
 
 .intro__contacts-link {
+  flex-shrink: 0;
   width: 40px;
   height: 40px;
-
 
   border-radius: 50%;
 
@@ -103,25 +103,9 @@
   }
 }
 
-// .intro__contacts-icon {
-//   width: 40px;
-//   height: 40px;
-//   margin-right: 0;
-
-//   background-color: $color-yellow;
-
-//   &--phone {
-//     background-color: #ff8d30;
-//   }
-
-//   svg {
-//     fill: #161c35;
-//   }
-// }
-
 .intro__user-list {
   @include list-reset;
-  width: 100%;
+  width: 189px;
   margin-top: -20px;
 }
 
@@ -218,7 +202,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    min-height: 652px;
+    height: 652px;
+    min-height: auto;
     padding-top: 109px;
     padding-bottom: 125px;
 
@@ -235,6 +220,7 @@
     width: 465px;
     min-height: auto;
     margin: 0;
+    margin-right: auto;
     padding-top: 0;
     padding-left: 67px;
 
@@ -249,6 +235,7 @@
   }
 
   .intro__steps-list {
+    margin-top: auto;
     margin-bottom: 0;
   }
 }
