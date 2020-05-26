@@ -72,14 +72,14 @@ window.addEventListener("load", function(evt) {
     let myPlacemark = new ymaps.Placemark(
       myMap.getCenter(),
       {
-         hintContent: "Собственный значок метки",
-         balloonContent: "Это красивая метка",
+        hintContent: "Собственный значок метки",
+        balloonContent: "Это красивая метка",
       },
       {
-         iconLayout: "default#image",
-         iconImageHref: "../img/map-marker.svg",
-         iconImageSize: [56, 69],
-         iconImageOffset: [-5, -38],
+        iconLayout: "default#image",
+        iconImageHref: "../img/map-marker.svg",
+        iconImageSize: [56, 69],
+        iconImageOffset: [-5, -38],
       }
     );
 

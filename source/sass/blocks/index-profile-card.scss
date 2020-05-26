@@ -130,7 +130,7 @@
   line-height: 14px;
 }
 
-.index-profile-card__level-icon  {
+.index-profile-card__level-icon {
   display: block;
   width: 60px;
   height: 60px;
@@ -138,19 +138,17 @@
 
   & circle {
     fill: none;
-  
     stroke: #ff8d30;
     stroke-width: 2px;
-  
     transform-origin: 50%;
     stroke-dashoffset: 25;
   }
 
-  &--99 circle{
+  &--99 circle {
     stroke-dasharray: 123px;
   }
 
-  &--80 circle{
+  &--80 circle {
     stroke-dasharray: 107px;
   }
 }
